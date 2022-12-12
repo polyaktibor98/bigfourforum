@@ -10,7 +10,10 @@ DB_NAME = "forum_database.db"
 def create_app():
     app = Flask(__name__)
     app.config['SECRET_KEY'] = "DoLbpxWD2T"
-    app.config['SQLALCHEMY_DATABASE_URI'] = f'sqlite:///{DB_NAME}'
+    #lokálishoz, sqlite
+    #app.config['SQLALCHEMY_DATABASE_URI'] = f'sqlite:///{DB_NAME}'
+    #deployment, postgresql
+    app.config['SQLALCHEMY_DATABASE_URI'] = "postgres://polyaktibor98:jMU3jheFq2toDnJWLf8fLnEt3UwDDSKE@dpg-cebmjc82i3mr376j273g-a/dbname_2hhv"
     db.init_app(app)
 
     from .views import views
