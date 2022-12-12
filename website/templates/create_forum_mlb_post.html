@@ -1,0 +1,39 @@
+{% extends "create_post_base.html" %}
+
+
+{% block title %}
+    Create MLB post
+{% endblock %}
+
+
+{% block title_icon %}
+    <link rel="icon" href="/static/logo_mlb.png" type="image/png">
+{% endblock %}
+
+
+{% block banner %}
+    <div class="border-top border-bottom border-3 align-self-center mb-3" align="center">
+        <img src="/static/logo_mlb.png" width="150" height="150" class="img-fluid rounded-start" alt="logo_mlb">
+        <br>
+        <div class="own-text-color"><b>Major League Baseball</b></div>
+    </div>
+{% endblock %}
+
+
+{% block create_to_forum %}
+    MLB
+{% endblock %}
+
+
+{% block create_to_image %}
+    <img src="/static/logo_mlb.png" width="75" height="75" class="img-fluid rounded-start" alt="logo_mlb">
+{% endblock %}
+
+
+{% block create_form_base %}
+    <textarea class="form-control mb-5" rows="3" id="createForumMlbPostTextareaId" name="createForumMlbPostTextarea"></textarea>
+    <div align="center">
+        <a href="/mlb-forum/1"><button type="button" class="btn btn-secondary btn-lg">Back</button></a>
+        <button type="submit" class="btn btn-dark btn-lg own-background-color">Post</button>
+    </div>
+{% endblock %}

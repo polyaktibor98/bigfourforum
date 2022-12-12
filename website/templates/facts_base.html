@@ -1,0 +1,648 @@
+{% extends "base.html" %}
+
+
+{% block content %}
+    <!-- source (Forrás) megnyitása új lapon: https://www.freecodecamp.org/news/how-to-use-html-to-open-link-in-new-tab -->
+    <h1 class="own-text-color mb-5" align="center">
+        Interesting facts about <b>{% block facts_league %}{% endblock %}</b> {% block facts_image %}{% endblock %} teams
+    </h1>
+
+    <!-- TEAM 1 -->
+    <div class="card border own-border-color mb-3">
+        <div class="card-header d-flex justify-content-between align-items-center">
+            <div class="col-1" align="center">
+                {% block team_1_image %}{% endblock %}
+            </div>
+            <div class="col-11">
+                <h5 class="card-title own-text-color">{% block team_1_name %}{% endblock %}</h5>
+                <h6 class="card-subtitle text-muted">{% block team_1_division %}{% endblock %}</h6>
+            </div>
+        </div>
+        <div class="card-body">
+            <ul class="list-group list-group-flush">
+                {% block team_1_facts %}{% endblock %}
+            </ul>
+        </div>
+        <div class="card-footer text-end">
+            <em>{% block team_1_source %}{% endblock %}</em>
+        </div>
+    </div>
+
+    <!-- TEAM 2 -->
+    <div class="card border own-border-color mb-3">
+        <div class="card-header d-flex justify-content-between align-items-center">
+            <div class="col-1" align="center">
+                {% block team_2_image %}{% endblock %}
+            </div>
+            <div class="col-11">
+                <h5 class="card-title own-text-color">{% block team_2_name %}{% endblock %}</h5>
+                <h6 class="card-subtitle text-muted">{% block team_2_division %}{% endblock %}</h6>
+            </div>
+        </div>
+        <div class="card-body">
+            <ul class="list-group list-group-flush">
+                {% block team_2_facts %}{% endblock %}
+            </ul>
+        </div>
+        <div class="card-footer text-end">
+            <em>{% block team_2_source %}{% endblock %}</em>
+        </div>
+    </div>
+
+    <!-- TEAM 3 -->
+    <div class="card border own-border-color mb-3">
+        <div class="card-header d-flex justify-content-between align-items-center">
+            <div class="col-1" align="center">
+                {% block team_3_image %}{% endblock %}
+            </div>
+            <div class="col-11">
+                <h5 class="card-title own-text-color">{% block team_3_name %}{% endblock %}</h5>
+                <h6 class="card-subtitle text-muted">{% block team_3_division %}{% endblock %}</h6>
+            </div>
+        </div>
+        <div class="card-body">
+            <ul class="list-group list-group-flush">
+                {% block team_3_facts %}{% endblock %}
+            </ul>
+        </div>
+        <div class="card-footer text-end">
+            <em>{% block team_3_source %}{% endblock %}</em>
+        </div>
+    </div>
+
+    <!-- TEAM 4 -->
+    <div class="card border own-border-color mb-3">
+        <div class="card-header d-flex justify-content-between align-items-center">
+            <div class="col-1" align="center">
+                {% block team_4_image %}{% endblock %}
+            </div>
+            <div class="col-11">
+                <h5 class="card-title own-text-color">{% block team_4_name %}{% endblock %}</h5>
+                <h6 class="card-subtitle text-muted">{% block team_4_division %}{% endblock %}</h6>
+            </div>
+        </div>
+        <div class="card-body">
+            <ul class="list-group list-group-flush">
+                {% block team_4_facts %}{% endblock %}
+            </ul>
+        </div>
+        <div class="card-footer text-end">
+            <em>{% block team_4_source %}{% endblock %}</em>
+        </div>
+    </div>
+
+    <!-- TEAM 5 -->
+    <div class="card border own-border-color mb-3">
+        <div class="card-header d-flex justify-content-between align-items-center">
+            <div class="col-1" align="center">
+                {% block team_5_image %}{% endblock %}
+            </div>
+            <div class="col-11">
+                <h5 class="card-title own-text-color">{% block team_5_name %}{% endblock %}</h5>
+                <h6 class="card-subtitle text-muted">{% block team_5_division %}{% endblock %}</h6>
+            </div>
+        </div>
+        <div class="card-body">
+            <ul class="list-group list-group-flush">
+                {% block team_5_facts %}{% endblock %}
+            </ul>
+        </div>
+        <div class="card-footer text-end">
+            <em>{% block team_5_source %}{% endblock %}</em>
+        </div>
+    </div>
+
+    <!-- TEAM 6 -->
+    <div class="card border own-border-color mb-3">
+        <div class="card-header d-flex justify-content-between align-items-center">
+            <div class="col-1" align="center">
+                {% block team_6_image %}{% endblock %}
+            </div>
+            <div class="col-11">
+                <h5 class="card-title own-text-color">{% block team_6_name %}{% endblock %}</h5>
+                <h6 class="card-subtitle text-muted">{% block team_6_division %}{% endblock %}</h6>
+            </div>
+        </div>
+        <div class="card-body">
+            <ul class="list-group list-group-flush">
+                {% block team_6_facts %}{% endblock %}
+            </ul>
+        </div>
+        <div class="card-footer text-end">
+            <em>{% block team_6_source %}{% endblock %}</em>
+        </div>
+    </div>
+
+    <!-- TEAM 7 -->
+    <div class="card border own-border-color mb-3">
+        <div class="card-header d-flex justify-content-between align-items-center">
+            <div class="col-1" align="center">
+                {% block team_7_image %}{% endblock %}
+            </div>
+            <div class="col-11">
+                <h5 class="card-title own-text-color">{% block team_7_name %}{% endblock %}</h5>
+                <h6 class="card-subtitle text-muted">{% block team_7_division %}{% endblock %}</h6>
+            </div>
+        </div>
+        <div class="card-body">
+            <ul class="list-group list-group-flush">
+                {% block team_7_facts %}{% endblock %}
+            </ul>
+        </div>
+        <div class="card-footer text-end">
+            <em>{% block team_7_source %}{% endblock %}</em>
+        </div>
+    </div>
+
+    <!-- TEAM 8 -->
+    <div class="card border own-border-color mb-3">
+        <div class="card-header d-flex justify-content-between align-items-center">
+            <div class="col-1" align="center">
+                {% block team_8_image %}{% endblock %}
+            </div>
+            <div class="col-11">
+                <h5 class="card-title own-text-color">{% block team_8_name %}{% endblock %}</h5>
+                <h6 class="card-subtitle text-muted">{% block team_8_division %}{% endblock %}</h6>
+            </div>
+        </div>
+        <div class="card-body">
+            <ul class="list-group list-group-flush">
+                {% block team_8_facts %}{% endblock %}
+            </ul>
+        </div>
+        <div class="card-footer text-end">
+            <em>{% block team_8_source %}{% endblock %}</em>
+        </div>
+    </div>
+
+    <!-- TEAM 9 -->
+    <div class="card border own-border-color mb-3">
+        <div class="card-header d-flex justify-content-between align-items-center">
+            <div class="col-1" align="center">
+                {% block team_9_image %}{% endblock %}
+            </div>
+            <div class="col-11">
+                <h5 class="card-title own-text-color">{% block team_9_name %}{% endblock %}</h5>
+                <h6 class="card-subtitle text-muted">{% block team_9_division %}{% endblock %}</h6>
+            </div>
+        </div>
+        <div class="card-body">
+            <ul class="list-group list-group-flush">
+                {% block team_9_facts %}{% endblock %}
+            </ul>
+        </div>
+        <div class="card-footer text-end">
+            <em>{% block team_9_source %}{% endblock %}</em>
+        </div>
+    </div>
+
+    <!-- TEAM 10 -->
+    <div class="card border own-border-color mb-3">
+        <div class="card-header d-flex justify-content-between align-items-center">
+            <div class="col-1" align="center">
+                {% block team_10_image %}{% endblock %}
+            </div>
+            <div class="col-11">
+                <h5 class="card-title own-text-color">{% block team_10_name %}{% endblock %}</h5>
+                <h6 class="card-subtitle text-muted">{% block team_10_division %}{% endblock %}</h6>
+            </div>
+        </div>
+        <div class="card-body">
+            <ul class="list-group list-group-flush">
+                {% block team_10_facts %}{% endblock %}
+            </ul>
+        </div>
+        <div class="card-footer text-end">
+            <em>{% block team_10_source %}{% endblock %}</em>
+        </div>
+    </div>
+
+    <!-- TEAM 11 -->
+    <div class="card border own-border-color mb-3">
+        <div class="card-header d-flex justify-content-between align-items-center">
+            <div class="col-1" align="center">
+                {% block team_11_image %}{% endblock %}
+            </div>
+            <div class="col-11">
+                <h5 class="card-title own-text-color">{% block team_11_name %}{% endblock %}</h5>
+                <h6 class="card-subtitle text-muted">{% block team_11_division %}{% endblock %}</h6>
+            </div>
+        </div>
+        <div class="card-body">
+            <ul class="list-group list-group-flush">
+                {% block team_11_facts %}{% endblock %}
+            </ul>
+        </div>
+        <div class="card-footer text-end">
+            <em>{% block team_11_source %}{% endblock %}</em>
+        </div>
+    </div>
+
+    <!-- TEAM 12 -->
+    <div class="card border own-border-color mb-3">
+        <div class="card-header d-flex justify-content-between align-items-center">
+            <div class="col-1" align="center">
+                {% block team_12_image %}{% endblock %}
+            </div>
+            <div class="col-11">
+                <h5 class="card-title own-text-color">{% block team_12_name %}{% endblock %}</h5>
+                <h6 class="card-subtitle text-muted">{% block team_12_division %}{% endblock %}</h6>
+            </div>
+        </div>
+        <div class="card-body">
+            <ul class="list-group list-group-flush">
+                {% block team_12_facts %}{% endblock %}
+            </ul>
+        </div>
+        <div class="card-footer text-end">
+            <em>{% block team_12_source %}{% endblock %}</em>
+        </div>
+    </div>
+
+    <!-- TEAM 13 -->
+    <div class="card border own-border-color mb-3">
+        <div class="card-header d-flex justify-content-between align-items-center">
+            <div class="col-1" align="center">
+                {% block team_13_image %}{% endblock %}
+            </div>
+            <div class="col-11">
+                <h5 class="card-title own-text-color">{% block team_13_name %}{% endblock %}</h5>
+                <h6 class="card-subtitle text-muted">{% block team_13_division %}{% endblock %}</h6>
+            </div>
+        </div>
+        <div class="card-body">
+            <ul class="list-group list-group-flush">
+                {% block team_13_facts %}{% endblock %}
+            </ul>
+        </div>
+        <div class="card-footer text-end">
+            <em>{% block team_13_source %}{% endblock %}</em>
+        </div>
+    </div>
+
+    <!-- TEAM 14 -->
+    <div class="card border own-border-color mb-3">
+        <div class="card-header d-flex justify-content-between align-items-center">
+            <div class="col-1" align="center">
+                {% block team_14_image %}{% endblock %}
+            </div>
+            <div class="col-11">
+                <h5 class="card-title own-text-color">{% block team_14_name %}{% endblock %}</h5>
+                <h6 class="card-subtitle text-muted">{% block team_14_division %}{% endblock %}</h6>
+            </div>
+        </div>
+        <div class="card-body">
+            <ul class="list-group list-group-flush">
+                {% block team_14_facts %}{% endblock %}
+            </ul>
+        </div>
+        <div class="card-footer text-end">
+            <em>{% block team_14_source %}{% endblock %}</em>
+        </div>
+    </div>
+
+    <!-- TEAM 15 -->
+    <div class="card border own-border-color mb-3">
+        <div class="card-header d-flex justify-content-between align-items-center">
+            <div class="col-1" align="center">
+                {% block team_15_image %}{% endblock %}
+            </div>
+            <div class="col-11">
+                <h5 class="card-title own-text-color">{% block team_15_name %}{% endblock %}</h5>
+                <h6 class="card-subtitle text-muted">{% block team_15_division %}{% endblock %}</h6>
+            </div>
+        </div>
+        <div class="card-body">
+            <ul class="list-group list-group-flush">
+                {% block team_15_facts %}{% endblock %}
+            </ul>
+        </div>
+        <div class="card-footer text-end">
+            <em>{% block team_15_source %}{% endblock %}</em>
+        </div>
+    </div>
+
+    <!-- TEAM 16 -->
+    <div class="card border own-border-color mb-3">
+        <div class="card-header d-flex justify-content-between align-items-center">
+            <div class="col-1" align="center">
+                {% block team_16_image %}{% endblock %}
+            </div>
+            <div class="col-11">
+                <h5 class="card-title own-text-color">{% block team_16_name %}{% endblock %}</h5>
+                <h6 class="card-subtitle text-muted">{% block team_16_division %}{% endblock %}</h6>
+            </div>
+        </div>
+        <div class="card-body">
+            <ul class="list-group list-group-flush">
+                {% block team_16_facts %}{% endblock %}
+            </ul>
+        </div>
+        <div class="card-footer text-end">
+            <em>{% block team_16_source %}{% endblock %}</em>
+        </div>
+    </div>
+
+    <!-- TEAM 17 -->
+    <div class="card border own-border-color mb-3">
+        <div class="card-header d-flex justify-content-between align-items-center">
+            <div class="col-1" align="center">
+                {% block team_17_image %}{% endblock %}
+            </div>
+            <div class="col-11">
+                <h5 class="card-title own-text-color">{% block team_17_name %}{% endblock %}</h5>
+                <h6 class="card-subtitle text-muted">{% block team_17_division %}{% endblock %}</h6>
+            </div>
+        </div>
+        <div class="card-body">
+            <ul class="list-group list-group-flush">
+                {% block team_17_facts %}{% endblock %}
+            </ul>
+        </div>
+        <div class="card-footer text-end">
+            <em>{% block team_17_source %}{% endblock %}</em>
+        </div>
+    </div>
+
+    <!-- TEAM 18 -->
+    <div class="card border own-border-color mb-3">
+        <div class="card-header d-flex justify-content-between align-items-center">
+            <div class="col-1" align="center">
+                {% block team_18_image %}{% endblock %}
+            </div>
+            <div class="col-11">
+                <h5 class="card-title own-text-color">{% block team_18_name %}{% endblock %}</h5>
+                <h6 class="card-subtitle text-muted">{% block team_18_division %}{% endblock %}</h6>
+            </div>
+        </div>
+        <div class="card-body">
+            <ul class="list-group list-group-flush">
+                {% block team_18_facts %}{% endblock %}
+            </ul>
+        </div>
+        <div class="card-footer text-end">
+            <em>{% block team_18_source %}{% endblock %}</em>
+        </div>
+    </div>
+
+    <!-- TEAM 19 -->
+    <div class="card border own-border-color mb-3">
+        <div class="card-header d-flex justify-content-between align-items-center">
+            <div class="col-1" align="center">
+                {% block team_19_image %}{% endblock %}
+            </div>
+            <div class="col-11">
+                <h5 class="card-title own-text-color">{% block team_19_name %}{% endblock %}</h5>
+                <h6 class="card-subtitle text-muted">{% block team_19_division %}{% endblock %}</h6>
+            </div>
+        </div>
+        <div class="card-body">
+            <ul class="list-group list-group-flush">
+                {% block team_19_facts %}{% endblock %}
+            </ul>
+        </div>
+        <div class="card-footer text-end">
+            <em>{% block team_19_source %}{% endblock %}</em>
+        </div>
+    </div>
+
+    <!-- TEAM 20 -->
+    <div class="card border own-border-color mb-3">
+        <div class="card-header d-flex justify-content-between align-items-center">
+            <div class="col-1" align="center">
+                {% block team_20_image %}{% endblock %}
+            </div>
+            <div class="col-11">
+                <h5 class="card-title own-text-color">{% block team_20_name %}{% endblock %}</h5>
+                <h6 class="card-subtitle text-muted">{% block team_20_division %}{% endblock %}</h6>
+            </div>
+        </div>
+        <div class="card-body">
+            <ul class="list-group list-group-flush">
+                {% block team_20_facts %}{% endblock %}
+            </ul>
+        </div>
+        <div class="card-footer text-end">
+            <em>{% block team_20_source %}{% endblock %}</em>
+        </div>
+    </div>
+
+    <!-- TEAM 21 -->
+    <div class="card border own-border-color mb-3">
+        <div class="card-header d-flex justify-content-between align-items-center">
+            <div class="col-1" align="center">
+                {% block team_21_image %}{% endblock %}
+            </div>
+            <div class="col-11">
+                <h5 class="card-title own-text-color">{% block team_21_name %}{% endblock %}</h5>
+                <h6 class="card-subtitle text-muted">{% block team_21_division %}{% endblock %}</h6>
+            </div>
+        </div>
+        <div class="card-body">
+            <ul class="list-group list-group-flush">
+                {% block team_21_facts %}{% endblock %}
+            </ul>
+        </div>
+        <div class="card-footer text-end">
+            <em>{% block team_21_source %}{% endblock %}</em>
+        </div>
+    </div>
+
+    <!-- TEAM 22 -->
+    <div class="card border own-border-color mb-3">
+        <div class="card-header d-flex justify-content-between align-items-center">
+            <div class="col-1" align="center">
+                {% block team_22_image %}{% endblock %}
+            </div>
+            <div class="col-11">
+                <h5 class="card-title own-text-color">{% block team_22_name %}{% endblock %}</h5>
+                <h6 class="card-subtitle text-muted">{% block team_22_division %}{% endblock %}</h6>
+            </div>
+        </div>
+        <div class="card-body">
+            <ul class="list-group list-group-flush">
+                {% block team_22_facts %}{% endblock %}
+            </ul>
+        </div>
+        <div class="card-footer text-end">
+            <em>{% block team_22_source %}{% endblock %}</em>
+        </div>
+    </div>
+
+    <!-- TEAM 23 -->
+    <div class="card border own-border-color mb-3">
+        <div class="card-header d-flex justify-content-between align-items-center">
+            <div class="col-1" align="center">
+                {% block team_23_image %}{% endblock %}
+            </div>
+            <div class="col-11">
+                <h5 class="card-title own-text-color">{% block team_23_name %}{% endblock %}</h5>
+                <h6 class="card-subtitle text-muted">{% block team_23_division %}{% endblock %}</h6>
+            </div>
+        </div>
+        <div class="card-body">
+            <ul class="list-group list-group-flush">
+                {% block team_23_facts %}{% endblock %}
+            </ul>
+        </div>
+        <div class="card-footer text-end">
+            <em>{% block team_23_source %}{% endblock %}</em>
+        </div>
+    </div>
+
+    <!-- TEAM 24 -->
+    <div class="card border own-border-color mb-3">
+        <div class="card-header d-flex justify-content-between align-items-center">
+            <div class="col-1" align="center">
+                {% block team_24_image %}{% endblock %}
+            </div>
+            <div class="col-11">
+                <h5 class="card-title own-text-color">{% block team_24_name %}{% endblock %}</h5>
+                <h6 class="card-subtitle text-muted">{% block team_24_division %}{% endblock %}</h6>
+            </div>
+        </div>
+        <div class="card-body">
+            <ul class="list-group list-group-flush">
+                {% block team_24_facts %}{% endblock %}
+            </ul>
+        </div>
+        <div class="card-footer text-end">
+            <em>{% block team_24_source %}{% endblock %}</em>
+        </div>
+    </div>
+
+    <!-- TEAM 25 -->
+    <div class="card border own-border-color mb-3">
+        <div class="card-header d-flex justify-content-between align-items-center">
+            <div class="col-1" align="center">
+                {% block team_25_image %}{% endblock %}
+            </div>
+            <div class="col-11">
+                <h5 class="card-title own-text-color">{% block team_25_name %}{% endblock %}</h5>
+                <h6 class="card-subtitle text-muted">{% block team_25_division %}{% endblock %}</h6>
+            </div>
+        </div>
+        <div class="card-body">
+            <ul class="list-group list-group-flush">
+                {% block team_25_facts %}{% endblock %}
+            </ul>
+        </div>
+        <div class="card-footer text-end">
+            <em>{% block team_25_source %}{% endblock %}</em>
+        </div>
+    </div>
+    
+    <!-- TEAM 26 -->
+    <div class="card border own-border-color mb-3">
+        <div class="card-header d-flex justify-content-between align-items-center">
+            <div class="col-1" align="center">
+                {% block team_26_image %}{% endblock %}
+            </div>
+            <div class="col-11">
+                <h5 class="card-title own-text-color">{% block team_26_name %}{% endblock %}</h5>
+                <h6 class="card-subtitle text-muted">{% block team_26_division %}{% endblock %}</h6>
+            </div>
+        </div>
+        <div class="card-body">
+            <ul class="list-group list-group-flush">
+                {% block team_26_facts %}{% endblock %}
+            </ul>
+        </div>
+        <div class="card-footer text-end">
+            <em>{% block team_26_source %}{% endblock %}</em>
+        </div>
+    </div>
+
+    <!-- TEAM 27 -->
+    <div class="card border own-border-color mb-3">
+        <div class="card-header d-flex justify-content-between align-items-center">
+            <div class="col-1" align="center">
+                {% block team_27_image %}{% endblock %}
+            </div>
+            <div class="col-11">
+                <h5 class="card-title own-text-color">{% block team_27_name %}{% endblock %}</h5>
+                <h6 class="card-subtitle text-muted">{% block team_27_division %}{% endblock %}</h6>
+            </div>
+        </div>
+        <div class="card-body">
+            <ul class="list-group list-group-flush">
+                {% block team_27_facts %}{% endblock %}
+            </ul>
+        </div>
+        <div class="card-footer text-end">
+            <em>{% block team_27_source %}{% endblock %}</em>
+        </div>
+    </div>
+
+    <!-- TEAM 28 -->
+    <div class="card border own-border-color mb-3">
+        <div class="card-header d-flex justify-content-between align-items-center">
+            <div class="col-1" align="center">
+                {% block team_28_image %}{% endblock %}
+            </div>
+            <div class="col-11">
+                <h5 class="card-title own-text-color">{% block team_28_name %}{% endblock %}</h5>
+                <h6 class="card-subtitle text-muted">{% block team_28_division %}{% endblock %}</h6>
+            </div>
+        </div>
+        <div class="card-body">
+            <ul class="list-group list-group-flush">
+                {% block team_28_facts %}{% endblock %}
+            </ul>
+        </div>
+        <div class="card-footer text-end">
+            <em>{% block team_28_source %}{% endblock %}</em>
+        </div>
+    </div>
+
+    <!-- TEAM 29 -->
+    <div class="card border own-border-color mb-3">
+        <div class="card-header d-flex justify-content-between align-items-center">
+            <div class="col-1" align="center">
+                {% block team_29_image %}{% endblock %}
+            </div>
+            <div class="col-11">
+                <h5 class="card-title own-text-color">{% block team_29_name %}{% endblock %}</h5>
+                <h6 class="card-subtitle text-muted">{% block team_29_division %}{% endblock %}</h6>
+            </div>
+        </div>
+        <div class="card-body">
+            <ul class="list-group list-group-flush">
+                {% block team_29_facts %}{% endblock %}
+            </ul>
+        </div>
+        <div class="card-footer text-end">
+            <em>{% block team_29_source %}{% endblock %}</em>
+        </div>
+    </div>
+
+    <!-- TEAM 30 -->
+    <div class="card border own-border-color mb-3">
+        <div class="card-header d-flex justify-content-between align-items-center">
+            <div class="col-1" align="center">
+                {% block team_30_image %}{% endblock %}
+            </div>
+            <div class="col-11">
+                <h5 class="card-title own-text-color">{% block team_30_name %}{% endblock %}</h5>
+                <h6 class="card-subtitle text-muted">{% block team_30_division %}{% endblock %}</h6>
+            </div>
+        </div>
+        <div class="card-body">
+            <ul class="list-group list-group-flush">
+                {% block team_30_facts %}{% endblock %}
+            </ul>
+        </div>
+        <div class="card-footer text-end">
+            <em>{% block team_30_source %}{% endblock %}</em>
+        </div>
+    </div>
+
+    <!-- TEAM 31 -->
+    {% block team_31_full %}
+    {% endblock %}
+
+    <!-- TEAM 32 -->
+    {% block team_32_full %}
+    {% endblock %}
+
+{% endblock %}

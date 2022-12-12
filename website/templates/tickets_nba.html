@@ -1,0 +1,621 @@
+{% extends "tickets_base.html" %}
+
+
+{% block title %}
+    NBA Tickets
+{% endblock %}
+
+
+{% block title_icon %}
+    <link rel="icon" href="/static/logo_nba.png" type="image/png">
+{% endblock %}
+
+
+{% block tickets_league %}
+    NBA
+{% endblock %}
+
+
+{% block tickets_image %}
+    <img src="/static/logo_nba.png" width="55" height="55" class="img-fluid rounded-start" alt="logo_nba">
+{% endblock %}
+
+
+<!-- TEAM 1 -->
+{% block team_1_image %}
+    <a href="https://www.nba.com/hawks" target="_blank" rel="noopener noreferrer"><img src="/static/nba_atlantahawks.png"  width="60" height="60" class="img-fluid rounded-start" alt="nba_atlantahawks"></a>
+{% endblock %}
+
+{% block team_1_name %}
+    Atlanta Hawks
+{% endblock %}
+
+{% block team_1_stadium %}
+    <a href="https://www.google.com/maps/place/State+Farm+Arena/@33.7572891,-84.3985131,17z/data=!3m1!4b1!4m5!3m4!1s0x88f5037f9142496d:0xb060d5dcce275ffb!8m2!3d33.7572891!4d-84.3963244" target="_blank" rel="noopener noreferrer" class="own-text-color"><i class="fa-solid fa-location-dot"></i></a>
+    State Farm Arena
+{% endblock %}
+
+{% block team_1_tickets %}
+    <a href="https://www.nba.com/hawks/tickets" target="_blank" rel="noopener noreferrer" class="own-text-color"><i class="fa-solid fa-ticket"></i></a>
+    tickets
+{% endblock %}
+
+
+<!-- TEAM 2 -->
+{% block team_2_image %}
+    <a href="https://www.nba.com/celtics" target="_blank" rel="noopener noreferrer"><img src="/static/nba_bostonceltics.png"  width="60" height="60" class="img-fluid rounded-start" alt="nba_bostonceltics"></a>
+{% endblock %}
+
+{% block team_2_name %}
+    Boston Celtics
+{% endblock %}
+
+{% block team_2_stadium %}
+    <a href="https://www.google.com/maps/place/TD+Garden/@42.366198,-71.0643347,17z/data=!4m5!3m4!1s0x89e3708e162d05cb:0x32d335fe5ed797a8!8m2!3d42.366198!4d-71.062146" target="_blank" rel="noopener noreferrer" class="own-text-color"><i class="fa-solid fa-location-dot"></i></a>
+    TD Garden
+{% endblock %}
+
+{% block team_2_tickets %}
+    <a href="https://www.nba.com/celtics/tickets" target="_blank" rel="noopener noreferrer" class="own-text-color"><i class="fa-solid fa-ticket"></i></a>
+    tickets
+{% endblock %}
+
+
+<!-- TEAM 3 -->
+{% block team_3_image %}
+    <a href="https://www.nba.com/nets" target="_blank" rel="noopener noreferrer"><img src="/static/nba_brooklynnets.png"  width="60" height="60" class="img-fluid rounded-start" alt="nba_brooklynnets"></a>
+{% endblock %}
+
+{% block team_3_name %}
+    Brooklyn Nets
+{% endblock %}
+
+{% block team_3_stadium %}
+    <a href="https://www.google.com/maps/place/Barclays+Center/@40.6826465,-73.9776043,17z/data=!3m1!4b1!4m5!3m4!1s0x89c25bae694479a3:0xb9949385da52e69e!8m2!3d40.6826465!4d-73.9754156" target="_blank" rel="noopener noreferrer" class="own-text-color"><i class="fa-solid fa-location-dot"></i></a>
+    Barclays Center
+{% endblock %}
+
+{% block team_3_tickets %}
+    <a href="https://www.nba.com/nets/tickets" target="_blank" rel="noopener noreferrer" class="own-text-color"><i class="fa-solid fa-ticket"></i></a>
+    tickets
+{% endblock %}
+
+
+<!-- TEAM 4 -->
+{% block team_4_image %}
+    <a href="https://www.nba.com/hornets" target="_blank" rel="noopener noreferrer"><img src="/static/nba_charlottehornets.png"  width="60" height="60" class="img-fluid rounded-start" alt="nba_charlottehornets"></a>
+{% endblock %}
+
+{% block team_4_name %}
+    Charlotte Hornets
+{% endblock %}
+
+{% block team_4_stadium %}
+    <a href="https://www.google.com/maps/place/Spectrum+Center/@35.2251877,-80.8415259,17z/data=!4m5!3m4!1s0x8856a0243e9c7d45:0x76230b8d88293efa!8m2!3d35.2251877!4d-80.8393372" target="_blank" rel="noopener noreferrer" class="own-text-color"><i class="fa-solid fa-location-dot"></i></a>
+    Spectrum Center
+{% endblock %}
+
+{% block team_4_tickets %}
+    <a href="https://www.nba.com/hornets/tickets" target="_blank" rel="noopener noreferrer" class="own-text-color"><i class="fa-solid fa-ticket"></i></a>
+    tickets
+{% endblock %}
+
+
+<!-- TEAM 5 -->
+{% block team_5_image %}
+    <a href="https://www.nba.com/bulls" target="_blank" rel="noopener noreferrer"><img src="/static/nba_chicagobulls.png"  width="60" height="60" class="img-fluid rounded-start" alt="nba_chicagobulls"></a>
+{% endblock %}
+
+{% block team_5_name %}
+    Chicago Bulls
+{% endblock %}
+
+{% block team_5_stadium %}
+    <a href="https://www.google.com/maps/place/United+Center/@41.8806908,-87.6763646,17z/data=!3m1!4b1!4m5!3m4!1s0x880e2d3ecaa9b54f:0x9b93f0068cf00344!8m2!3d41.8806908!4d-87.6741759" target="_blank" rel="noopener noreferrer" class="own-text-color"><i class="fa-solid fa-location-dot"></i></a>
+    United Center
+{% endblock %}
+
+{% block team_5_tickets %}
+    <a href="https://www.nba.com/bulls/tickets" target="_blank" rel="noopener noreferrer" class="own-text-color"><i class="fa-solid fa-ticket"></i></a>
+    tickets
+{% endblock %}
+
+
+<!-- TEAM 6 -->
+{% block team_6_image %}
+    <a href="https://www.nba.com/cavaliers" target="_blank" rel="noopener noreferrer"><img src="/static/nba_clevelandcavaliers.png"  width="60" height="60" class="img-fluid rounded-start" alt="nba_clevelandcavaliers"></a>
+{% endblock %}
+
+{% block team_6_name %}
+    Cleveland Cavaliers
+{% endblock %}
+
+{% block team_6_stadium %}
+    <a href="https://www.google.com/maps/place/Rocket+Mortgage+FieldHouse/@41.4965474,-81.6902461,17z/data=!3m1!4b1!4m5!3m4!1s0x8830fa81ba7c99b5:0x53fafe5c51529920!8m2!3d41.4965474!4d-81.6880574" target="_blank" rel="noopener noreferrer" class="own-text-color"><i class="fa-solid fa-location-dot"></i></a>
+    Rocket Mortgage FieldHouse
+{% endblock %}
+
+{% block team_6_tickets %}
+    <a href="https://www.nba.com/cavaliers/tickets" target="_blank" rel="noopener noreferrer" class="own-text-color"><i class="fa-solid fa-ticket"></i></a>
+    tickets
+{% endblock %}
+
+
+<!-- TEAM 7 -->
+{% block team_7_image %}
+    <a href="https://www.mavs.com" target="_blank" rel="noopener noreferrer"><img src="/static/nba_dallasmavericks.png"  width="60" height="60" class="img-fluid rounded-start" alt="nba_dallasmavericks"></a>
+{% endblock %}
+
+{% block team_7_name %}
+    Dallas Mavericks
+{% endblock %}
+
+{% block team_7_stadium %}
+    <a href="https://www.google.com/maps/place/American+Airlines+Center/@32.7904566,-96.8128234,17z/data=!3m1!5s0x864e9939baab17c5:0x759ae74e521ed0ee!4m9!1m2!2m1!1sdallas+mavericks+arena!3m5!1s0x864e992f5ccee5af:0x21611d4f28860fa3!8m2!3d32.7903908!4d-96.8102547!15sChZkYWxsYXMgbWF2ZXJpY2tzIGFyZW5hWhgiFmRhbGxhcyBtYXZlcmlja3MgYXJlbmGSAQVhcmVuYZoBJENoZERTVWhOTUc5blMwVkpRMEZuU1VNeWNDMTJkelJSUlJBQg" target="_blank" rel="noopener noreferrer" class="own-text-color"><i class="fa-solid fa-location-dot"></i></a>
+    American Airlines Center
+{% endblock %}
+
+{% block team_7_tickets %}
+    <a href="https://www.mavs.com/tickets/" target="_blank" rel="noopener noreferrer" class="own-text-color"><i class="fa-solid fa-ticket"></i></a>
+    tickets
+{% endblock %}
+
+
+<!-- TEAM 8 -->
+{% block team_8_image %}
+    <a href="https://www.nba.com/nuggets" target="_blank" rel="noopener noreferrer"><img src="/static/nba_denvernuggets.png"  width="60" height="60" class="img-fluid rounded-start" alt="nba_denvernuggets"></a>
+{% endblock %}
+
+{% block team_8_name %}
+    Denver Nuggets
+{% endblock %}
+
+{% block team_8_stadium %}
+    <a href="https://www.google.com/maps/place/Ball+Arena/@39.7486565,-105.0097915,17z/data=!3m1!4b1!4m5!3m4!1s0x876c78b866687b77:0x7bec273737d47786!8m2!3d39.7486565!4d-105.0076028" target="_blank" rel="noopener noreferrer" class="own-text-color"><i class="fa-solid fa-location-dot"></i></a>
+    Ball Arena
+{% endblock %}
+
+{% block team_8_tickets %}
+    <a href="https://www.nba.com/nuggets/tickets" target="_blank" rel="noopener noreferrer" class="own-text-color"><i class="fa-solid fa-ticket"></i></a>
+    tickets
+{% endblock %}
+
+
+<!-- TEAM 9 -->
+{% block team_9_image %}
+    <a href="https://www.nba.com/pistons" target="_blank" rel="noopener noreferrer"><img src="/static/nba_detroitpistons.png"  width="60" height="60" class="img-fluid rounded-start" alt="nba_detroitpistons"></a>
+{% endblock %}
+
+{% block team_9_name %}
+    Detroit Pistons
+{% endblock %}
+
+{% block team_9_stadium %}
+    <a href="https://www.google.com/maps/place/Little+Caesars+Arena/@42.3411026,-83.057456,17z/data=!3m1!4b1!4m5!3m4!1s0x8824d2cb21bf140b:0xcb0fd860979f4678!8m2!3d42.3411026!4d-83.0552673" target="_blank" rel="noopener noreferrer" class="own-text-color"><i class="fa-solid fa-location-dot"></i></a>
+    Little Caesars Arena
+{% endblock %}
+
+{% block team_9_tickets %}
+    <a href="https://www.nba.com/pistons/tickets" target="_blank" rel="noopener noreferrer" class="own-text-color"><i class="fa-solid fa-ticket"></i></a>
+    tickets
+{% endblock %}
+
+
+<!-- TEAM 10 -->
+{% block team_10_image %}
+    <a href="https://www.nba.com/warriors" target="_blank" rel="noopener noreferrer"><img src="/static/nba_goldenstatewarriors.png"  width="60" height="60" class="img-fluid rounded-start" alt="nba_goldenstatewarriors"></a>
+{% endblock %}
+
+{% block team_10_name %}
+    Golden State Warriors
+{% endblock %}
+
+{% block team_10_stadium %}
+    <a href="https://www.google.com/maps/place/Chase+Center/@37.7680183,-122.3900659,17z/data=!4m5!3m4!1s0x808f7fc67f4400e9:0x7d6793e3d8a141e3!8m2!3d37.7680183!4d-122.3878772" target="_blank" rel="noopener noreferrer" class="own-text-color"><i class="fa-solid fa-location-dot"></i></a>
+    Chase Center
+{% endblock %}
+
+{% block team_10_tickets %}
+    <a href="https://www.nba.com/warriors/tickets" target="_blank" rel="noopener noreferrer" class="own-text-color"><i class="fa-solid fa-ticket"></i></a>
+    tickets
+{% endblock %}
+
+
+<!-- TEAM 11 -->
+{% block team_11_image %}
+    <a href="https://www.nba.com/rockets" target="_blank" rel="noopener noreferrer"><img src="/static/nba_houstonrockets.png"  width="60" height="60" class="img-fluid rounded-start" alt="nba_houstonrockets"></a>
+{% endblock %}
+
+{% block team_11_name %}
+    Houston Rockets
+{% endblock %}
+
+{% block team_11_stadium %}
+    <a href="https://www.google.com/maps/place/Toyota+Center/@29.7507604,-95.3642892,17z/data=!4m5!3m4!1s0x8640bee56015ad33:0x4b3b6ccb1295ba8b!8m2!3d29.7507604!4d-95.3621005" target="_blank" rel="noopener noreferrer" class="own-text-color"><i class="fa-solid fa-location-dot"></i></a>
+    Toyota Center
+{% endblock %}
+
+{% block team_11_tickets %}
+    <a href="https://www.nba.com/rockets/tickets" target="_blank" rel="noopener noreferrer" class="own-text-color"><i class="fa-solid fa-ticket"></i></a>
+    tickets
+{% endblock %}
+
+
+<!-- TEAM 12 -->
+{% block team_12_image %}
+    <a href="https://www.nba.com/pacers" target="_blank" rel="noopener noreferrer"><img src="/static/nba_indianapacers.png"  width="60" height="60" class="img-fluid rounded-start" alt="nba_indianapacers"></a>
+{% endblock %}
+
+{% block team_12_name %}
+    Indiana Pacers
+{% endblock %}
+
+{% block team_12_stadium %}
+    <a href="https://www.google.com/maps/place/Gainbridge+Fieldhouse/@39.7640434,-86.1577254,17z/data=!4m5!3m4!1s0x886b50bd40850b3f:0xf4180158659c473d!8m2!3d39.7640434!4d-86.1555367" target="_blank" rel="noopener noreferrer" class="own-text-color"><i class="fa-solid fa-location-dot"></i></a>
+    Gainbridge Fieldhouse
+{% endblock %}
+
+{% block team_12_tickets %}
+    <a href="https://www.nba.com/pacers/tickets" target="_blank" rel="noopener noreferrer" class="own-text-color"><i class="fa-solid fa-ticket"></i></a>
+    tickets
+{% endblock %}
+
+
+<!-- TEAM 13 -->
+{% block team_13_image %}
+    <a href="https://www.nba.com/clippers" target="_blank" rel="noopener noreferrer"><img src="/static/nba_losangelesclippers.png"  width="60" height="60" class="img-fluid rounded-start" alt="nba_losangelesclippers"></a>
+{% endblock %}
+
+{% block team_13_name %}
+    Los Angeles Clippers
+{% endblock %}
+
+{% block team_13_stadium %}
+    <a href="https://www.google.com/maps/place/Crypto.com+Arena/@34.0430175,-118.2694428,17z/data=!3m1!4b1!4m5!3m4!1s0x80c2c7b85dea2a93:0x1ff47c3ceb7bb2d5!8m2!3d34.0430175!4d-118.2672541" target="_blank" rel="noopener noreferrer" class="own-text-color"><i class="fa-solid fa-location-dot"></i></a>
+    Crypto.com Arena
+{% endblock %}
+
+{% block team_13_tickets %}
+    <a href="https://www.nba.com/clippers/tickets" target="_blank" rel="noopener noreferrer" class="own-text-color"><i class="fa-solid fa-ticket"></i></a>
+    tickets
+{% endblock %}
+
+
+<!-- TEAM 14 -->
+{% block team_14_image %}
+    <a href="https://www.nba.com/lakers" target="_blank" rel="noopener noreferrer"><img src="/static/nba_losangeleslakers.png"  width="60" height="60" class="img-fluid rounded-start" alt="nba_losangeleslakers"></a>
+{% endblock %}
+
+{% block team_14_name %}
+    Los Angeles Lakers
+{% endblock %}
+
+{% block team_14_stadium %}
+    <a href="https://www.google.com/maps/place/Crypto.com+Arena/@34.0430175,-118.2694428,17z/data=!3m1!4b1!4m5!3m4!1s0x80c2c7b85dea2a93:0x1ff47c3ceb7bb2d5!8m2!3d34.0430175!4d-118.2672541" target="_blank" rel="noopener noreferrer" class="own-text-color"><i class="fa-solid fa-location-dot"></i></a>
+    Crypto.com Arena
+{% endblock %}
+
+{% block team_14_tickets %}
+    <a href="https://www.nba.com/lakers/tickets" target="_blank" rel="noopener noreferrer" class="own-text-color"><i class="fa-solid fa-ticket"></i></a>
+    tickets
+{% endblock %}
+
+
+<!-- TEAM 15 -->
+{% block team_15_image %}
+    <a href="https://www.nba.com/grizzlies" target="_blank" rel="noopener noreferrer"><img src="/static/nba_memphisgrizzlies.png"  width="60" height="60" class="img-fluid rounded-start" alt="nba_memphisgrizzlies"></a>
+{% endblock %}
+
+{% block team_15_name %}
+    Memphis Grizzlies
+{% endblock %}
+
+{% block team_15_stadium %}
+    <a href="https://www.google.com/maps/place/FedExForum/@35.1381418,-90.0527751,17z/data=!3m1!4b1!4m5!3m4!1s0x87d57e97345bb629:0xd52fcb315b8b7c4e!8m2!3d35.1381418!4d-90.0505864" target="_blank" rel="noopener noreferrer" class="own-text-color"><i class="fa-solid fa-location-dot"></i></a>
+    FedExForum
+{% endblock %}
+
+{% block team_15_tickets %}
+    <a href="https://www.nba.com/grizzlies/tickets" target="_blank" rel="noopener noreferrer" class="own-text-color"><i class="fa-solid fa-ticket"></i></a>
+    tickets
+{% endblock %}
+
+
+<!-- TEAM 16 -->
+{% block team_16_image %}
+    <a href="https://www.nba.com/heat" target="_blank" rel="noopener noreferrer"><img src="/static/nba_miamiheat.png"  width="60" height="60" class="img-fluid rounded-start" alt="nba_miamiheat"></a>
+{% endblock %}
+
+{% block team_16_name %}
+    Miami Heat
+{% endblock %}
+
+{% block team_16_stadium %}
+    <a href="https://www.google.com/maps/place/FTX+Arena/@25.7814014,-80.1891577,17z/data=!4m5!3m4!1s0x88d9b6a009729195:0x13ad0552284f5b6c!8m2!3d25.7814014!4d-80.186969" target="_blank" rel="noopener noreferrer" class="own-text-color"><i class="fa-solid fa-location-dot"></i></a>
+    FTX Arena
+{% endblock %}
+
+{% block team_16_tickets %}
+    <a href="https://www.nba.com/heat/tickets/miami-heat-tickets" target="_blank" rel="noopener noreferrer" class="own-text-color"><i class="fa-solid fa-ticket"></i></a>
+    tickets
+{% endblock %}
+
+
+<!-- TEAM 17 -->
+{% block team_17_image %}
+    <a href="https://www.nba.com/bucks" target="_blank" rel="noopener noreferrer"><img src="/static/nba_milwaukeebucks.png"  width="60" height="60" class="img-fluid rounded-start" alt="nba_milwaukeebucks"></a>
+{% endblock %}
+
+{% block team_17_name %}
+    Milwaukee Bucks
+{% endblock %}
+
+{% block team_17_stadium %}
+    <a href="https://www.google.com/maps/place/Fiserv+Forum/@43.0450802,-87.9195749,17z/data=!3m1!4b1!4m5!3m4!1s0x880519748afe3d71:0x20af60eabab279bb!8m2!3d43.0450802!4d-87.9173862" target="_blank" rel="noopener noreferrer" class="own-text-color"><i class="fa-solid fa-location-dot"></i></a>
+    Fiserv Forum
+{% endblock %}
+
+{% block team_17_tickets %}
+    <a href="https://www.nba.com/bucks/tickets" target="_blank" rel="noopener noreferrer" class="own-text-color"><i class="fa-solid fa-ticket"></i></a>
+    tickets
+{% endblock %}
+
+
+<!-- TEAM 18 -->
+{% block team_18_image %}
+    <a href="https://www.nba.com/timberwolves" target="_blank" rel="noopener noreferrer"><img src="/static/nba_minnesotatimberwolves.png"  width="60" height="60" class="img-fluid rounded-start" alt="nba_minnesotatimberwolves"></a>
+{% endblock %}
+
+{% block team_18_name %}
+    Minnesota Timberwolves
+{% endblock %}
+
+{% block team_18_stadium %}
+    <a href="https://www.google.com/maps/place/Target+Center/@44.9794633,-93.2782834,17z/data=!3m1!4b1!4m5!3m4!1s0x52b33291bbf6587b:0xd85d3dd117998fec!8m2!3d44.9794633!4d-93.2760947" target="_blank" rel="noopener noreferrer" class="own-text-color"><i class="fa-solid fa-location-dot"></i></a>
+    Target Center
+{% endblock %}
+
+{% block team_18_tickets %}
+    <a href="https://www.nba.com/timberwolves/tickets" target="_blank" rel="noopener noreferrer" class="own-text-color"><i class="fa-solid fa-ticket"></i></a>
+    tickets
+{% endblock %}
+
+
+<!-- TEAM 19 -->
+{% block team_19_image %}
+    <a href="https://www.nba.com/pelicans" target="_blank" rel="noopener noreferrer"><img src="/static/nba_neworleanspelicans.png"  width="60" height="60" class="img-fluid rounded-start" alt="nba_neworleanspelicans"></a>
+{% endblock %}
+
+{% block team_19_name %}
+    New Orleans Pelicans
+{% endblock %}
+
+{% block team_19_stadium %}
+    <a href="https://www.google.com/maps/place/Smoothie+King+Center/@29.9490351,-90.0842455,17z/data=!3m1!4b1!4m5!3m4!1s0x8620a5dddbc5a271:0x5572ede5e0a7ea6f!8m2!3d29.9490351!4d-90.0820568" target="_blank" rel="noopener noreferrer" class="own-text-color"><i class="fa-solid fa-location-dot"></i></a>
+    Smoothie King Center
+{% endblock %}
+
+{% block team_19_tickets %}
+    <a href="https://www.nba.com/pelicans/tickets" target="_blank" rel="noopener noreferrer" class="own-text-color"><i class="fa-solid fa-ticket"></i></a>
+    tickets
+{% endblock %}
+
+
+<!-- TEAM 20 -->
+{% block team_20_image %}
+    <a href="https://www.nba.com/knicks" target="_blank" rel="noopener noreferrer"><img src="/static/nba_newyorkknicks.png"  width="60" height="60" class="img-fluid rounded-start" alt="nba_newyorkknicks"></a>
+{% endblock %}
+
+{% block team_20_name %}
+    New York Knicks
+{% endblock %}
+
+{% block team_20_stadium %}
+    <a href="https://www.google.com/maps/place/Madison+Square+Garden/@40.7505045,-73.9956274,17z/data=!4m5!3m4!1s0x89c25a21fb011c85:0x33df10e49762f8e4!8m2!3d40.7505045!4d-73.9934387" target="_blank" rel="noopener noreferrer" class="own-text-color"><i class="fa-solid fa-location-dot"></i></a>
+    Madison Square Garden
+{% endblock %}
+
+{% block team_20_tickets %}
+    <a href="https://www.nba.com/knicks/tickets" target="_blank" rel="noopener noreferrer" class="own-text-color"><i class="fa-solid fa-ticket"></i></a>
+    tickets
+{% endblock %}
+
+
+<!-- TEAM 21 -->
+{% block team_21_image %}
+    <a href="https://www.nba.com/thunder" target="_blank" rel="noopener noreferrer"><img src="/static/nba_oklahomacitythunder.png"  width="60" height="60" class="img-fluid rounded-start" alt="nba_oklahomacitythunder"></a>
+{% endblock %}
+
+{% block team_21_name %}
+    Oklahoma City Thunder
+{% endblock %}
+
+{% block team_21_stadium %}
+    <a href="https://www.google.com/maps/place/Paycom+Center/@35.4634247,-97.5173025,17z/data=!4m5!3m4!1s0x87b217281cbe6d99:0xa5375eb4651d9445!8m2!3d35.4634247!4d-97.5151138" target="_blank" rel="noopener noreferrer" class="own-text-color"><i class="fa-solid fa-location-dot"></i></a>
+    Paycom Center
+{% endblock %}
+
+{% block team_21_tickets %}
+    <a href="https://www.nba.com/thunder/tickets" target="_blank" rel="noopener noreferrer" class="own-text-color"><i class="fa-solid fa-ticket"></i></a>
+    tickets
+{% endblock %}
+
+
+<!-- TEAM 22 -->
+{% block team_22_image %}
+    <a href="https://www.nba.com/magic" target="_blank" rel="noopener noreferrer"><img src="/static/nba_orlandomagic.png"  width="60" height="60" class="img-fluid rounded-start" alt="nba_orlandomagic"></a>
+{% endblock %}
+
+{% block team_22_name %}
+    Orlando Magic
+{% endblock %}
+
+{% block team_22_stadium %}
+    <a href="https://www.google.com/maps/place/Amway+Center/@28.5392214,-81.3860422,17z/data=!3m1!4b1!4m5!3m4!1s0x88e77afa51fbca55:0xf7c90b9225939190!8m2!3d28.5392214!4d-81.3838535" target="_blank" rel="noopener noreferrer" class="own-text-color"><i class="fa-solid fa-location-dot"></i></a>
+    Amway Center
+{% endblock %}
+
+{% block team_22_tickets %}
+    <a href="https://www.nba.com/magic/tickets" target="_blank" rel="noopener noreferrer" class="own-text-color"><i class="fa-solid fa-ticket"></i></a>
+    tickets
+{% endblock %}
+
+
+<!-- TEAM 23 -->
+{% block team_23_image %}
+    <a href="https://www.nba.com/sixers" target="_blank" rel="noopener noreferrer"><img src="/static/nba_philadelphia76ers.png"  width="60" height="60" class="img-fluid rounded-start" alt="nba_philadelphia76ers"></a>
+{% endblock %}
+
+{% block team_23_name %}
+    Philadelphia 76ers
+{% endblock %}
+
+{% block team_23_stadium %}
+    <a href="https://www.google.com/maps/place/Wells+Fargo+Center/@39.9012015,-75.1741682,17z/data=!3m1!4b1!4m5!3m4!1s0x89c6c5ec0fe3b147:0x529f31b23f45ba2d!8m2!3d39.9012015!4d-75.1719795" target="_blank" rel="noopener noreferrer" class="own-text-color"><i class="fa-solid fa-location-dot"></i></a>
+    Wells Fargo Center
+{% endblock %}
+
+{% block team_23_tickets %}
+    <a href="https://www.nba.com/sixers/tickets" target="_blank" rel="noopener noreferrer" class="own-text-color"><i class="fa-solid fa-ticket"></i></a>
+    tickets
+{% endblock %}
+
+
+<!-- TEAM 24 -->
+{% block team_24_image %}
+    <a href="https://www.nba.com/suns" target="_blank" rel="noopener noreferrer"><img src="/static/nba_phoenixsuns.png"  width="60" height="60" class="img-fluid rounded-start" alt="nba_phoenixsuns"></a>
+{% endblock %}
+
+{% block team_24_name %}
+    Phoenix Suns
+{% endblock %}
+
+{% block team_24_stadium %}
+    <a href="https://www.google.com/maps/place/Footprint+Center/@33.445737,-112.073389,17z/data=!4m5!3m4!1s0x872b156ccf48c66f:0x7a220f94e2bf245b!8m2!3d33.445737!4d-112.0712003" target="_blank" rel="noopener noreferrer" class="own-text-color"><i class="fa-solid fa-location-dot"></i></a>
+    Footprint Center
+{% endblock %}
+
+{% block team_24_tickets %}
+    <a href="https://www.nba.com/suns/tickets" target="_blank" rel="noopener noreferrer" class="own-text-color"><i class="fa-solid fa-ticket"></i></a>
+    tickets
+{% endblock %}
+
+
+<!-- TEAM 25 -->
+{% block team_25_image %}
+    <a href="https://www.nba.com/blazers" target="_blank" rel="noopener noreferrer"><img src="/static/nba_portlandtrailblazers.png"  width="60" height="60" class="img-fluid rounded-start" alt="nba_portlandtrailblazers"></a>
+{% endblock %}
+
+{% block team_25_name %}
+    Portland Trail Blazers
+{% endblock %}
+
+{% block team_25_stadium %}
+    <a href="https://www.google.com/maps/place/Moda+Center/@45.5315651,-122.669031,17z/data=!3m1!4b1!4m5!3m4!1s0x5495a752d90af2bd:0xac4da428b0c0c9a7!8m2!3d45.5315651!4d-122.6668423" target="_blank" rel="noopener noreferrer" class="own-text-color"><i class="fa-solid fa-location-dot"></i></a>
+    Moda Center
+{% endblock %}
+
+{% block team_25_tickets %}
+    <a href="https://www.nba.com/blazers/tickets" target="_blank" rel="noopener noreferrer" class="own-text-color"><i class="fa-solid fa-ticket"></i></a>
+    tickets
+{% endblock %}
+
+
+<!-- TEAM 26 -->
+{% block team_26_image %}
+    <a href="https://www.nba.com/kings" target="_blank" rel="noopener noreferrer"><img src="/static/nba_sacramentokings.png"  width="60" height="60" class="img-fluid rounded-start" alt="nba_sacramentokings"></a>
+{% endblock %}
+
+{% block team_26_name %}
+    Sacramento Kings
+{% endblock %}
+
+{% block team_26_stadium %}
+    <a href="https://www.google.com/maps/place/Golden+1+Center/@38.5802045,-121.5018489,17z/data=!3m1!4b1!4m5!3m4!1s0x80e84cbc046b19bf:0x987c53711f042fa6!8m2!3d38.5802045!4d-121.4996602" target="_blank" rel="noopener noreferrer" class="own-text-color"><i class="fa-solid fa-location-dot"></i></a>
+    Golden 1 Center
+{% endblock %}
+
+{% block team_26_tickets %}
+    <a href="https://www.nba.com/kings/tickets" target="_blank" rel="noopener noreferrer" class="own-text-color"><i class="fa-solid fa-ticket"></i></a>
+    tickets
+{% endblock %}
+
+
+<!-- TEAM 27 -->
+{% block team_27_image %}
+    <a href="https://www.nba.com/spurs" target="_blank" rel="noopener noreferrer"><img src="/static/nba_sanantoniospurs.png"  width="60" height="60" class="img-fluid rounded-start" alt="nba_sanantoniospurs"></a>
+{% endblock %}
+
+{% block team_27_name %}
+    San Antonio Spurs
+{% endblock %}
+
+{% block team_27_stadium %}
+    <a href="https://www.google.com/maps/place/AT%26T+Center/@29.4270201,-98.4396539,17z/data=!4m5!3m4!1s0x865cf681b490e335:0xaad3c1cc2b98e0a4!8m2!3d29.4270201!4d-98.4374652" target="_blank" rel="noopener noreferrer" class="own-text-color"><i class="fa-solid fa-location-dot"></i></a>
+    AT&T Center
+{% endblock %}
+
+{% block team_27_tickets %}
+    <a href="https://www.nba.com/spurs/tickets" target="_blank" rel="noopener noreferrer" class="own-text-color"><i class="fa-solid fa-ticket"></i></a>
+    tickets
+{% endblock %}
+
+
+<!-- TEAM 28 -->
+{% block team_28_image %}
+    <a href="https://www.nba.com/raptors" target="_blank" rel="noopener noreferrer"><img src="/static/nba_torontoraptors.png"  width="60" height="60" class="img-fluid rounded-start" alt="nba_torontoraptors"></a>
+{% endblock %}
+
+{% block team_28_name %}
+    Toronto Raptors
+{% endblock %}
+
+{% block team_28_stadium %}
+    <a href="https://www.google.com/maps/place/Scotiabank+Arena/@43.6434661,-79.3812876,17z/data=!3m1!4b1!4m5!3m4!1s0x89d4cb2b5935bf09:0x5842d0e7d5669410!8m2!3d43.6434661!4d-79.3790989" target="_blank" rel="noopener noreferrer" class="own-text-color"><i class="fa-solid fa-location-dot"></i></a>
+    Scotiabank Arena
+{% endblock %}
+
+{% block team_28_tickets %}
+    <a href="https://www.nba.com/raptors/tickets" target="_blank" rel="noopener noreferrer" class="own-text-color"><i class="fa-solid fa-ticket"></i></a>
+    tickets
+{% endblock %}
+
+
+<!-- TEAM 29 -->
+{% block team_29_image %}
+    <a href="https://www.nba.com/jazz" target="_blank" rel="noopener noreferrer"><img src="/static/nba_utahjazz.png"  width="60" height="60" class="img-fluid rounded-start" alt="nba_utahjazz"></a>
+{% endblock %}
+
+{% block team_29_name %}
+    Utah Jazz
+{% endblock %}
+
+{% block team_29_stadium %}
+    <a href="https://www.google.com/maps/place/Vivint+Arena/@40.7682681,-111.9032761,17z/data=!3m1!4b1!4m5!3m4!1s0x8752f50103ebf04d:0xf0e545531f11b120!8m2!3d40.7682681!4d-111.9010874" target="_blank" rel="noopener noreferrer" class="own-text-color"><i class="fa-solid fa-location-dot"></i></a>
+    Vivint Arena
+{% endblock %}
+
+{% block team_29_tickets %}
+    <a href="https://www.nba.com/jazz/tickets" target="_blank" rel="noopener noreferrer" class="own-text-color"><i class="fa-solid fa-ticket"></i></a>
+    tickets
+{% endblock %}
+
+
+<!-- TEAM 30 -->
+{% block team_30_image %}
+    <a href="https://www.nba.com/wizards" target="_blank" rel="noopener noreferrer"><img src="/static/nba_washingtonwizards.png"  width="60" height="60" class="img-fluid rounded-start" alt="nba_washingtonwizards"></a>
+{% endblock %}
+
+{% block team_30_name %}
+    Washington Wizards
+{% endblock %}
+
+{% block team_30_stadium %}
+    <a href="https://www.google.com/maps/place/Capital+One+Arena/@38.8981675,-77.0230455,17z/data=!4m5!3m4!1s0x89b7b78e4f5f6873:0x75cc04db1e11f711!8m2!3d38.8981675!4d-77.0208568" target="_blank" rel="noopener noreferrer" class="own-text-color"><i class="fa-solid fa-location-dot"></i></a>
+    Capital One Arena
+{% endblock %}
+
+{% block team_30_tickets %}
+    <a href="https://www.nba.com/wizards/tickets-2" target="_blank" rel="noopener noreferrer" class="own-text-color"><i class="fa-solid fa-ticket"></i></a>
+    tickets
+{% endblock %}

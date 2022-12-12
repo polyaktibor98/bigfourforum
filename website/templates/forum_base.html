@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+
+{% block content %}
+    <h1 class="own-text-color mb-5" align="center">
+        Welcome to the <b>{% block forum_league %}{% endblock %}</b>{% block forum_image %}{% endblock %} Forum
+    </h1>
+
+    <div id="showingPostsComments">
+        {% block posts_comments %}
+        {% endblock %}
+    </div>
+
+    <div class="mb-3" align="center">
+        {% block create_a_post_button %}
+        {% endblock %}
+    </div>
+{% endblock %}

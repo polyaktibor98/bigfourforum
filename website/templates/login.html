@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+
+{% block title %}
+    Login
+{% endblock %}
+
+
+{% block content %}
+    <h3 class="own-text-color" align="center"><b>Login</b></h3>
+    <br>
+    <form method="POST">
+        <div class="mb-4 form-floating">
+            <input class="form-control form-control-lg" type="email" id="loginEmailInputId" name="loginEmailInput" placeholder="name@example.com" required>
+            <label for="loginEmailInputId">Email address</label>
+        </div>
+        <div class="mb-4 form-floating">
+            <input class="form-control form-control-lg" type="password" id="loginPasswordInputId" name="loginPasswordInput" placeholder="example password" required>
+            <label for="loginPasswordInputId">Password</label>
+        </div>
+        <div class="mb-4" align="center">
+            <button type="submit" class="btn btn-dark btn-lg own-background-color">Login</button>
+        </div>
+    </form>
+{% endblock %}

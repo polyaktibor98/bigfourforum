@@ -1,0 +1,39 @@
+{% extends "create_post_base.html" %}
+
+
+{% block title %}
+    Create NBA post
+{% endblock %}
+
+
+{% block title_icon %}
+    <link rel="icon" href="/static/logo_nba.png" type="image/png">
+{% endblock %}
+
+
+{% block banner %}
+    <div class="border-top border-bottom border-3 align-self-center mb-3" align="center">
+        <img src="/static/logo_nba.png" width="96" height="96" class="img-fluid rounded-start" alt="logo_nba">
+        <br>
+        <div class="own-text-color"><b>National Basketball Association</b></div>
+    </div>
+{% endblock %}
+
+
+{% block create_to_forum %}
+    NBA
+{% endblock %}
+
+
+{% block create_to_image %}
+    <img src="/static/logo_nba.png" width="55" height="55" class="img-fluid rounded-start" alt="logo_nba">
+{% endblock %}
+
+
+{% block create_form_base %}
+    <textarea class="form-control mb-5" rows="3" id="createForumNbaPostTextareaId" name="createForumNbaPostTextarea"></textarea>
+    <div align="center">
+        <a href="/nba-forum/1"><button type="button" class="btn btn-secondary btn-lg">Back</button></a>
+        <button type="submit" class="btn btn-dark btn-lg own-background-color">Post</button>
+    </div>
+{% endblock %}

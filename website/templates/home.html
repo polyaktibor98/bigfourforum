@@ -1,0 +1,77 @@
+{% extends "base.html" %}
+
+
+{% block title %}
+    Big Four
+{% endblock %}
+
+
+{% block content %}
+    <div id="homeBigFourCarousel" class="carousel slide carousel-fade mb-3" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#homeBigFourCarousel" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#homeBigFourCarousel" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#homeBigFourCarousel" data-bs-slide-to="2"></button>
+            <button type="button" data-bs-target="#homeBigFourCarousel" data-bs-slide-to="3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="/static/home_nfl.png" class="d-block w-100 rounded border border-2 border-dark" alt="home_nfl">
+                <div class="carousel-caption d-none d-md-block">
+                    <h2><span class="badge border border-2 own-background-color">National Football League</span></h2>
+                    <p class="border border-2 rounded bg-dark bg-opacity-75 text-white fs-5">
+                        The NFL, formed in 1920, is America’s most popular professional sports league. It consists of 32 franchises, divided between NFC and AFC, competing each year to win the world’s biggest annual sports event, the Super Bowl.
+                        There is a further subdivision of 16 teams of each conference in four four-team divisions that are North, South, East, and West. Each division winner enters the playoffs, and there are two non-division winners wild card entries as well. Playoffs consist of four rounds. The Super Bowl is the last round, where two conference champions compete with each other to determine the league champion.
+                        As per revenue, the NFL is the wealthiest professional sports league. In 2018, the NFL was the most profitable sports league, with US$16 billion in revenue.
+                        <a href="https://dailygazette.com/major-professional-sports-leagues-the-us-canada" target="_blank" rel="noopener noreferrer"><i class="fs-6">source</i></a>
+                    </p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="/static/home_nba.png" class="d-block w-100 rounded border border-2 border-dark" alt="home_nba">
+                <div class="carousel-caption d-none d-md-block">
+                    <h2><span class="badge border border-2 own-background-color">National Basketball Association</span></h2>
+                    <p class="border border-2 rounded bg-dark bg-opacity-75 text-white fs-5">
+                        The NBA, founded in 1946, is an American professional basketball league. It consists of 30 teams, with two conferences of 15 teams each. Each team plays 82 games.
+                        There are further three divisions of these 15 teams in each conference. Total of eight teams from each conference advance to the playoffs. Each matchup in the playoffs is a best-of-7-game series. These series continue until only one team remains from each conference. Then, the two winners enter in the best-of-seven NBA finals to compete with each other.
+                        In the 2018-19 season, the NBA generated the highest revenue to-date of around US$8.76 billion.
+                        <a href="https://dailygazette.com/major-professional-sports-leagues-the-us-canada" target="_blank" rel="noopener noreferrer"><i class="fs-6">source</i></a>
+                    </p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="/static/home_mlb.png" class="d-block w-100 rounded border border-2 border-dark" alt="home_mlb">
+                <div class="carousel-caption d-none d-md-block">
+                    <h2><span class="badge border border-2 own-background-color">Major League Baseball</span></h2>
+                    <p class="border border-2 rounded bg-dark bg-opacity-75 text-white fs-5">
+                        In the US, MLB is the oldest professional sports league. Major League Baseball consists of 30 teams. Out of these 30 teams, 15 teams play in the National League and the other 15 in the American League.
+                        The MLB season, with 162-games, is the longest of the major American sports. After the regular season, the highest-ranking teams enter playoff games. Total twelve teams, six from each league, get into the playoffs. Eventually, the winner from the AL and the NL plays in the World Series. Thus, the champion of the season is determined.
+                        After the NFL, MLB is the wealthiest professional sports league by revenue. In 2019, MLB revenue was around US$10.7 billion.
+                        <a href="https://dailygazette.com/major-professional-sports-leagues-the-us-canada" target="_blank" rel="noopener noreferrer"><i class="fs-6">source</i></a>
+                    </p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="/static/home_nhl.png" class="d-block w-100 rounded border border-2 border-dark" alt="home_nhl">
+                <div class="carousel-caption d-none d-md-block">
+                    <h2><span class="badge border border-2 own-background-color">National Hockey League</span></h2>
+                    <p class="border border-2 rounded bg-dark bg-opacity-75 text-white fs-5">
+                        The NHL, founded in 1917, is the second-oldest major professional team sports league in North America.
+                        The NHL consists of 32 clubs in two conferences and four divisions. The three highest-placed teams in each division from each conference enter the playoffs. There are two other wild card teams as well that enter the playoffs. These teams compete with each other to win the Stanley Cup.
+                        The NHL ranks fifth in the wealthiest professional sports leagues in the USA. The total revenue generated by NHL in the 2018/19 season was US$5.09 billion.
+                        <a href="https://dailygazette.com/major-professional-sports-leagues-the-us-canada" target="_blank" rel="noopener noreferrer"><i class="fs-6">source</i></a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#homeBigFourCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#homeBigFourCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+{% endblock %}

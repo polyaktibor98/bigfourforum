@@ -1,0 +1,212 @@
+{% extends "base.html" %}
+
+
+{% block title %}
+    Profile - {{specific_user_profile.username}}
+{% endblock %}
+
+
+{% block content %}
+<div align="center">
+    <span class="border border-3 rounded bg-light fs-1 p-1 own-text-color own-border-color">
+        <b>{{specific_user_profile.username}}</b>'s profile
+    </span>
+</div>
+
+<div class="container border border-4 p-4 own-border-color rounded bg-light">
+    <div class="row g-1 align-items-center">
+        <div class="col-6">
+            <div class="p-3 d-flex justify-content-center">
+                <h1><span class="badge own-background-color">Bio</span></h1>
+            </div>
+        </div>
+        <div class="col-6">
+            <div class="p-3">
+                <p class="border border-2 own-border-color own-text-color rounded p-2 fs-5">
+                    {{specific_user_profile.bio}}
+                </p>
+            </div>
+        </div>
+        <hr>
+        <div class="col-6">
+            <div class="p-3 d-flex justify-content-center">
+                <h2><span class="badge own-background-color">Favourite NFL team</span></h2>
+            </div>
+        </div>
+        <div class="col-6">
+            <div class="p-3">
+                <h3><span class="badge border border-2 own-border-color own-text-color">{{specific_user_profile.nfl}}</span></h3>
+            </div>
+        </div>
+        <hr>
+        <div class="col-6">
+            <div class="p-3 d-flex justify-content-center">
+                <h2><span class="badge own-background-color">Favourite NBA team</span></h2>
+            </div>
+        </div>
+        <div class="col-6">
+            <div class="p-3">
+                <h3><span class="badge border border-2 own-border-color own-text-color">{{specific_user_profile.nba}}</span></h3>
+            </div>
+        </div>
+        <hr>
+        <div class="col-6">
+            <div class="p-3 d-flex justify-content-center">
+                <h2><span class="badge own-background-color">Favourite MLB team</span></h2>
+            </div>
+        </div>
+        <div class="col-6">
+            <div class="p-3">
+                <h3><span class="badge border border-2 own-border-color own-text-color">{{specific_user_profile.mlb}}</span></h3>
+            </div>
+        </div>
+        <hr>
+        <div class="col-6">
+            <div class="p-3 d-flex justify-content-center">
+                <h2><span class="badge own-background-color">Favourite NHL team</span></h2>
+            </div>
+        </div>
+        <div class="col-6">
+            <div class="p-3">
+                <h3><span class="badge border border-2 own-border-color own-text-color">{{specific_user_profile.nhl}}</span></h3>
+            </div>
+        </div>
+    </div>
+</div>
+<br>
+<!-- GOMBOK -->
+{% if specific_user_profile == user_active %}
+    <div class="mb-2" align="center">
+        <a href="/edit-user/{{user_active.username}}"><button type="button" class="btn btn-dark btn-lg own-background-color">Edit my profile</button></a>
+    </div>
+
+    <!-- NFL kommentek -->
+    <div class="pb-5 ps-5 pe-5">
+        <div class="d-inline-flex mb-1">
+            <h4 class="own-text-color">My NFL</h4>&nbsp;
+            <img src="/static/logo_nfl.png" width="30" height="30" class="img-fluid rounded-start" alt="logo_nfl">&nbsp;
+            <h4 class="own-text-color">Forum comments</h4>
+        </div>
+        
+        <div class="overflow-auto text-nowrap p-3 border border-3 own-border-color bg-light rounded" style="height:250px;">
+            {% if user_active.comments_forum_nfl %}
+                <span class="text-muted mb-5">My most recent comment</span>
+                {% for my_nfl_comments in user_active.comments_forum_nfl|reverse %}
+                    <div class="row mb-1">
+                        <div class="col-auto">
+                            <em><span class="text-muted">post:</span></em>
+                            <form method="POST" action="/nfl-forum/1" class="d-inline-flex">
+                                <input type="hidden" name="nflCommentLinkToPostId" value="{{ my_nfl_comments.post_id }}">
+                                <input type="hidden" name="nflForumLastPage" value="{{ my_nfl_comments.post_id }}">
+                                <button type="submit" class="border border-2 own-border-color own-text-color rounded"><b>{{ my_nfl_comments.post_id }}</b></button>
+                            </form>
+                        </div>
+                        <div class="col text-truncate">
+                            {{my_nfl_comments.text}}
+                        </div>
+                    </div>
+                {% endfor %}
+            {% else %}
+                <span class="text-muted">I haven't commented anything on the NFL Forum yet.</span>
+            {% endif %}
+        </div>
+    </div>
+
+    <!-- NBA kommentek -->
+    <div class="pb-5 ps-5 pe-5">
+        <div class="d-inline-flex mb-1">
+            <h4 class="own-text-color">My NBA</h4>&nbsp;
+            <img src="/static/logo_nba.png" width="40" height="40" class="img-fluid rounded-start" alt="logo_nba">&nbsp;
+            <h4 class="own-text-color">Forum comments</h4>
+        </div>
+
+        <div class="overflow-auto text-nowrap p-3 border border-3 own-border-color bg-light rounded"  style="height:250px;">
+            {% if user_active.comments_forum_nba %}
+                <span class="text-muted mb-5">My most recent comment</span>
+                {% for my_nba_comments in user_active.comments_forum_nba|reverse %}
+                    <div class="row mb-1">
+                        <div class="col-auto">
+                            <em><span class="text-muted">post:</span></em>
+                            <form method="POST" action="/nba-forum/1" class="d-inline-flex">
+                                <input type="hidden" name="nbaCommentLinkToPostId" value="{{ my_nba_comments.post_id }}">
+                                <button type="submit" class="border border-2 own-border-color own-text-color rounded"><b>{{ my_nba_comments.post_id }}</b></button>
+                            </form>
+                        </div>
+                        <div class="col text-truncate">
+                            {{my_nba_comments.text}}
+                        </div>
+                    </div>
+                {% endfor %}
+            {% else %}
+                <span class="text-muted">I haven't commented anything on the NBA Forum yet.</span>
+            {% endif %}
+        </div>
+    </div>
+
+    <!-- MLB kommentek -->
+    <div class="pb-5 ps-5 pe-5">
+        <div class="d-inline-flex mb-1">
+            <h4 class="own-text-color">My MLB</h4>&nbsp;
+            <img src="/static/logo_mlb.png" width="55" height="55" class="img-fluid rounded-start" alt="logo_mlb">&nbsp;
+            <h4 class="own-text-color">Forum comments</h4>
+        </div>
+
+        <div class="overflow-auto text-nowrap p-3 border border-3 own-border-color bg-light rounded" style="height:250px;">
+            {% if user_active.comments_forum_mlb %}
+                <span class="text-muted mb-5">My most recent comment</span>
+                {% for my_mlb_comments in user_active.comments_forum_mlb|reverse %}
+                    <div class="row mb-1">
+                        <div class="col-auto">
+                            <em><span class="text-muted">post:</span></em>
+                            <form method="POST" action="/mlb-forum/1" class="d-inline-flex">
+                                <input type="hidden" name="mlbCommentLinkToPostId" value="{{ my_mlb_comments.post_id }}">
+                                <button type="submit" class="border border-2 own-border-color own-text-color rounded"><b>{{ my_mlb_comments.post_id }}</b></button>
+                            </form>
+                        </div>
+                        <div class="col text-truncate">
+                            {{my_mlb_comments.text}}
+                        </div>
+                    </div>
+                {% endfor %}
+            {% else %}
+                <span class="text-muted">I haven't commented anything on the MLB Forum yet.</span>
+            {% endif %}
+        </div>
+    </div>
+
+    <!-- NHL kommentek -->
+    <div class="pb-5 ps-5 pe-5">
+        <div class="d-inline-flex mb-1">
+            <h4 class="own-text-color">My NHL</h4>&nbsp;
+            <img src="/static/logo_nhl.png" width="35" height="35" class="img-fluid rounded-start" alt="logo_nhl">&nbsp;
+            <h4 class="own-text-color">Forum comments</h4>
+        </div>
+
+        <div class="overflow-auto text-nowrap p-3 border border-3 own-border-color bg-light rounded" style="height:250px;">
+            {% if user_active.comments_forum_nhl %}
+                <span class="text-muted mb-5">My most recent comment</span>
+                {% for my_nhl_comments in user_active.comments_forum_nhl|reverse %}
+                    <div class="row mb-1">
+                        <div class="col-auto">
+                            <em><span class="text-muted">post:</span></em>
+                            <form method="POST" action="/nhl-forum/1" class="d-inline-flex">
+                                <input type="hidden" name="nhlCommentLinkToPostId" value="{{ my_nhl_comments.post_id }}">
+                                <button type="submit" class="border border-2 own-border-color own-text-color rounded"><b>{{ my_nhl_comments.post_id }}</b></button>
+                            </form>
+                        </div>
+                        <div class="col text-truncate">
+                            {{my_nhl_comments.text}}
+                        </div>
+                    </div>
+                {% endfor %}
+            {% else %}
+                <span class="text-muted">I haven't commented anything on the NHL Forum yet.</span>
+            {% endif %}
+        </div>
+    </div>
+
+    <br><br><br>
+
+{% endif %}
+
+{% endblock %}

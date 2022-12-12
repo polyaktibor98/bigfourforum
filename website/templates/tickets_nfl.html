@@ -1,0 +1,661 @@
+{% extends "tickets_base.html" %}
+
+
+{% block title %}
+    NFL Tickets
+{% endblock %}
+
+
+{% block title_icon %}
+    <link rel="icon" href="/static/logo_nfl.png" type="image/png">
+{% endblock %}
+
+
+{% block tickets_league %}
+    NFL
+{% endblock %}
+
+
+{% block tickets_image %}
+    <img src="/static/logo_nfl.png" width="40" height="40" class="img-fluid rounded-start" alt="logo_nfl">
+{% endblock %}
+
+
+<!-- TEAM 1 -->
+{% block team_1_image %}
+    <a href="https://www.nfl.com/teams/arizona-cardinals" target="_blank" rel="noopener noreferrer"><img src="/static/nfl_arizonacardinals.png"  width="60" height="60" class="img-fluid rounded-start" alt="nfl_arizonacardinals"></a>
+{% endblock %}
+
+{% block team_1_name %}
+    Arizona Cardinals
+{% endblock %}
+
+{% block team_1_stadium %}
+    <a href="https://www.google.com/maps/place/University+of+Phoenix+Stadium/@33.5276247,-112.264748,17z/data=!3m1!4b1!4m5!3m4!1s0x872b40484caa40dd:0xb9c497aa9569305b!8m2!3d33.5276247!4d-112.2625593" target="_blank" rel="noopener noreferrer" class="own-text-color"><i class="fa-solid fa-location-dot"></i></a>
+    University of Phoenix Stadium
+{% endblock %}
+
+{% block team_1_tickets %}
+    <a href="https://www.azcardinals.com/schedule/" target="_blank" rel="noopener noreferrer" class="own-text-color"><i class="fa-solid fa-ticket"></i></a>
+    tickets
+{% endblock %}
+
+
+<!-- TEAM 2 -->
+{% block team_2_image %}
+    <a href="https://www.nfl.com/teams/atlanta-falcons" target="_blank" rel="noopener noreferrer"><img src="/static/nfl_atlantafalcons.png"  width="60" height="60" class="img-fluid rounded-start" alt="nfl_atlantafalcons"></a>
+{% endblock %}
+
+{% block team_2_name %}
+    Atlanta Falcons
+{% endblock %}
+
+{% block team_2_stadium %}
+    <a href="https://www.google.com/maps/place/Mercedes+Benz+Stadium/@33.7393577,-84.4155728,17z/data=!3m1!4b1!4m5!3m4!1s0x88f5036938cd6cd1:0x53608fc67d0f1d55!8m2!3d33.7393577!4d-84.4133841" target="_blank" rel="noopener noreferrer" class="own-text-color"><i class="fa-solid fa-location-dot"></i></a>
+    Mercedes Benz Stadium
+{% endblock %}
+
+{% block team_2_tickets %}
+    <a href="https://www.atlantafalcons.com/schedule/" target="_blank" rel="noopener noreferrer" class="own-text-color"><i class="fa-solid fa-ticket"></i></a>
+    tickets
+{% endblock %}
+
+
+<!-- TEAM 3 -->
+{% block team_3_image %}
+    <a href="https://www.nfl.com/teams/baltimore-ravens" target="_blank" rel="noopener noreferrer"><img src="/static/nfl_baltimoreravens.png"  width="60" height="60" class="img-fluid rounded-start" alt="nfl_baltimoreravens"></a>
+{% endblock %}
+
+{% block team_3_name %}
+    Baltimore Ravens
+{% endblock %}
+
+{% block team_3_stadium %}
+    <a href="https://www.google.com/maps/place/M%26T+Bank+Stadium/@39.2779876,-76.6248931,17z/data=!3m1!4b1!4m5!3m4!1s0x89c80343486734c3:0x7c2275034a246ed4!8m2!3d39.2779876!4d-76.6227044" target="_blank" rel="noopener noreferrer" class="own-text-color"><i class="fa-solid fa-location-dot"></i></a>
+    M&T Bank Stadium
+{% endblock %}
+
+{% block team_3_tickets %}
+    <a href="https://www.baltimoreravens.com/schedule/" target="_blank" rel="noopener noreferrer" class="own-text-color"><i class="fa-solid fa-ticket"></i></a>
+    tickets
+{% endblock %}
+
+
+<!-- TEAM 4 -->
+{% block team_4_image %}
+    <a href="https://www.nfl.com/teams/buffalo-bills" target="_blank" rel="noopener noreferrer"><img src="/static/nfl_buffalobills.png"  width="60" height="60" class="img-fluid rounded-start" alt="nfl_buffalobills"></a>
+{% endblock %}
+
+{% block team_4_name %}
+    Buffalo Bills
+{% endblock %}
+
+{% block team_4_stadium %}
+    <a href="https://www.google.com/maps/place/Highmark+Stadium/@42.7737546,-78.789161,17z/data=!3m1!4b1!4m5!3m4!1s0x89d305815466a99f:0xf0b562b249eaa7f5!8m2!3d42.7737546!4d-78.7869723" target="_blank" rel="noopener noreferrer" class="own-text-color"><i class="fa-solid fa-location-dot"></i></a>
+    Highmark Stadium
+{% endblock %}
+
+{% block team_4_tickets %}
+    <a href="https://www.buffalobills.com/schedule/" target="_blank" rel="noopener noreferrer" class="own-text-color"><i class="fa-solid fa-ticket"></i></a>
+    tickets
+{% endblock %}
+
+
+<!-- TEAM 5 -->
+{% block team_5_image %}
+    <a href="https://www.nfl.com/teams/carolina-panthers" target="_blank" rel="noopener noreferrer"><img src="/static/nfl_carolinapanthers.png"  width="60" height="60" class="img-fluid rounded-start" alt="nfl_carolinapanthers"></a>
+{% endblock %}
+
+{% block team_5_name %}
+    Carolina Panthers
+{% endblock %}
+
+{% block team_5_stadium %}
+    <a href="https://www.google.com/maps/place/Bank+of+America+Stadium/@35.2257795,-80.8551537,17z/data=!3m1!4b1!4m5!3m4!1s0x8856a02cbdb65535:0x480ec8bd36ab934f!8m2!3d35.2257795!4d-80.852965" target="_blank" rel="noopener noreferrer" class="own-text-color"><i class="fa-solid fa-location-dot"></i></a>
+    Bank of America Stadium
+{% endblock %}
+
+{% block team_5_tickets %}
+    <a href="https://www.panthers.com/schedule/" target="_blank" rel="noopener noreferrer" class="own-text-color"><i class="fa-solid fa-ticket"></i></a>
+    tickets
+{% endblock %}
+
+
+<!-- TEAM 6 -->
+{% block team_6_image %}
+    <a href="https://www.nfl.com/teams/chicago-bears" target="_blank" rel="noopener noreferrer"><img src="/static/nfl_chicagobears.png"  width="60" height="60" class="img-fluid rounded-start" alt="nfl_chicagobears"></a>
+{% endblock %}
+
+{% block team_6_name %}
+    Chicago Bears
+{% endblock %}
+
+{% block team_6_stadium %}
+    <a href="https://www.google.com/maps/place/Soldier+Field/@41.8623132,-87.6188771,17z/data=!3m1!4b1!4m5!3m4!1s0x880e2b7db595e7bb:0xa3c99cebaff8029c!8m2!3d41.8623132!4d-87.6166884" target="_blank" rel="noopener noreferrer" class="own-text-color"><i class="fa-solid fa-location-dot"></i></a>
+    Soldier Field
+{% endblock %}
+
+{% block team_6_tickets %}
+    <a href="https://www.chicagobears.com/schedule/" target="_blank" rel="noopener noreferrer" class="own-text-color"><i class="fa-solid fa-ticket"></i></a>
+    tickets
+{% endblock %}
+
+
+<!-- TEAM 7 -->
+{% block team_7_image %}
+    <a href="https://www.nfl.com/teams/cincinnati-bengals" target="_blank" rel="noopener noreferrer"><img src="/static/nfl_cincinnatibengals.png"  width="60" height="60" class="img-fluid rounded-start" alt="nfl_cincinnatibengals"></a>
+{% endblock %}
+
+{% block team_7_name %}
+    Cincinnati Bengals
+{% endblock %}
+
+{% block team_7_stadium %}
+    <a href="https://www.google.com/maps/place/Paul+Brown+Stadium/@39.0954576,-84.5182464,17z/data=!3m1!4b1!4m5!3m4!1s0x8841b14e8e995ab1:0x991715beb84d8bcb!8m2!3d39.0954576!4d-84.5160577" target="_blank" rel="noopener noreferrer" class="own-text-color"><i class="fa-solid fa-location-dot"></i></a>
+    Paul Brown Stadium
+{% endblock %}
+
+{% block team_7_tickets %}
+    <a href="https://www.bengals.com/schedule/" target="_blank" rel="noopener noreferrer" class="own-text-color"><i class="fa-solid fa-ticket"></i></a>
+    tickets
+{% endblock %}
+
+
+<!-- TEAM 8 -->
+{% block team_8_image %}
+    <a href="https://www.nfl.com/teams/cleveland-browns" target="_blank" rel="noopener noreferrer"><img src="/static/nfl_clevelandbrowns.png"  width="60" height="60" class="img-fluid rounded-start" alt="nfl_clevelandbrowns"></a>
+{% endblock %}
+
+{% block team_8_name %}
+    Cleveland Browns
+{% endblock %}
+
+{% block team_8_stadium %}
+    <a href="https://www.google.com/maps/place/FirstEnergy+Stadium/@41.5060535,-81.7017368,17z/data=!3m1!4b1!4m5!3m4!1s0x8830f085d448b84d:0xc1d55254b1aa84e9!8m2!3d41.5060535!4d-81.6995481" target="_blank" rel="noopener noreferrer" class="own-text-color"><i class="fa-solid fa-location-dot"></i></a>
+    FirstEnergy Stadium
+{% endblock %}
+
+{% block team_8_tickets %}
+    <a href="https://www.clevelandbrowns.com/schedule/" target="_blank" rel="noopener noreferrer" class="own-text-color"><i class="fa-solid fa-ticket"></i></a>
+    tickets
+{% endblock %}
+
+
+<!-- TEAM 9 -->
+{% block team_9_image %}
+    <a href="https://www.nfl.com/teams/dallas-cowboys" target="_blank" rel="noopener noreferrer"><img src="/static/nfl_dallascowboys.png"  width="60" height="60" class="img-fluid rounded-start" alt="nfl_dallascowboys"></a>
+{% endblock %}
+
+{% block team_9_name %}
+    Dallas Cowboys
+{% endblock %}
+
+{% block team_9_stadium %}
+    <a href="https://www.google.com/maps/place/AT%26T+Stadium/@32.7472844,-97.0966826,17z/data=!3m1!4b1!4m5!3m4!1s0x864e7d86c8884727:0x6d1e60e88c6a9df8!8m2!3d32.7472844!4d-97.0944939" target="_blank" rel="noopener noreferrer" class="own-text-color"><i class="fa-solid fa-location-dot"></i></a>
+    AT&T Stadium
+{% endblock %}
+
+{% block team_9_tickets %}
+    <a href="https://www.dallascowboys.com/schedule/" target="_blank" rel="noopener noreferrer" class="own-text-color"><i class="fa-solid fa-ticket"></i></a>
+    tickets
+{% endblock %}
+
+
+<!-- TEAM 10 -->
+{% block team_10_image %}
+    <a href="https://www.nfl.com/teams/denver-broncos" target="_blank" rel="noopener noreferrer"><img src="/static/nfl_denverbroncos.png"  width="60" height="60" class="img-fluid rounded-start" alt="nfl_denverbroncos"></a>
+{% endblock %}
+
+{% block team_10_name %}
+    Denver Broncos
+{% endblock %}
+
+{% block team_10_stadium %}
+    <a href="https://www.google.com/maps/place/Empower+Field+at+Mile+High/@39.7438895,-105.0222981,17z/data=!3m1!4b1!4m5!3m4!1s0x876c78baa83cb755:0xb1bc3143c6a9ac85!8m2!3d39.7438895!4d-105.0201094" target="_blank" rel="noopener noreferrer" class="own-text-color"><i class="fa-solid fa-location-dot"></i></a>
+    Empower Field at Mile High
+{% endblock %}
+
+{% block team_10_tickets %}
+    <a href="https://www.denverbroncos.com/schedule/" target="_blank" rel="noopener noreferrer" class="own-text-color"><i class="fa-solid fa-ticket"></i></a>
+    tickets
+{% endblock %}
+
+
+<!-- TEAM 11 -->
+{% block team_11_image %}
+    <a href="https://www.nfl.com/teams/detroit-lions" target="_blank" rel="noopener noreferrer"><img src="/static/nfl_detroitlions.png"  width="60" height="60" class="img-fluid rounded-start" alt="nfl_detroitlions"></a>
+{% endblock %}
+
+{% block team_11_name %}
+    Detroit Lions
+{% endblock %}
+
+{% block team_11_stadium %}
+    <a href="https://www.google.com/maps/place/Ford+Field/@42.3400064,-83.0477917,17z/data=!3m1!4b1!4m5!3m4!1s0x883b2d2d6742e0b7:0xd4923792afe689b6!8m2!3d42.3400064!4d-83.045603" target="_blank" rel="noopener noreferrer" class="own-text-color"><i class="fa-solid fa-location-dot"></i></a>
+    Ford Field
+{% endblock %}
+
+{% block team_11_tickets %}
+    <a href="https://www.detroitlions.com/schedule/" target="_blank" rel="noopener noreferrer" class="own-text-color"><i class="fa-solid fa-ticket"></i></a>
+    tickets
+{% endblock %}
+
+
+<!-- TEAM 12 -->
+{% block team_12_image %}
+    <a href="https://www.nfl.com/teams/green-bay-packers" target="_blank" rel="noopener noreferrer"><img src="/static/nfl_greenbaypackers.png"  width="60" height="60" class="img-fluid rounded-start" alt="nfl_greenbaypackers"></a>
+{% endblock %}
+
+{% block team_12_name %}
+    Green Bay Packers
+{% endblock %}
+
+{% block team_12_stadium %}
+    <a href="https://www.google.com/maps/place/Lambeau+Field/@44.5013406,-88.064397,17z/data=!3m1!4b1!4m5!3m4!1s0x8802fa51d9541b0f:0x45828001c843dcdd!8m2!3d44.5013406!4d-88.0622083" target="_blank" rel="noopener noreferrer" class="own-text-color"><i class="fa-solid fa-location-dot"></i></a>
+    Lambeau Field
+{% endblock %}
+
+{% block team_12_tickets %}
+    <a href="https://www.packers.com/schedule/" target="_blank" rel="noopener noreferrer" class="own-text-color"><i class="fa-solid fa-ticket"></i></a>
+    tickets
+{% endblock %}
+
+
+<!-- TEAM 13 -->
+{% block team_13_image %}
+    <a href="https://www.nfl.com/teams/houston-texans" target="_blank" rel="noopener noreferrer"><img src="/static/nfl_houstontexans.png"  width="60" height="60" class="img-fluid rounded-start" alt="nfl_houstontexans"></a>
+{% endblock %}
+
+{% block team_13_name %}
+    Houston Texans
+{% endblock %}
+
+{% block team_13_stadium %}
+    <a href="https://www.google.com/maps/place/NRG-stadion/@29.6847219,-95.4107074,17z/data=!3m1!4b1!4m5!3m4!1s0x8640c0194b406bad:0x1b0f6ec2399a9d57!8m2!3d29.6847219!4d-95.4107074" target="_blank" rel="noopener noreferrer" class="own-text-color"><i class="fa-solid fa-location-dot"></i></a>
+    NRG Stadium
+{% endblock %}
+
+{% block team_13_tickets %}
+    <a href="https://www.houstontexans.com/schedule/" target="_blank" rel="noopener noreferrer" class="own-text-color"><i class="fa-solid fa-ticket"></i></a>
+    tickets
+{% endblock %}
+
+
+<!-- TEAM 14 -->
+{% block team_14_image %}
+    <a href="https://www.nfl.com/teams/indianapolis-colts" target="_blank" rel="noopener noreferrer"><img src="/static/nfl_indianapoliscolts.png"  width="60" height="60" class="img-fluid rounded-start" alt="nfl_indianapoliscolts"></a>
+{% endblock %}
+
+{% block team_14_name %}
+    Indianapolis Colts
+{% endblock %}
+
+{% block team_14_stadium %}
+    <a href="https://www.google.com/maps/place/Lucas+Oil+Stadium/@39.7601007,-86.1660764,17z/data=!3m1!4b1!4m5!3m4!1s0x886b50a5f3e4ada5:0xcc345a26d33f09e1!8m2!3d39.7601007!4d-86.1638877" target="_blank" rel="noopener noreferrer" class="own-text-color"><i class="fa-solid fa-location-dot"></i></a>
+    Lucas Oil Stadium
+{% endblock %}
+
+{% block team_14_tickets %}
+    <a href="https://www.colts.com/schedule/" target="_blank" rel="noopener noreferrer" class="own-text-color"><i class="fa-solid fa-ticket"></i></a>
+    tickets
+{% endblock %}
+
+
+<!-- TEAM 15 -->
+{% block team_15_image %}
+    <a href="https://www.nfl.com/teams/jacksonville-jaguars" target="_blank" rel="noopener noreferrer"><img src="/static/nfl_jacksonvillejaguars.png"  width="60" height="60" class="img-fluid rounded-start" alt="nfl_jacksonvillejaguars"></a>
+{% endblock %}
+
+{% block team_15_name %}
+    Jacksonville Jaguars
+{% endblock %}
+
+{% block team_15_stadium %}
+    <a href="https://www.google.com/maps/place/EverBank+Field/@30.3239099,-81.6395384,17z/data=!3m1!4b1!4m5!3m4!1s0x88e449a7e635d48f:0xf9b72d60a652e5ba!8m2!3d30.3239099!4d-81.6373497" target="_blank" rel="noopener noreferrer" class="own-text-color"><i class="fa-solid fa-location-dot"></i></a>
+    EverBank Field
+{% endblock %}
+
+{% block team_15_tickets %}
+    <a href="https://www.jaguars.com/schedule/" target="_blank" rel="noopener noreferrer" class="own-text-color"><i class="fa-solid fa-ticket"></i></a>
+    tickets
+{% endblock %}
+
+
+<!-- TEAM 16 -->
+{% block team_16_image %}
+    <a href="https://www.nfl.com/teams/kansas-city-chiefs" target="_blank" rel="noopener noreferrer"><img src="/static/nfl_kansascitychiefs.png"  width="60" height="60" class="img-fluid rounded-start" alt="nfl_kansascitychiefs"></a>
+{% endblock %}
+
+{% block team_16_name %}
+    Kansas City Chiefs
+{% endblock %}
+
+{% block team_16_stadium %}
+    <a href="https://www.google.com/maps/place/GEHA+Field+at+Arrowhead+Stadium/@39.0489391,-94.4861044,17z/data=!3m1!4b1!4m5!3m4!1s0x87c0e4a194db922b:0xbccd4d8cf72544e6!8m2!3d39.0489391!4d-94.4839157" target="_blank" rel="noopener noreferrer" class="own-text-color"><i class="fa-solid fa-location-dot"></i></a>
+    Arrowhead Stadium
+{% endblock %}
+
+{% block team_16_tickets %}
+    <a href="https://www.chiefs.com/schedule/" target="_blank" rel="noopener noreferrer" class="own-text-color"><i class="fa-solid fa-ticket"></i></a>
+    tickets
+{% endblock %}
+
+
+<!-- TEAM 17 -->
+{% block team_17_image %}
+    <a href="https://www.nfl.com/teams/las-vegas-raiders" target="_blank" rel="noopener noreferrer"><img src="/static/nfl_lasvegasraiders.png"  width="60" height="60" class="img-fluid rounded-start" alt="nfl_lasvegasraiders"></a>
+{% endblock %}
+
+{% block team_17_name %}
+    Las Vegas Raiders
+{% endblock %}
+
+{% block team_17_stadium %}
+    <a href="https://www.google.com/maps/place/Allegiant+Stadium/@36.0908665,-115.1855109,17z/data=!3m1!4b1!4m5!3m4!1s0x80c8c50545b8cda9:0xa519d9e66aad29c9!8m2!3d36.0908665!4d-115.1833222" target="_blank" rel="noopener noreferrer" class="own-text-color"><i class="fa-solid fa-location-dot"></i></a>
+    Allegiant Stadium
+{% endblock %}
+
+{% block team_17_tickets %}
+    <a href="https://www.raiders.com/schedule/" target="_blank" rel="noopener noreferrer" class="own-text-color"><i class="fa-solid fa-ticket"></i></a>
+    tickets
+{% endblock %}
+
+
+<!-- TEAM 18 -->
+{% block team_18_image %}
+    <a href="https://www.nfl.com/teams/los-angeles-chargers" target="_blank" rel="noopener noreferrer"><img src="/static/nfl_losangeleschargers.png"  width="60" height="60" class="img-fluid rounded-start" alt="nfl_losangeleschargers"></a>
+{% endblock %}
+
+{% block team_18_name %}
+    Los Angeles Chargers
+{% endblock %}
+
+{% block team_18_stadium %}
+    <a href="https://www.google.com/maps/place/SoFi+Stadium/@33.9534651,-118.3412283,17z/data=!3m1!4b1!4m5!3m4!1s0x80c2b786cbfb8f4f:0x5fb99cb7249e4170!8m2!3d33.9534651!4d-118.3390396" target="_blank" rel="noopener noreferrer" class="own-text-color"><i class="fa-solid fa-location-dot"></i></a>
+    SoFi Stadium
+{% endblock %}
+
+{% block team_18_tickets %}
+    <a href="https://www.chargers.com/schedule/" target="_blank" rel="noopener noreferrer" class="own-text-color"><i class="fa-solid fa-ticket"></i></a>
+    tickets
+{% endblock %}
+
+
+<!-- TEAM 19 -->
+{% block team_19_image %}
+    <a href="https://www.nfl.com/teams/los-angeles-rams" target="_blank" rel="noopener noreferrer"><img src="/static/nfl_losangelesrams.png"  width="60" height="60" class="img-fluid rounded-start" alt="nfl_losangelesrams"></a>
+{% endblock %}
+
+{% block team_19_name %}
+    Los Angeles Rams
+{% endblock %}
+
+{% block team_19_stadium %}
+    <a href="https://www.google.com/maps/place/SoFi+Stadium/@33.9534651,-118.3412283,17z/data=!3m1!4b1!4m5!3m4!1s0x80c2b786cbfb8f4f:0x5fb99cb7249e4170!8m2!3d33.9534651!4d-118.3390396" target="_blank" rel="noopener noreferrer" class="own-text-color"><i class="fa-solid fa-location-dot"></i></a>
+    SoFi Stadium
+{% endblock %}
+
+{% block team_19_tickets %}
+    <a href="https://www.therams.com/schedule/" target="_blank" rel="noopener noreferrer" class="own-text-color"><i class="fa-solid fa-ticket"></i></a>
+    tickets
+{% endblock %}
+
+
+<!-- TEAM 20 -->
+{% block team_20_image %}
+    <a href="https://www.nfl.com/teams/miami-dolphins" target="_blank" rel="noopener noreferrer"><img src="/static/nfl_miamidolphins.png"  width="60" height="60" class="img-fluid rounded-start" alt="nfl_miamidolphins"></a>
+{% endblock %}
+
+{% block team_20_name %}
+    Miami Dolphins
+{% endblock %}
+
+{% block team_20_stadium %}
+    <a href="https://www.google.com/maps/place/Hard+Rock+Stadium/@25.9579665,-80.2410491,17z/data=!3m1!4b1!4m5!3m4!1s0x88d9af0497b5f3a9:0x5815e194c60bf9db!8m2!3d25.9579665!4d-80.2388604" target="_blank" rel="noopener noreferrer" class="own-text-color"><i class="fa-solid fa-location-dot"></i></a>
+    Hard Rock Stadium
+{% endblock %}
+
+{% block team_20_tickets %}
+    <a href="https://www.miamidolphins.com/schedule/" target="_blank" rel="noopener noreferrer" class="own-text-color"><i class="fa-solid fa-ticket"></i></a>
+    tickets
+{% endblock %}
+
+
+<!-- TEAM 21 -->
+{% block team_21_image %}
+    <a href="https://www.nfl.com/teams/minnesota-vikings" target="_blank" rel="noopener noreferrer"><img src="/static/nfl_minnesotavikings.png"  width="60" height="60" class="img-fluid rounded-start" alt="nfl_minnesotavikings"></a>
+{% endblock %}
+
+{% block team_21_name %}
+    Minnesota Vikings
+{% endblock %}
+
+{% block team_21_stadium %}
+    <a href="https://www.google.com/maps/place/U.S.+Bank+Stadium/@44.9736461,-93.2596832,17z/data=!3m1!4b1!4m5!3m4!1s0x52b32d60f3b6c9f3:0xe5359d25498abfd3!8m2!3d44.9736461!4d-93.2574945" target="_blank" rel="noopener noreferrer" class="own-text-color"><i class="fa-solid fa-location-dot"></i></a>
+    U.S. Bank Stadium
+{% endblock %}
+
+{% block team_21_tickets %}
+    <a href="https://www.vikings.com/schedule/" target="_blank" rel="noopener noreferrer" class="own-text-color"><i class="fa-solid fa-ticket"></i></a>
+    tickets
+{% endblock %}
+
+
+<!-- TEAM 22 -->
+{% block team_22_image %}
+    <a href="https://www.nfl.com/teams/new-england-patriots" target="_blank" rel="noopener noreferrer"><img src="/static/nfl_newenglandpatriots.png"  width="60" height="60" class="img-fluid rounded-start" alt="nfl_newenglandpatriots"></a>
+{% endblock %}
+
+{% block team_22_name %}
+    New England Patriots
+{% endblock %}
+
+{% block team_22_stadium %}
+    <a href="https://www.google.com/maps/place/Gillette+Stadion/@42.0909458,-71.2665352,17z/data=!3m1!4b1!4m5!3m4!1s0x89e4632476f73d67:0x68f66bebfe4bcade!8m2!3d42.0909458!4d-71.2643465" target="_blank" rel="noopener noreferrer" class="own-text-color"><i class="fa-solid fa-location-dot"></i></a>
+    Gillette Stadium
+{% endblock %}
+
+{% block team_22_tickets %}
+    <a href="https://www.patriots.com/schedule/" target="_blank" rel="noopener noreferrer" class="own-text-color"><i class="fa-solid fa-ticket"></i></a>
+    tickets
+{% endblock %}
+
+
+<!-- TEAM 23 -->
+{% block team_23_image %}
+    <a href="https://www.nfl.com/teams/new-orleans-saints" target="_blank" rel="noopener noreferrer"><img src="/static/nfl_neworleanssaints.png"  width="60" height="60" class="img-fluid rounded-start" alt="nfl_neworleanssaints"></a>
+{% endblock %}
+
+{% block team_23_name %}
+    New Orleans Saints
+{% endblock %}
+
+{% block team_23_stadium %}
+    <a href="https://www.google.com/maps/place/Superdome/@29.951061,-90.0834329,17z/data=!3m1!4b1!4m5!3m4!1s0x8620a5dd82214811:0x6e354b4a1659e3af!8m2!3d29.951061!4d-90.0812442" target="_blank" rel="noopener noreferrer" class="own-text-color"><i class="fa-solid fa-location-dot"></i></a>
+    Superdome
+{% endblock %}
+
+{% block team_23_tickets %}
+    <a href="https://www.neworleanssaints.com/schedule/" target="_blank" rel="noopener noreferrer" class="own-text-color"><i class="fa-solid fa-ticket"></i></a>
+    tickets
+{% endblock %}
+
+
+<!-- TEAM 24 -->
+{% block team_24_image %}
+    <a href="https://www.nfl.com/teams/new-york-giants" target="_blank" rel="noopener noreferrer"><img src="/static/nfl_newyorkgiants.png"  width="60" height="60" class="img-fluid rounded-start" alt="nfl_newyorkgiants"></a>
+{% endblock %}
+
+{% block team_24_name %}
+    New York Giants
+{% endblock %}
+
+{% block team_24_stadium %}
+    <a href="https://www.google.com/maps/place/MetLife+Stadium/@40.8135064,-74.0766457,17z/data=!3m1!4b1!4m5!3m4!1s0x89c2f861ad5902bf:0x8184280d31051734!8m2!3d40.8135064!4d-74.074457" target="_blank" rel="noopener noreferrer" class="own-text-color"><i class="fa-solid fa-location-dot"></i></a>
+    MetLife Stadium
+{% endblock %}
+
+{% block team_24_tickets %}
+    <a href="https://www.giants.com/schedule/" target="_blank" rel="noopener noreferrer" class="own-text-color"><i class="fa-solid fa-ticket"></i></a>
+    tickets
+{% endblock %}
+
+
+<!-- TEAM 25 -->
+{% block team_25_image %}
+    <a href="https://www.nfl.com/teams/new-york-jets" target="_blank" rel="noopener noreferrer"><img src="/static/nfl_newyorkjets.png"  width="60" height="60" class="img-fluid rounded-start" alt="nfl_newyorkjets"></a>
+{% endblock %}
+
+{% block team_25_name %}
+    New York Jets
+{% endblock %}
+
+{% block team_25_stadium %}
+    <a href="https://www.google.com/maps/place/MetLife+Stadium/@40.8135064,-74.0766457,17z/data=!3m1!4b1!4m5!3m4!1s0x89c2f861ad5902bf:0x8184280d31051734!8m2!3d40.8135064!4d-74.074457" target="_blank" rel="noopener noreferrer" class="own-text-color"><i class="fa-solid fa-location-dot"></i></a>
+    MetLife Stadium
+{% endblock %}
+
+{% block team_25_tickets %}
+    <a href="https://www.newyorkjets.com/schedule/" target="_blank" rel="noopener noreferrer" class="own-text-color"><i class="fa-solid fa-ticket"></i></a>
+    tickets
+{% endblock %}
+
+
+<!-- TEAM 26 -->
+{% block team_26_image %}
+    <a href="https://www.nfl.com/teams/philadelphia-eagles" target="_blank" rel="noopener noreferrer"><img src="/static/nfl_philadelphiaeagles.png"  width="60" height="60" class="img-fluid rounded-start" alt="nfl_philadelphiaeagles"></a>
+{% endblock %}
+
+{% block team_26_name %}
+    Philadelphia Eagles
+{% endblock %}
+
+{% block team_26_stadium %}
+    <a href="https://www.google.com/maps/place/Lincoln+Financial+Field/@39.9013695,-75.1697102,17z/data=!4m5!3m4!1s0x89c6c7a9e03add31:0xf4050036d4293709!8m2!3d39.9013695!4d-75.1675215" target="_blank" rel="noopener noreferrer" class="own-text-color"><i class="fa-solid fa-location-dot"></i></a>
+    Lincoln Financial Field
+{% endblock %}
+
+{% block team_26_tickets %}
+    <a href="https://www.philadelphiaeagles.com/schedule/" target="_blank" rel="noopener noreferrer" class="own-text-color"><i class="fa-solid fa-ticket"></i></a>
+    tickets
+{% endblock %}
+
+
+<!-- TEAM 27 -->
+{% block team_27_image %}
+    <a href="https://www.nfl.com/teams/pittsburgh-steelers" target="_blank" rel="noopener noreferrer"><img src="/static/nfl_pittsburghsteelers.png"  width="60" height="60" class="img-fluid rounded-start" alt="nfl_pittsburghsteelers"></a>
+{% endblock %}
+
+{% block team_27_name %}
+    Pittsburgh Steelers
+{% endblock %}
+
+{% block team_27_stadium %}
+    <a href="https://www.google.com/maps/place/Acrisure+Stadium/@40.4467648,-80.017949,17z/data=!3m1!4b1!4m5!3m4!1s0x8834f40214bce405:0x8590d1891f55b9c8!8m2!3d40.4467648!4d-80.0157603" target="_blank" rel="noopener noreferrer" class="own-text-color"><i class="fa-solid fa-location-dot"></i></a>
+    Acrisure Stadium
+{% endblock %}
+
+{% block team_27_tickets %}
+    <a href="https://www.steelers.com/schedule/" target="_blank" rel="noopener noreferrer" class="own-text-color"><i class="fa-solid fa-ticket"></i></a>
+    tickets
+{% endblock %}
+
+
+<!-- TEAM 28 -->
+{% block team_28_image %}
+    <a href="https://www.nfl.com/teams/san-francisco-49ers" target="_blank" rel="noopener noreferrer"><img src="/static/nfl_sanfrancisco49ers.png"  width="60" height="60" class="img-fluid rounded-start" alt="nfl_sanfrancisco49ers"></a>
+{% endblock %}
+
+{% block team_28_name %}
+    San Francisco 49ers
+{% endblock %}
+
+{% block team_28_stadium %}
+    <a href="https://www.google.com/maps/place/Levi's+Stadium/@37.4033165,-121.9715661,17z/data=!3m1!4b1!4m5!3m4!1s0x808fc9c827c5f0df:0x11455a372e1f7d18!8m2!3d37.4033165!4d-121.9693774" target="_blank" rel="noopener noreferrer" class="own-text-color"><i class="fa-solid fa-location-dot"></i></a>
+    Levi's Stadium
+{% endblock %}
+
+{% block team_28_tickets %}
+    <a href="https://www.49ers.com/schedule/" target="_blank" rel="noopener noreferrer" class="own-text-color"><i class="fa-solid fa-ticket"></i></a>
+    tickets
+{% endblock %}
+
+
+<!-- TEAM 29 -->
+{% block team_29_image %}
+    <a href="https://www.nfl.com/teams/seattle-seahawks" target="_blank" rel="noopener noreferrer"><img src="/static/nfl_seattleseahawks.png"  width="60" height="60" class="img-fluid rounded-start" alt="nfl_seattleseahawks"></a>
+{% endblock %}
+
+{% block team_29_name %}
+    Seattle Seahawks
+{% endblock %}
+
+{% block team_29_stadium %}
+    <a href="https://www.google.com/maps/place/Lumen+Field/@47.5951518,-122.3338281,17z/data=!3m1!4b1!4m5!3m4!1s0x54906aa3b9f1182b:0xa636cd513bba22dc!8m2!3d47.5951518!4d-122.3316394" target="_blank" rel="noopener noreferrer" class="own-text-color"><i class="fa-solid fa-location-dot"></i></a>
+    Lumen Field
+{% endblock %}
+
+{% block team_29_tickets %}
+    <a href="https://www.seahawks.com/schedule/" target="_blank" rel="noopener noreferrer" class="own-text-color"><i class="fa-solid fa-ticket"></i></a>
+    tickets
+{% endblock %}
+
+
+<!-- TEAM 30 -->
+{% block team_30_image %}
+    <a href="https://www.nfl.com/teams/tampa-bay-buccaneers" target="_blank" rel="noopener noreferrer"><img src="/static/nfl_tampabaybuccaneers.png"  width="60" height="60" class="img-fluid rounded-start" alt="nfl_tampabaybuccaneers"></a>
+{% endblock %}
+
+{% block team_30_name %}
+    Tampa Bay Buccaneers
+{% endblock %}
+
+{% block team_30_stadium %}
+    <a href="https://www.google.com/maps/place/Raymond+James+Stadium/@27.9758691,-82.5055231,17z/data=!4m5!3m4!1s0x88c2c3b8dc9428cf:0xc1cd5337edfcf3df!8m2!3d27.9758691!4d-82.5033344" target="_blank" rel="noopener noreferrer" class="own-text-color"><i class="fa-solid fa-location-dot"></i></a>
+    Raymond James Stadium
+{% endblock %}
+
+{% block team_30_tickets %}
+    <a href="https://www.buccaneers.com/schedule/" target="_blank" rel="noopener noreferrer" class="own-text-color"><i class="fa-solid fa-ticket"></i></a>
+    tickets
+{% endblock %}
+
+
+<!-- TEAM 31 -->
+{% block team_31_full %}
+    <tr class="fs-5">
+        <th scope="row" class="own-background-color" style="color:white;">31</th>
+        <td>
+            <div class="d-flex justify-content-between align-items-center">
+                <div class="col-2">
+                    <a href="https://www.nfl.com/teams/tennessee-titans" target="_blank" rel="noopener noreferrer"><img src="/static/nfl_tennesseetitans.png"  width="60" height="60" class="img-fluid rounded-start" alt="nfl_tennesseetitans"></a>
+                </div>
+                <div class="col-10">
+                    &ensp;Tennessee Titans
+                </div>
+            </div>
+        </td>
+        <td><a href="https://www.google.com/maps/place/Nissan+Stadium/@36.166479,-86.7734785,17z/data=!3m1!4b1!4m5!3m4!1s0x8864664fe4bf4197:0xf9c5bc49669894e9!8m2!3d36.166479!4d-86.7712898" target="_blank" rel="noopener noreferrer" class="own-text-color"><i class="fa-solid fa-location-dot"></i></a> Nissan Stadium</td>
+        <td><a href="https://www.tennesseetitans.com/schedule/" target="_blank" rel="noopener noreferrer" class="own-text-color"><i class="fa-solid fa-ticket"></i></a> tickets</td>
+    </tr>
+{% endblock %}
+
+
+<!-- TEAM 32 -->
+{% block team_32_full %}
+    <tr class="fs-5">
+        <th scope="row" class="own-background-color" style="color:white;">32</th>
+        <td>
+            <div class="d-flex justify-content-between align-items-center">
+                <div class="col-2">
+                    <a href="https://www.nfl.com/teams/washington-commanders" target="_blank" rel="noopener noreferrer"><img src="/static/nfl_washingtoncommanders.png"  width="60" height="60" class="img-fluid rounded-start" alt="nfl_washingtoncommanders"></a>
+                </div>
+                <div class="col-10">
+                    &ensp;Washington Commanders
+                </div>
+            </div>
+        </td>
+        <td><a href="https://www.google.com/maps/place/FedEx+Field/@38.9077031,-76.8666951,17z/data=!3m1!4b1!4m5!3m4!1s0x89b7bf8767ad5c43:0x4770659d01cbb79e!8m2!3d38.9077031!4d-76.8645064" target="_blank" rel="noopener noreferrer" class="own-text-color"><i class="fa-solid fa-location-dot"></i></a> FedEx Field</td>
+        <td><a href="https://www.commanders.com/schedule/" target="_blank" rel="noopener noreferrer" class="own-text-color"><i class="fa-solid fa-ticket"></i></a> tickets</td>
+    </tr>
+{% endblock %}

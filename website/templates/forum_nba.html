@@ -1,0 +1,229 @@
+{% extends "forum_base.html" %}
+
+
+{% block title %}
+    NBA Forum
+{% endblock %}
+
+
+{% block title_icon %}
+    <link rel="icon" href="/static/logo_nba.png" type="image/png">
+{% endblock %}
+
+
+{% block forum_league %}
+    NBA
+{% endblock %}
+
+
+{% block forum_image %}
+    <img src="/static/logo_nba.png" width="55" height="55" class="img-fluid rounded-start" alt="logo_nba">
+{% endblock %}
+
+
+{% block posts_comments %}
+
+    {% if all_nba_posts.page == 1 and all_nba_posts.total != 0 %}
+        <h6 class="text-muted">Most recent post</h6>
+    {% endif %}
+
+    {% for post in all_nba_posts.items %}
+    <div class="card border own-border-color">
+        <div class="card-header d-flex justify-content-between align-items-center">
+            <div class="col-1">
+                <img src="/static/logo_nba.png" width="55" height="55" class="img-fluid rounded-start" alt="logo_nba">
+            </div>
+            <div class="col-11">
+                <div class="d-flex justify-content-between align-items-center">
+                    <h3 class="card-title"><a href="/user/{{post.user.username}}" class="own-text-color">{{post.user.username}}</a></h3>
+                    <small class="text-muted"><em>Post ID: {{post.id}}</em></small>
+                    <div class="d-flex ps-3 pe-3">
+                        <!-- Lájkolás -->
+                        <div class="me-1 align-self-center">{{ post.likes_forum_nba|length }}</div>
+                        <div class="me-1 align-self-center">
+                            {% if user_active.id in post.likes_forum_nba|map(attribute="author")|list %}
+                                <form method="POST" action="/like-forum-nba/{{post.id}}">
+                                    <input type="hidden" name="currentPageForumNbaLiking" value="{{ all_nba_posts.page }}"> <!-- aktuális oldal -->
+                                    <button type="submit" class="btn btn-dark btn-sm own-background-color"><i class="fa-solid fa-heart"></i></button>
+                                </form>
+                            {% else %}
+                                {% if user_active.id == post.author %}
+                                    <button type="button" class="btn btn-outline-dark btn-sm own-border-color" disabled><i class="fa-regular fa-heart own-text-color"></i></button>
+                                {% else %}
+                                    <form method="POST" action="/like-forum-nba/{{post.id}}">
+                                        <input type="hidden" name="currentPageForumNbaLiking" value="{{ all_nba_posts.page }}"> <!-- aktuális oldal -->
+                                        <button type="submit" class="btn btn-outline-dark btn-sm own-border-color"><i class="fa-regular fa-heart"></i></button>
+                                    </form>
+                                {% endif %}
+                            {% endif %}
+                        </div>
+                        <!-- Lájkolás vége -->
+
+                        <!-- Poszt törlése -->
+                        <!-- https://getbootstrap.com/docs/5.1/components/modal/#live-demo -->
+                        <!-- https://stackoverflow.com/questions/45874906/flask-and-javascript-confirm-before-deleting -->
+                        {% if user_active.id == post.author %}
+                            <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#confirmDeleteNbaPostId{{post.id}}">Delete</button>
+                            <!-- modal (megerősítés) -->
+                            <div class="modal fade" id="confirmDeleteNbaPostId{{post.id}}">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title">Delete NBA post</h5>
+                                            <img src="/static/logo_nba.png" width="40" height="40" class="img-fluid rounded-start" alt="logo_nba">
+                                        </div>
+                                        <div class="modal-body">
+                                            Are you sure you want to delete your post?
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-dark own-background-color" data-bs-dismiss="modal">No</button>
+                                            <form method="POST" action="/delete-forum-nba-post/{{post.id}}">
+                                                <input type="hidden" name="currentPageForumNbaDeletingPost" value="{{ all_nba_posts.page }}">
+                                                <input type="hidden" name="allPagesForumNbaDeletingPost" value="{{ all_nba_posts.pages }}">
+                                                <input type="hidden" name="perPageForumNbaDeletingPost" value="{{ all_nba_posts.per_page }}">
+                                                <input type="hidden" name="totalForumNbaDeletingPost" value="{{ all_nba_posts.total }}">
+                                                <button type="submit" class="btn btn-secondary">Yes</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        {% endif %}
+                        <!-- Poszt törlés vége -->
+                    </div>
+                </div>
+                <h6 class="card-subtitle text-muted">NBA Forum</h6>
+            </div>
+        </div>
+        <div class="card-body">
+            <div class="card-text">
+                {{post.text}}
+            </div>
+            <hr>
+            <!-- Hozzászólások megjelenítése -->
+            <div class="collapse mb-3" id="commentsNba-{{post.id}}">
+                <div class="card">
+                    <div class="card-body" id="commentsNbaExpanded-{{post.id}}">
+                        {% for comment in post.comments_forum_nba %}
+                            <div class="d-flex justify-content-between">
+                                <!-- A hozzászólás -->
+                                <div class="row container p-0">
+                                    <div class="col-9">
+                                        <a href="/user/{{comment.user.username}}" class="fs-5 own-text-color">{{comment.user.username}}</a>: {{comment.text}}
+                                    </div>
+                                    <!-- A hozzászólás vége -->
+                                    <div class="col-3 align-self-center" align="right">
+                                        <small class="text-muted">{{comment.date_of_comment.replace(microsecond=0)}}</small>
+                                        <!-- Hozzászólás törlése -->
+                                        {% if user_active.id == comment.author or user_active.id == post.author %}
+                                            <button type="button" class="btn btn-outline-danger btn-sm" data-bs-toggle="modal" data-bs-target="#confirmDeleteNbaCommentId{{comment.id}}">Delete</button>
+                                            <!-- modal (megerősítés) -->
+                                            <div class="modal fade" id="confirmDeleteNbaCommentId{{comment.id}}">
+                                                <div class="modal-dialog modal-dialog-centered">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+                                                            <h5 class="modal-title">Delete comment</h5>
+                                                            <img src="/static/logo_nba.png" width="40" height="40" class="img-fluid rounded-start" alt="logo_nba">
+                                                        </div>
+                                                        <div class="modal-body">
+                                                            Are you sure you want to delete this comment?
+                                                        </div>
+                                                        <div class="modal-footer">
+                                                            <button type="button" class="btn btn-dark own-background-color" data-bs-dismiss="modal">No</button>
+                                                            <form method="POST" action="/delete-forum-nba-comment/{{comment.id}}">
+                                                                <input type="hidden" name="currentPageForumNbaDeletingComment" value="{{ all_nba_posts.page }}">
+                                                                <button type="submit" class="btn btn-secondary">Yes</button>
+                                                            </form>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        {% endif %}
+                                        <!-- Hozzászólás törlés vége -->
+                                    </div>
+                                </div>
+                            </div>
+                            <hr>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+            <!-- Hozzászólások megjelenítés vége -->
+            <div class="card-text mb-3">
+                {% if post.comments_forum_nba|length > 0 %}
+                    <a href="#commentsNba-{{post.id}}" data-bs-toggle="collapse" role="button">
+                        <span class="badge bg-dark own-background-color">View the comments</span>
+                    </a>
+                {% else %}
+                    <small class="text-muted">There are no comments yet</small>
+                {% endif %}
+            </div>
+            <!-- Hozzászólás űrlap -->
+            <form class="input-group mb-3" method="POST" action="/create-forum-nba-comment/{{post.id}}">
+                <input class="form-control" type="text" name="createForumNbaCommentInput" id="createForumNbaCommentInputId" placeholder="Comment something">
+                <input type="hidden" name="currentPageForumNbaCommenting" value="{{ all_nba_posts.page }}">
+                <button type="submit" class="btn btn-dark btn-lg own-background-color">Comment</button>
+            </form>
+            <!-- Hozzászólás űrlap vége -->
+        </div>
+        <div class="card-footer text-end text-muted">
+            <!-- dátum formázás: https://www.8bitavenue.com/get-current-datetime-without-milliseconds-in-python/ -->
+            <em>Post created: {{post.date_of_post.replace(microsecond=0)}}</em>
+        </div>
+    </div>
+    <br>
+    {% endfor %}
+
+    <!-- Az oldalak léptetése -->
+    {% if all_nba_posts.pages != 0 %}
+    <div class="mb-3" align="center">
+        <ul class="pagination pagination-sm justify-content-center">
+            <!-- Előző -->
+            {% if all_nba_posts.page == 1 %}
+                <li class="page-item disabled">
+                    <span class="fs-4 page-link">Previous</span>
+                </li>
+            {% else %}
+                <li class="page-item">
+                    <a href="{{ url_for('views.nba_forum', page_number=all_nba_posts.page-1) }}" class="fs-4 own-text-color page-link">Previous</a>
+                </li>
+            {% endif %}
+            <!-- Az oldalszámok -->
+            {% for page in all_nba_posts.iter_pages(left_edge=2, right_edge=2, left_current=2, right_current=3) %}
+                {% if page %}
+                    {% if page == all_nba_posts.page %}
+                        <li class="page-item">
+                            <a href="{{ url_for('views.nba_forum', page_number=page) }}" class="fs-4 own-background-color page-link" style="color:white;">{{ page }}</a>
+                        </li>
+                    {% else %}
+                        <li class="page-item">
+                            <a href="{{ url_for('views.nba_forum', page_number=page) }}" class="fs-4 own-text-color page-link">{{ page }}</a>
+                        </li>
+                    {% endif %}
+                {% else %}
+                    <li class="page-item disabled">
+                        <span class="fs-4 page-link">.....</span>
+                    </li>
+                {% endif %}
+            {% endfor %}
+            <!-- Következő -->
+            {% if all_nba_posts.page == all_nba_posts.pages %}
+                <li class="page-item disabled">
+                    <span class="fs-4 page-link">Next</span>
+                </li>
+            {% else %}
+                <li class="page-item">
+                    <a href="{{ url_for('views.nba_forum', page_number=all_nba_posts.page+1) }}" class="fs-4 own-text-color page-link">Next</a>
+                </li>
+            {% endif %}
+        </ul>
+    </div>
+    {% endif %}
+    <!-- Az oldalak lépetetés vége -->
+
+{% endblock %}
+
+
+{% block create_a_post_button %}
+    <a href="/create-forum-nba-post"><button type="submit" class="btn btn-dark btn-lg own-background-color">Create a post</button></a>
+{% endblock %}

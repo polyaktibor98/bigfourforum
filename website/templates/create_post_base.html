@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+
+{% block content %}
+    <h1 class="own-text-color" align="center">
+        Create a post on the <b>{% block create_to_forum %}{% endblock %}</b>{% block create_to_image %}{% endblock %} Forum
+    </h1>
+    <br>
+    <form method="POST">
+        {% block create_form_base %}
+        {% endblock %}
+    </form>
+{% endblock %}

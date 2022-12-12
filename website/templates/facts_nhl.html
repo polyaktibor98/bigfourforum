@@ -1,0 +1,812 @@
+{% extends "facts_base.html" %}
+
+
+{% block title %}
+    NHL Facts
+{% endblock %}
+
+
+{% block title_icon %}
+    <link rel="icon" href="/static/logo_nhl.png" type="image/png">
+{% endblock %}
+
+
+{% block facts_league %}
+    NHL
+{% endblock %}
+
+
+{% block facts_image %}
+    <img src="/static/logo_nhl.png" width="45" height="45" class="img-fluid rounded-start" alt="logo_nhl">
+{% endblock %}
+
+
+<!-- TEAM 1 -->
+{% block team_1_image %}
+    <a href="https://www.nhl.com/ducks" target="_blank" rel="noopener noreferrer"><img src="/static/nhl_anaheimducks.png"  width="60" height="60" class="img-fluid rounded-start" alt="nhl_anaheimducks"></a>
+{% endblock %}
+
+{% block team_1_name %}
+    Anaheim Ducks
+{% endblock %}
+
+{% block team_1_division %}
+    WC - Pacific
+{% endblock %}
+
+{% block team_1_facts %}
+    <li class="list-group-item">The club was founded in 1993 by The Walt Disney Company as the Mighty Ducks of Anaheim, a name based on the 1992 film The Mighty Ducks.</li>
+    <li class="list-group-item">The Ducks have made the playoffs 14 times, won six Pacific Division titles (2006–07, 2012–13, 2013–14, 2014–15, 2015–16, 2016–17), two Western Conference championships (2002–03 and 2006–07), and one Stanley Cup (2006–07).</li>
+{% endblock %}
+
+{% block team_1_source %}
+    <a href="https://kids.kiddle.co/Anaheim_Ducks" target="_blank" rel="noopener noreferrer">source</a>
+{% endblock %}
+
+
+<!-- TEAM 2 -->
+{% block team_2_image %}
+    <a href="https://www.nhl.com/coyotes" target="_blank" rel="noopener noreferrer"><img src="/static/nhl_arizonacoyotes.png"  width="60" height="60" class="img-fluid rounded-start" alt="nhl_arizonacoyotes"></a>
+{% endblock %}
+
+{% block team_2_name %}
+    Arizona Coyotes
+{% endblock %}
+
+{% block team_2_division %}
+    WC - Central
+{% endblock %}
+
+{% block team_2_facts %}
+    <li class="list-group-item">The Coyotes were founded in 1971, as the Winnipeg Jets of the World Hockey Association (WHA).</li>
+    <li class="list-group-item">After the WHA had ceased operations, they were one of four franchises absorbed into the National Hockey League and then granted membership in 1979.</li>
+    <li class="list-group-item">The Jets moved to Phoenix in 1996, and were renamed the Phoenix Coyotes. In 2014, the team was re-named to the present Arizona Coyotes.</li>
+    <li class="list-group-item">They haven't been in the Stanley Cup once.</li>
+{% endblock %}
+
+{% block team_2_source %}
+    <a href="https://kids.kiddle.co/Arizona_Coyotes" target="_blank" rel="noopener noreferrer">source</a>
+{% endblock %}
+
+
+<!-- TEAM 3 -->
+{% block team_3_image %}
+    <a href="https://www.nhl.com/bruins" target="_blank" rel="noopener noreferrer"><img src="/static/nhl_bostonbruins.png"  width="60" height="60" class="img-fluid rounded-start" alt="nhl_bostonbruins"></a>
+{% endblock %}
+
+{% block team_3_name %}
+    Boston Bruins
+{% endblock %}
+
+{% block team_3_division %}
+    EC - Atlantic
+{% endblock %}
+
+{% block team_3_facts %}
+    <li class="list-group-item">Between the years 1942 and 1967, there were only six teams that played in the NHL – the Bruins were one of these teams.</li>
+    <li class="list-group-item">When the Bruins joined (what is now) the NHL in 1924, they were the first and only American team. This would continue to be the case for another ten years.</li>
+    <li class="list-group-item">The Boston Bruins were the first NHL team to sign a black player. The player was the legendary Willie O’Ree.</li>
+    <li class="list-group-item">They won the Stanley Cup 6 times.</li>
+{% endblock %}
+
+{% block team_3_source %}
+    <a href="https://blackngoldhockey.com/2021/09/11/ten-interesting-facts-about-the-boston-bruins" target="_blank" rel="noopener noreferrer">source</a>
+{% endblock %}
+
+
+<!-- TEAM 4 -->
+{% block team_4_image %}
+    <a href="https://www.nhl.com/sabres" target="_blank" rel="noopener noreferrer"><img src="/static/nhl_buffalosabres.png"  width="60" height="60" class="img-fluid rounded-start" alt="nhl_buffalosabres"></a>
+{% endblock %}
+
+{% block team_4_name %}
+    Buffalo Sabres
+{% endblock %}
+
+{% block team_4_division %}
+    EC - Atlantic
+{% endblock %}
+
+{% block team_4_facts %}
+    <li class="list-group-item">The team was established in 1970, along with the Vancouver Canucks, when the league expanded to 14 teams.</li>
+    <li class="list-group-item">The Sabres have the longest active playoff drought in the NHL, at 10 seasons.</li>
+    <li class="list-group-item">The team has twice advanced to the Stanley Cup Finals, losing to the Philadelphia Flyers in 1975 and to the Dallas Stars in 1999.</li>
+    <li class="list-group-item">The Sabres and the Canucks, share the record for being the longest continuously running active NHL franchise to have never won the Stanley Cup.</li>
+{% endblock %}
+
+{% block team_4_source %}
+    <a href="https://kids.kiddle.co/Buffalo_Sabres" target="_blank" rel="noopener noreferrer">source</a>
+{% endblock %}
+
+
+<!-- TEAM 5 -->
+{% block team_5_image %}
+    <a href="https://www.nhl.com/flames" target="_blank" rel="noopener noreferrer"><img src="/static/nhl_calgaryflames.png"  width="60" height="60" class="img-fluid rounded-start" alt="nhl_calgaryflames"></a>
+{% endblock %}
+
+{% block team_5_name %}
+    Calgary Flames
+{% endblock %}
+
+{% block team_5_division %}
+    WC - Pacific
+{% endblock %}
+
+{% block team_5_facts %}
+    <li class="list-group-item">In 1972, the Atlanta Flames were founded in Atlanta before relocating to Calgary in 1980.</li>
+    <li class="list-group-item">A Stanley Cup championship was won by the Flames in 1988–89, their only trophy in team history.</li>
+    <li class="list-group-item">During the 1989 season, eight players were inducted into the Hockey Hall of Fame.</li>
+    <li class="list-group-item">Fame. Sonia Scurfield was a co-owner of the Flames, which means her name appears on the Cup along with the players and staff of the ’89 team. She is only the second woman in history to have her name engraved on Lord Stanley.</li>
+{% endblock %}
+
+{% block team_5_source %}
+    <a href="https://factsaboutcanada.ca/calgary-flames-facts.html" target="_blank" rel="noopener noreferrer">source</a>
+{% endblock %}
+
+
+<!-- TEAM 6 -->
+{% block team_6_image %}
+    <a href="https://www.nhl.com/hurricanes" target="_blank" rel="noopener noreferrer"><img src="/static/nhl_carolinahurricanes.png"  width="60" height="60" class="img-fluid rounded-start" alt="nhl_carolinahurricanes"></a>
+{% endblock %}
+
+{% block team_6_name %}
+    Carolina Hurricanes
+{% endblock %}
+
+{% block team_6_division %}
+    EC - Metropolitan
+{% endblock %}
+
+{% block team_6_facts %}
+    <li class="list-group-item">The franchise was formed in 1971 as the New England Whalers of the World Hockey Association (WHA).</li>
+    <li class="list-group-item">The franchise joined the NHL in 1979 as part of the NHL–WHA merger, renaming themselves the Hartford Whalers.</li>
+    <li class="list-group-item">The team relocated to North Carolina in 1997, rebranding themselves as the Hurricanes.</li>
+    <li class="list-group-item">The Hurricanes won the 2006 Stanley Cup over the Edmonton Oilers.</li>
+{% endblock %}
+
+{% block team_6_source %}
+    <a href="https://kids.kiddle.co/Carolina_Hurricanes" target="_blank" rel="noopener noreferrer">source</a>
+{% endblock %}
+
+
+<!-- TEAM 7 -->
+{% block team_7_image %}
+    <a href="https://www.nhl.com/blackhawks" target="_blank" rel="noopener noreferrer"><img src="/static/nhl_chicagoblackhawks.png"  width="60" height="60" class="img-fluid rounded-start" alt="nhl_chicagoblackhawks"></a>
+{% endblock %}
+
+{% block team_7_name %}
+    Chicago Blackhawks
+{% endblock %}
+
+{% block team_7_division %}
+    WC - Central
+{% endblock %}
+
+{% block team_7_facts %}
+    <li class="list-group-item">They have won six Stanley Cup championships since their founding in 1926 (1934, 1938, 1961, 2010, 2013, 2015).</li>
+    <li class="list-group-item">The Blackhawks are one of the original six NHL teams.</li>
+    <li class="list-group-item">The club's original owner was Frederic McLaughlin, who owned the club until his death in 1944. The club was then owned by the Norris family. After James D. Norris died in 1966, the Wirtz family became owners of the franchise.</li>
+    <li class="list-group-item">The Blackhawks was spelled Black Hawks until 1986.</li>
+{% endblock %}
+
+{% block team_7_source %}
+    <a href="https://kids.kiddle.co/Chicago_Blackhawks" target="_blank" rel="noopener noreferrer">source</a>
+{% endblock %}
+
+
+<!-- TEAM 8 -->
+{% block team_8_image %}
+    <a href="https://www.nhl.com/avalanche" target="_blank" rel="noopener noreferrer"><img src="/static/nhl_coloradoavalanche.png"  width="60" height="60" class="img-fluid rounded-start" alt="nhl_coloradoavalanche"></a>
+{% endblock %}
+
+{% block team_8_name %}
+    Colorado Avalanche
+{% endblock %}
+
+{% block team_8_division %}
+    WC - Central
+{% endblock %}
+
+{% block team_8_facts %}
+    <li class="list-group-item">The Avalanche were founded in 1972, joined the NHL in 1979 as a result of the NHL–WHA merger.</li>
+    <li class="list-group-item">Their home arena is Pepsi Center, Denver, which they share with the Denver Nuggets of the National Basketball Association.</li>
+    <li class="list-group-item">They won the Stanley Cup in 1996, sweeping the Florida Panthers.</li>
+    <li class="list-group-item">In the 2001 Stanley Cup Finals, the Avalanche defeated the New Jersey Devils to win their second and most recent championship. As a result, they are the only active NHL team that has won all of its Stanley Cup Final appearances.</li>
+{% endblock %}
+
+{% block team_8_source %}
+    <a href="https://kids.kiddle.co/Colorado_Avalanche" target="_blank" rel="noopener noreferrer">source</a>
+{% endblock %}
+
+
+<!-- TEAM 9 -->
+{% block team_9_image %}
+    <a href="https://www.nhl.com/bluejackets" target="_blank" rel="noopener noreferrer"><img src="/static/nhl_columbusbluejackets.png"  width="60" height="60" class="img-fluid rounded-start" alt="nhl_columbusbluejackets"></a>
+{% endblock %}
+
+{% block team_9_name %}
+    Columbus Blue Jackets
+{% endblock %}
+
+{% block team_9_division %}
+    EC - Metropolitan
+{% endblock %}
+
+{% block team_9_facts %}
+    <li class="list-group-item">The Blue Jackets began play as an expansion team in 2000.</li>
+    <li class="list-group-item">In their initial years, the Blue Jackets struggled, failing to win 30 games in a season until the 2005–06 season.</li>
+    <li class="list-group-item">The team qualified for the playoffs for the first time in 2009, but were swept. Their first playoff game victory was in the 2014 playoffs and their first victorious playoff series in the 2019 playoffs. However, They are still the only team in the league which has never appeared in the conference finals.</li>
+{% endblock %}
+
+{% block team_9_source %}
+    <a href="https://kids.kiddle.co/Columbus_Blue_Jackets" target="_blank" rel="noopener noreferrer">source</a>
+{% endblock %}
+
+
+<!-- TEAM 10 -->
+{% block team_10_image %}
+    <a href="https://www.nhl.com/stars" target="_blank" rel="noopener noreferrer"><img src="/static/nhl_dallasstars.png"  width="60" height="60" class="img-fluid rounded-start" alt="nhl_dallasstars"></a>
+{% endblock %}
+
+{% block team_10_name %}
+    Dallas Stars
+{% endblock %}
+
+{% block team_10_division %}
+    WC - Central
+{% endblock %}
+
+{% block team_10_facts %}
+    <li class="list-group-item">The Dallas Stars are originally from Minnesota and were known as the North Stars. They moved to Dallas in January of 1993.</li>
+    <li class="list-group-item">The Dallas Stars have won the Stanley Cup one time. This happened during the 1998-1999 season. They defeated the Buffalo Sabres 4 games to 2.</li>
+    <li class="list-group-item">The Stars changed their color, logos and jersey prior to the 2015 season.</li>
+    <li class="list-group-item">You can listen to the Stars (and every other NHL team's) goal horn and goal song at www.wejustscored.com.</li>
+{% endblock %}
+
+{% block team_10_source %}
+    <a href="https://therideronline.com/stories/2016/05/5-facts-about-the-dallas-stars" target="_blank" rel="noopener noreferrer">source</a>
+{% endblock %}
+
+
+<!-- TEAM 11 -->
+{% block team_11_image %}
+    <a href="https://www.nhl.com/redwings" target="_blank" rel="noopener noreferrer"><img src="/static/nhl_detroitredwings.png"  width="60" height="60" class="img-fluid rounded-start" alt="nhl_detroitredwings"></a>
+{% endblock %}
+
+{% block team_11_name %}
+    Detroit Red Wings
+{% endblock %}
+
+{% block team_11_division %}
+    EC - Atlantic
+{% endblock %}
+
+{% block team_11_facts %}
+    <li class="list-group-item">The Detroit Red Wings and are one of the original six teams of the league.</li>
+    <li class="list-group-item">Founded in 1926, the team was known as the Detroit Cougars until 1930. For the 1930–31 and 1931–32 seasons the team was called the Detroit Falcons, and in 1932 changed their name to the Red Wings.</li>
+    <li class="list-group-item">As of 2020, the Red Wings have won the most Stanley Cup championships of any NHL franchise based in the United States (11) and are third overall in total Stanley Cup championships, behind the Montreal Canadiens (24) and Toronto Maple Leafs (13).</li>
+{% endblock %}
+
+{% block team_11_source %}
+    <a href="https://kids.kiddle.co/Detroit_Red_Wings" target="_blank" rel="noopener noreferrer">source</a>
+{% endblock %}
+
+
+<!-- TEAM 12 -->
+{% block team_12_image %}
+    <a href="https://www.nhl.com/oilers" target="_blank" rel="noopener noreferrer"><img src="/static/nhl_edmontonoilers.png"  width="60" height="60" class="img-fluid rounded-start" alt="nhl_edmontonoilers"></a>
+{% endblock %}
+
+{% block team_12_name %}
+    Edmonton Oilers
+{% endblock %}
+
+{% block team_12_division %}
+    WC - Pacific
+{% endblock %}
+
+{% block team_12_facts %}
+    <li class="list-group-item">The Edmonton Oilers was founded in 1971.</li>
+    <li class="list-group-item">The Oilers were one of the first founding franchises of the World Hockey Association (WHA) which operated from 1972 to 1979 (actually they played and won the first game).</li>
+    <li class="list-group-item">At the earliest, the team bore the name Alberta Oilers for a single year and later changed its name back to the Edmonton Oilers.</li>
+    <li class="list-group-item">The Oilers became absorbed into the NHL through the merger that occurred between WHA and NHL in 1979.</li>
+    <li class="list-group-item">They won 5 Stanley Cups.</li>
+{% endblock %}
+
+{% block team_12_source %}
+    <a href="https://sportblis.com/edmonton-oilers-history-net-worth-stadium-and-facts-that-would-surprise-you" target="_blank" rel="noopener noreferrer">source</a>
+{% endblock %}
+
+
+<!-- TEAM 13 -->
+{% block team_13_image %}
+    <a href="https://www.nhl.com/panthers" target="_blank" rel="noopener noreferrer"><img src="/static/nhl_floridapanthers.png"  width="60" height="60" class="img-fluid rounded-start" alt="nhl_floridapanthers"></a>
+{% endblock %}
+
+{% block team_13_name %}
+    Florida Panthers
+{% endblock %}
+
+{% block team_13_division %}
+    EC - Atlantic
+{% endblock %}
+
+{% block team_13_facts %}
+    <li class="list-group-item">Located in Sunrise, Florida, the Panthers are the southernmost team in the NHL.</li>
+    <li class="list-group-item">The Panthers began playing in the 1993–94 NHL season.</li>
+    <li class="list-group-item">The team has made one appearance in the Stanley Cup Finals, in 1996, the only season in which the Panthers have ever won a playoff series, eventually losing the Finals to the Colorado Avalanche.</li>
+    <li class="list-group-item">Since then, the Panthers have only qualified for the Stanley Cup playoffs five times, never advancing past the first round, since 1996.</li>
+{% endblock %}
+
+{% block team_13_source %}
+    <a href="https://kids.kiddle.co/Florida_Panthers" target="_blank" rel="noopener noreferrer">source</a>
+{% endblock %}
+
+
+<!-- TEAM 14 -->
+{% block team_14_image %}
+    <a href="https://www.nhl.com/kings" target="_blank" rel="noopener noreferrer"><img src="/static/nhl_losangeleskings.png"  width="60" height="60" class="img-fluid rounded-start" alt="nhl_losangeleskings"></a>
+{% endblock %}
+
+{% block team_14_name %}
+    Los Angeles Kings
+{% endblock %}
+
+{% block team_14_division %}
+    WC - Pacific
+{% endblock %}
+
+{% block team_14_facts %}
+    <li class="list-group-item">The team was founded in 1967, after Jack Kent Cooke was awarded an NHL expansion franchise for Los Angeles in 1966, becoming one of the six teams that began play as part of the 1967 NHL expansion.</li>
+    <li class="list-group-item">They had a famous upset of the uprising Edmonton Oilers in a 1982 playoff game known as the Miracle on Manchester.</li>
+    <li class="list-group-item">After the 1993 Stanley Cup (first appearance), the Kings entered financial problems, with a bankruptcy in 1995.</li>
+    <li class="list-group-item">They won the Stanley Cup in 2012 and 2014.</li>
+{% endblock %}
+
+{% block team_14_source %}
+    <a href="https://kids.kiddle.co/Los_Angeles_Kings" target="_blank" rel="noopener noreferrer">source</a>
+{% endblock %}
+
+
+<!-- TEAM 15 -->
+{% block team_15_image %}
+    <a href="https://www.nhl.com/wild" target="_blank" rel="noopener noreferrer"><img src="/static/nhl_minnesotawild.png"  width="60" height="60" class="img-fluid rounded-start" alt="nhl_minnesotawild"></a>
+{% endblock %}
+
+{% block team_15_name %}
+    Minnesota Wild
+{% endblock %}
+
+{% block team_15_division %}
+    WC - Central
+{% endblock %}
+
+{% block team_15_facts %}
+    <li class="list-group-item">Minnesota was actually hockeyless for seven years after the Stars moved to Dallas, until the Wild played their first game in 2000.</li>
+    <li class="list-group-item">The six finalist team names for the new NHL franchise were Blue Ox, Freeze, Northern Lights, Voyageurs, White Bears, and Wild.</li>
+    <li class="list-group-item">The logo is an optical illusion that depicts both an environmental landscape and the silhouette of a wild animal.</li>
+    <li class="list-group-item">The Wild has never been to the Stanley Cup.</li>
+{% endblock %}
+
+{% block team_15_source %}
+    <a href="https://www.minneapolis.org/things-to-do/pro-sports/wild" target="_blank" rel="noopener noreferrer">source</a>
+{% endblock %}
+
+
+<!-- TEAM 16 -->
+{% block team_16_image %}
+    <a href="https://www.nhl.com/canadiens" target="_blank" rel="noopener noreferrer"><img src="/static/nhl_montrealcanadiens.png"  width="60" height="60" class="img-fluid rounded-start" alt="nhl_montrealcanadiens"></a>
+{% endblock %}
+
+{% block team_16_name %}
+    Montreal Canadiens
+{% endblock %}
+
+{% block team_16_division %}
+    EC - Atlantic
+{% endblock %}
+
+{% block team_16_facts %}
+    <li class="list-group-item">The franchise has won 24 Stanley cup, they are the most successful team - by far.</li>
+    <li class="list-group-item">In 1955, after an on-ice fight between Rocket Richard and Bruins players, Richard was suspended. Despite his suspension, Campbell was silly enough to attend the Habs’ next home game, which led to the now-infamous Richards Riot. Montrealers rioted in the streets, causing millions of dollars in damage. The Canadiens had to forfeit the game and went on to lose in the finals to the Red Wings.</li>
+{% endblock %}
+
+{% block team_16_source %}
+    <a href="https://sportblis.com/montreal-canadiens-facts-you-probably-didnt-know/" target="_blank" rel="noopener noreferrer">source</a>
+{% endblock %}
+
+
+<!-- TEAM 17 -->
+{% block team_17_image %}
+    <a href="https://www.nhl.com/predators" target="_blank" rel="noopener noreferrer"><img src="/static/nhl_nashvillepredators.png"  width="60" height="60" class="img-fluid rounded-start" alt="nhl_nashvillepredators"></a>
+{% endblock %}
+
+{% block team_17_name %}
+    Nashville Predators
+{% endblock %}
+
+{% block team_17_division %}
+    WC - Central
+{% endblock %}
+
+{% block team_17_facts %}
+    <li class="list-group-item">The club was founded in 1998 when the NHL granted an expansion franchise to Craig Leipold.</li>
+    <li class="list-group-item">After five seasons, the Predators qualified for their first Stanley Cup playoffs during the 2003–04 season.</li>
+    <li class="list-group-item">The Predators advanced to their first Stanley Cup Finals in 2017, but were defeated by the Pittsburgh Penguins in six games. They haven't played in the Stanley Cup Finals before, and since.</li>
+{% endblock %}
+
+{% block team_17_source %}
+    <a href="https://kids.kiddle.co/Nashville_Predators" target="_blank" rel="noopener noreferrer">source</a>
+{% endblock %}
+
+
+<!-- TEAM 18 -->
+{% block team_18_image %}
+    <a href="https://www.nhl.com/devils" target="_blank" rel="noopener noreferrer"><img src="/static/nhl_newjerseydevils.png"  width="60" height="60" class="img-fluid rounded-start" alt="nhl_newjerseydevils"></a>
+{% endblock %}
+
+{% block team_18_name %}
+    New Jersey Devils
+{% endblock %}
+
+{% block team_18_division %}
+    EC - Metropolitan
+{% endblock %}
+
+{% block team_18_facts %}
+    <li class="list-group-item">The club was founded as the Kansas City Scouts in Kansas City, Missouri, in 1974.</li>
+    <li class="list-group-item">The Scouts moved to Denver, Colorado in 1976 and became the Colorado Rockies. In 1982, they moved to East Rutherford, New Jersey and took their current name.</li>
+    <li class="list-group-item">The Devils made the playoffs all but three times between 1988 and 2012, including 13 berths in a row from 1997 to 2010, and finished with a winning record every season from 1992–93 to 2009–10.</li>
+    <li class="list-group-item">They won the Stanley Cup three times (1995, 2000, 2003).</li>
+{% endblock %}
+
+{% block team_18_source %}
+    <a href="https://kids.kiddle.co/New_Jersey_Devils" target="_blank" rel="noopener noreferrer">source</a>
+{% endblock %}
+
+
+<!-- TEAM 19 -->
+{% block team_19_image %}
+    <a href="https://www.nhl.com/islanders" target="_blank" rel="noopener noreferrer"><img src="/static/nhl_newyorkislanders.png"  width="60" height="60" class="img-fluid rounded-start" alt="nhl_newyorkislanders"></a>
+{% endblock %}
+
+{% block team_19_name %}
+    New York Islanders
+{% endblock %}
+
+{% block team_19_division %}
+    EC - Metropolitan
+{% endblock %}
+
+{% block team_19_facts %}
+    <li class="list-group-item">The team was founded in 1972.</li>
+    <li class="list-group-item">They found almost instant success by securing fourteen straight playoff berths starting with their third season.</li>
+    <li class="list-group-item">The Islanders won four consecutive Stanley Cup championships between 1980 and 1983. They are the last team in any major professional North American sport to win four consecutive championships.</li>
+    <li class="list-group-item">From 1993 they went 23 seasons without winning a playoff series prior to the 2016 playoffs.</li>
+{% endblock %}
+
+{% block team_19_source %}
+    <a href="https://kids.kiddle.co/New_York_Islanders" target="_blank" rel="noopener noreferrer">source</a>
+{% endblock %}
+
+
+<!-- TEAM 20 -->
+{% block team_20_image %}
+    <a href="https://www.nhl.com/rangers" target="_blank" rel="noopener noreferrer"><img src="/static/nhl_newyorkrangers.png"  width="60" height="60" class="img-fluid rounded-start" alt="nhl_newyorkrangers"></a>
+{% endblock %}
+
+{% block team_20_name %}
+    New York Rangers
+{% endblock %}
+
+{% block team_20_division %}
+    EC - Metropolitan
+{% endblock %}
+
+{% block team_20_facts %}
+    <li class="list-group-item">Founded in 1926, the Rangers are one of the original six teams that competed in the NHL before its 1967 expansion.</li>
+    <li class="list-group-item">In 1928, they were the first NHL franchise in the United States to win the Stanley Cup.</li>
+    <li class="list-group-item">The team plays its home games at Madison Square Garden, sharing with the New York Knicks of the National Basketball Association (NBA).</li>
+    <li class="list-group-item">The Rangers have played 11 Stanley Cup Finals, they won 4 of them (1928, 1933 1940, 1994).</li>
+    <li class="list-group-item">The most valuable team this day.</li>
+{% endblock %}
+
+{% block team_20_source %}
+    <a href="https://kids.kiddle.co/New_York_Rangers" target="_blank" rel="noopener noreferrer">source</a>
+{% endblock %}
+
+
+<!-- TEAM 21 -->
+{% block team_21_image %}
+    <a href="https://www.nhl.com/senators" target="_blank" rel="noopener noreferrer"><img src="/static/nhl_ottawasenators.png"  width="60" height="60" class="img-fluid rounded-start" alt="nhl_ottawasenators"></a>
+{% endblock %}
+
+{% block team_21_name %}
+    Ottawa Senators
+{% endblock %}
+
+{% block team_21_division %}
+    EC - Atlantic
+{% endblock %}
+
+{% block team_21_facts %}
+    <li class="list-group-item">A franchise since 1992, the Senators chose their nickname from their affiliation with Ottawa's status as the national capital of Canada and from a previous hockey team - originally founded in 1883.</li>
+    <li class="list-group-item">The Ottawa Senators won 11 Stanley Cups during their NHL tenure between 1917 and 1934.</li>
+    <li class="list-group-item">A total of 16 playoff appearances have been achieved by the Senators.</li>
+    <li class="list-group-item">The Sens have made only one appearance in the Stanley Cup Finals. They have yet to win the Stanley Cup.</li>
+{% endblock %}
+
+{% block team_21_source %}
+    <a href="https://factsaboutcanada.ca/ottawa-senators-facts.html" target="_blank" rel="noopener noreferrer">source</a>
+{% endblock %}
+
+
+<!-- TEAM 22 -->
+{% block team_22_image %}
+    <a href="https://www.nhl.com/flyers" target="_blank" rel="noopener noreferrer"><img src="/static/nhl_philadelphiaflyers.png"  width="60" height="60" class="img-fluid rounded-start" alt="nhl_philadelphiaflyers"></a>
+{% endblock %}
+
+{% block team_22_name %}
+    Philadelphia Flyers
+{% endblock %}
+
+{% block team_22_division %}
+    EC - Metropolitan
+{% endblock %}
+
+{% block team_22_facts %}
+    <li class="list-group-item">Part of the 1967 NHL expansion, the Flyers were the first expansion team in the post–original six era to win the Stanley Cup, victorious in 1973–74 and again in 1974–75.</li>
+    <li class="list-group-item">The Flyers have the most appearances in the conference finals of all 24 expansion teams (16 appearances, winning 8), and they are second behind the St. Louis Blues for the most playoff appearances out of all expansion teams (40 out of 53 seasons).</li>
+{% endblock %}
+
+{% block team_22_source %}
+    <a href="https://kids.kiddle.co/Philadelphia_Flyers" target="_blank" rel="noopener noreferrer">source</a>
+{% endblock %}
+
+
+<!-- TEAM 23 -->
+{% block team_23_image %}
+    <a href="https://www.nhl.com/penguins" target="_blank" rel="noopener noreferrer"><img src="/static/nhl_pittsburghpenguins.png"  width="60" height="60" class="img-fluid rounded-start" alt="nhl_pittsburghpenguins"></a>
+{% endblock %}
+
+{% block team_23_name %}
+    Pittsburgh Penguins
+{% endblock %}
+
+{% block team_23_division %}
+    EC - Metropolitan
+{% endblock %}
+
+{% block team_23_facts %}
+    <li class="list-group-item">Pittsburgh currently holds the longest active streak for playoff appearances with 16. However, the team has a long way to go if they want to top the Boston Bruins’ all-time streak of 29.</li>
+    <li class="list-group-item">The longest sellout streak - started on Valentine’s Day in 2007 - for an NHL team belongs to the Pittsburgh Penguins, who had 633 in a row, which ended Oct. 16. in 2020.</li>
+    <li class="list-group-item">They originally used a real live Penguin, borrowed from the Pittsburgh Zoo named Pete as their mascot.</li>
+{% endblock %}
+
+{% block team_23_source %}
+    <a href="https://thehockeywriters.com/pittsburgh-penguins-10-interesting-facts" target="_blank" rel="noopener noreferrer">source</a>
+{% endblock %}
+
+
+<!-- TEAM 24 -->
+{% block team_24_image %}
+    <a href="https://www.nhl.com/sharks" target="_blank" rel="noopener noreferrer"><img src="/static/nhl_sanjosesharks.png"  width="60" height="60" class="img-fluid rounded-start" alt="nhl_sanjosesharks"></a>
+{% endblock %}
+
+{% block team_24_name %}
+    San Jose Sharks
+{% endblock %}
+
+{% block team_24_division %}
+    WC - Pacific
+{% endblock %}
+
+{% block team_24_facts %}
+    <li class="list-group-item">The Sharks were founded in 1991 and were the first NHL franchise based in the San Francisco Bay Area since the California Golden Seals relocated to Cleveland in 1976.</li>
+    <li class="list-group-item">The Sharks have advanced to the Stanley Cup Finals once, losing to the Pittsburgh Penguins in 2016.</li>
+    <li class="list-group-item">Their present home, now named SAP Center at San Jose, is known locally as the Shark Tank.</li>
+{% endblock %}
+
+{% block team_24_source %}
+    <a href="https://kids.kiddle.co/San_Jose_Sharks" target="_blank" rel="noopener noreferrer">source</a>
+{% endblock %}
+
+
+<!-- TEAM 25 -->
+{% block team_25_image %}
+    <a href="https://www.nhl.com/kraken" target="_blank" rel="noopener noreferrer"><img src="/static/nhl_seattlekraken.png"  width="60" height="60" class="img-fluid rounded-start" alt="nhl_seattlekraken"></a>
+{% endblock %}
+
+{% block team_25_name %}
+    Seattle Kraken
+{% endblock %}
+
+{% block team_25_division %}
+    WC - Pacific
+{% endblock %}
+
+{% block team_25_facts %}
+    <li class="list-group-item">The Kraken began playing during the league's 2021–22 season.</li>
+    <li class="list-group-item">In December 2018, the NHL approved a proposal by Seattle Hockey Partners to grant an expansion franchise to the city of Seattle. In July 2020, the Kraken's name and branding were revealed.</li>
+    <li class="list-group-item">The Kraken are the first professional hockey team to play in Seattle since the Seattle Totems of the Western Hockey League played their last game in 1975.</li>
+{% endblock %}
+
+{% block team_25_source %}
+    <a href="https://en.wikipedia.org/wiki/Seattle_Kraken" target="_blank" rel="noopener noreferrer">source</a>
+{% endblock %}
+
+
+<!-- TEAM 26 -->
+{% block team_26_image %}
+    <a href="https://www.nhl.com/blues" target="_blank" rel="noopener noreferrer"><img src="/static/nhl_stlouisblues.png"  width="60" height="60" class="img-fluid rounded-start" alt="nhl_stlouisblues"></a>
+{% endblock %}
+
+{% block team_26_name %}
+    St. Louis Blues
+{% endblock %}
+
+{% block team_26_division %}
+    WC - Central
+{% endblock %}
+
+{% block team_26_facts %}
+    <li class="list-group-item">The franchise was founded in 1967 as one of the six teams from the 1967 NHL expansion and is named after the W. C. Handy song "Saint Louis Blues".</li>
+    <li class="list-group-item">The Blues qualified for the playoffs in all but nine of their 53 seasons, appeared in the Stanley Cup Finals four times, and won the Stanley Cup in 2019.</li>
+    <li class="list-group-item">Their 44 playoff appearances are the most for any NHL team outside of the original six.</li>
+    <li class="list-group-item">49 years after their last appearance and in their 52nd year of existence, they became the final active team from the 1967 expansion to win their first Stanley Cup.</li>
+{% endblock %}
+
+{% block team_26_source %}
+    <a href="https://kids.kiddle.co/St._Louis_Blues" target="_blank" rel="noopener noreferrer">source</a>
+{% endblock %}
+
+
+<!-- TEAM 27 -->
+{% block team_27_image %}
+    <a href="https://www.nhl.com/lightning" target="_blank" rel="noopener noreferrer"><img src="/static/nhl_tampabaylightning.png"  width="60" height="60" class="img-fluid rounded-start" alt="nhl_tampabaylightning"></a>
+{% endblock %}
+
+{% block team_27_name %}
+    Tampa Bay Lightning
+{% endblock %}
+
+{% block team_27_division %}
+    EC - Atlantic
+{% endblock %}
+
+{% block team_27_facts %}
+    <li class="list-group-item">The Lightning (colloquially known as the Bolts) have won three Stanley Cup championships: 2004, 2020, and 2021. They also reached the Stanley Cup Finals in 2015.</li>
+    <li class="list-group-item">Jon Cooper has served as head coach since 2013, and is the longest-tenured active head coach in the NHL.</li>
+    <li class="list-group-item">They hold the most wins in a season (2018-19) record by winning 62 games - along with the 1996 Detroit Red Wings.</li>
+{% endblock %}
+
+{% block team_27_source %}
+    <a href="https://en.wikipedia.org/wiki/Tampa_Bay_Lightning" target="_blank" rel="noopener noreferrer">source</a>
+{% endblock %}
+
+
+<!-- TEAM 28 -->
+{% block team_28_image %}
+    <a href="https://www.nhl.com/mapleleafs" target="_blank" rel="noopener noreferrer"><img src="/static/nhl_torontomapleleafs.png"  width="55" height="55" class="img-fluid rounded-start" alt="nhl_torontomapleleafs"></a>
+{% endblock %}
+
+{% block team_28_name %}
+    Toronto Maple Leafs
+{% endblock %}
+
+{% block team_28_division %}
+    EC - Atlantic
+{% endblock %}
+
+{% block team_28_facts %}
+    <li class="list-group-item">The Maple Leafs (The Toronto Arenas at the time) began playing in 1917 and joined National Hockey League (NHL) in 1918, one of the founding members of the league.</li>
+    <li class="list-group-item">The Toronto Maple Leafs have won 13 Stanley Cup Championships, the most recent one being in 1967 (54 years drought).</li>
+    <li class="list-group-item">The team plays at Scotiabank Arena, shared by both the Leafs and the Toronto Raptors (NBA franchise), which is also owned by MLSE, the same company that owns the Leafs and has been doing so since 1999.</li>
+{% endblock %}
+
+{% block team_28_source %}
+    <a href="https://factsaboutcanada.ca/toronto-maple-leafs-facts.html" target="_blank" rel="noopener noreferrer">source</a>
+{% endblock %}
+
+
+<!-- TEAM 29 -->
+{% block team_29_image %}
+    <a href="https://www.nhl.com/canucks" target="_blank" rel="noopener noreferrer"><img src="/static/nhl_vancouvercanucks.png"  width="60" height="60" class="img-fluid rounded-start" alt="nhl_vancouvercanucks"></a>
+{% endblock %}
+
+{% block team_29_name %}
+    Vancouver Canucks
+{% endblock %}
+
+{% block team_29_division %}
+    WC - Pacific
+{% endblock %}
+
+{% block team_29_facts %}
+    <li class="list-group-item">The Vancouver Canucks (with the Buffalo Sabres) entered the league in the 1970-71 season.</li>
+    <li class="list-group-item">Their first playoff appearance happened in 1975.</li>
+    <li class="list-group-item">The team has played in three Stanley Cup Finals. Against the Islanders in 82, the Rangers in 94, and the Bruins in 2011 - they lost all three.</li>
+    <li class="list-group-item">Former Canuck Ed Jovanovski won gold with Team Canada at the 2002 Winter Olympic games.</li>
+{% endblock %}
+
+{% block team_29_source %}
+    <a href="https://604now.com/fun-facts-vancouver-canucks-2019" target="_blank" rel="noopener noreferrer">source</a>
+{% endblock %}
+
+
+<!-- TEAM 30 -->
+{% block team_30_image %}
+    <a href="https://www.nhl.com/goldenknights" target="_blank" rel="noopener noreferrer"><img src="/static/nhl_vegasgoldenknights.png"  width="45" height="45" class="img-fluid rounded-start" alt="nhl_vegasgoldenknights"></a>
+{% endblock %}
+
+{% block team_30_name %}
+    Vegas Golden Knights
+{% endblock %}
+
+{% block team_30_division %}
+    WC - Pacific
+{% endblock %}
+
+{% block team_30_facts %}
+    <li class="list-group-item">The Vegas Golden Knights were formed in 2017.</li>
+    <li class="list-group-item">They managed to reach the Stanley Cup Finals in the 2017-2018 year, their first season as an NHL team (the odds were 500-1). They lost to the Washington Capitals by 1-4.</li>
+    <li class="list-group-item">The team have already retired No. 58 from their official jerseys. The decision came in the wake of the deadly 2017 Vegas shooting, which left 58 dead and 867 injured. It was a tribute to the unfortunate victims of the most deadly shooting in recent history.</li>
+{% endblock %}
+
+{% block team_30_source %}
+    <a href="https://kuklaskorner.com/hockey/comments/8-fun-facts-about-the-vegas-golden-knights-hockey-team" target="_blank" rel="noopener noreferrer">source</a>
+{% endblock %}
+
+
+<!-- a maradék két csapat -->
+<!-- TEAM 31 -->
+{% block team_31_full %}
+    <div class="card border own-border-color mb-3">
+        <div class="card-header d-flex justify-content-between align-items-center">
+            <div class="col-1" align="center">
+                <a href="https://www.nhl.com/capitals" target="_blank" rel="noopener noreferrer"><img src="/static/nhl_washingtoncapitals.png"  width="60" height="60" class="img-fluid rounded-start" alt="nhl_washingtoncapitals"></a>
+            </div>
+            <div class="col-11">
+                <h5 class="card-title own-text-color">Washington Capitals</h5>
+                <h6 class="card-subtitle text-muted">EC - Metropolitan</h6>
+            </div>
+        </div>
+        <div class="card-body">
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">The Washington Capitals (colloquially known as the Caps) were founded in 1974 as an expansion franchise, alongside the Kansas City Scouts.</li>
+                <li class="list-group-item">The 2009–10 Capitals won the franchise's first Presidents' Trophy for being the team with the most points at the end of the regular season. They won it a second time in 2015–16, and did so for a third time the following season in 2016–17.</li>
+                <li class="list-group-item">The Capitals have reached the Stanley Cup Finals in 1998 and 2018, winning in the latter.</li>
+            </ul>
+        </div>
+        <div class="card-footer text-end">
+            <em><a href="https://kids.kiddle.co/Washington_Capitals" target="_blank" rel="noopener noreferrer">source</a></em>
+        </div>
+    </div>
+{% endblock %}
+
+
+<!-- TEAM 32 -->
+{% block team_32_full %}
+    <div class="card border own-border-color mb-3">
+        <div class="card-header d-flex justify-content-between align-items-center">
+            <div class="col-1" align="center">
+                <a href="https://www.nhl.com/jets" target="_blank" rel="noopener noreferrer"><img src="/static/nhl_winnipegjets.png"  width="60" height="60" class="img-fluid rounded-start" alt="nhl_winnipegjets"></a>
+            </div>
+            <div class="col-11">
+                <h5 class="card-title own-text-color">Winnipeg Jets</h5>
+                <h6 class="card-subtitle text-muted">WC - Central</h6>
+            </div>
+        </div>
+        <div class="card-body">
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">Winnipeg was among the founding members of the World Hockey Association (WHA) in 1971.</li>
+                <li class="list-group-item">The original Winnipeg Jets played their last regular season game in 1996.</li>
+                <li class="list-group-item">In 2011 the former Atlanta Thrashers became the second and current incarnation of the Winnipeg Jets, following the purchase of the team and a relocation.</li>
+                <li class="list-group-item">To date, the Jets have not won any Division championships, Presidents' Trophy, Conference championships or the Stanley Cup.</li>
+            </ul>
+        </div>
+        <div class="card-footer text-end">
+            <em><a href="https://factsaboutcanada.ca/winnipeg-jets-facts.html" target="_blank" rel="noopener noreferrer">source</a></em>
+        </div>
+    </div>
+{% endblock %}

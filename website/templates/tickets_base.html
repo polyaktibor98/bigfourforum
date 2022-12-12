@@ -1,0 +1,511 @@
+{% extends "base.html" %}
+
+
+{% block content %}
+    <h1 class="own-text-color" align="center">
+        Tickets for <b>{% block tickets_league %}{% endblock %}</b> {% block tickets_image %}{% endblock %} games
+    </h1>
+
+    <!-- insert spaces: https://www.geeksforgeeks.org/how-to-insert-spaces-tabs-in-text-using-html-css/ -->
+    <div class="p-4">
+        <table class="table table-bordered table-hover align-middle caption-top bg-light">
+            <caption>Buy or book tickets for your favourite teams' matches!</caption>
+            <thead>
+                <tr class="own-background-color fs-5" style="color:white;">
+                    <th scope="col">#</th>
+                    <th scope="col">TEAM</th>
+                    <th scope="col">STADIUM / ARENA Loc.</th>
+                    <th scope="col">SCHEDULE / TICKETS</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- TEAM 1 -->
+                <tr class="fs-5">
+                    <th scope="row" class="own-background-color" style="color:white;">1</th>
+                    <td>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="col-2">
+                                {% block team_1_image %}{% endblock %}
+                            </div>
+                            <div class="col-10">
+                                &nbsp;{% block team_1_name %}{% endblock %}
+                            </div>
+                        </div>
+                    </td>
+                    <td>{% block team_1_stadium %}{% endblock %}</td>
+                    <td>{% block team_1_tickets %}{% endblock %}</td>
+                </tr>
+                <!-- TEAM 2 -->
+                <tr class="fs-5">
+                    <th scope="row" class="own-background-color" style="color:white;">2</th>
+                    <td>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="col-2">
+                                {% block team_2_image %}{% endblock %}
+                            </div>
+                            <div class="col-10">
+                                &nbsp;{% block team_2_name %}{% endblock %}
+                            </div>
+                        </div>
+                    </td>
+                    <td>{% block team_2_stadium %}{% endblock %}</td>
+                    <td>{% block team_2_tickets %}{% endblock %}</td>
+                </tr>
+                <!-- TEAM 3 -->
+                <tr class="fs-5">
+                    <th scope="row" class="own-background-color" style="color:white;">3</th>
+                    <td>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="col-2">
+                                {% block team_3_image %}{% endblock %}
+                            </div>
+                            <div class="col-10">
+                                &nbsp;{% block team_3_name %}{% endblock %}
+                            </div>
+                        </div>
+                    </td>
+                    <td>{% block team_3_stadium %}{% endblock %}</td>
+                    <td>{% block team_3_tickets %}{% endblock %}</td>
+                </tr>
+                <!-- TEAM 4 -->
+                <tr class="fs-5">
+                    <th scope="row" class="own-background-color" style="color:white;">4</th>
+                    <td>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="col-2">
+                                {% block team_4_image %}{% endblock %}
+                            </div>
+                            <div class="col-10">
+                                &nbsp;{% block team_4_name %}{% endblock %}
+                            </div>
+                        </div>
+                    </td>
+                    <td>{% block team_4_stadium %}{% endblock %}</td>
+                    <td>{% block team_4_tickets %}{% endblock %}</td>
+                </tr>
+                <!-- TEAM 5 -->
+                <tr class="fs-5">
+                    <th scope="row" class="own-background-color" style="color:white;">5</th>
+                    <td>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="col-2">
+                                {% block team_5_image %}{% endblock %}
+                            </div>
+                            <div class="col-10">
+                                &nbsp;{% block team_5_name %}{% endblock %}
+                            </div>
+                        </div>
+                    </td>
+                    <td>{% block team_5_stadium %}{% endblock %}</td>
+                    <td>{% block team_5_tickets %}{% endblock %}</td>
+                </tr>
+                <!-- TEAM 6 -->
+                <tr class="fs-5">
+                    <th scope="row" class="own-background-color" style="color:white;">6</th>
+                    <td>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="col-2">
+                                {% block team_6_image %}{% endblock %}
+                            </div>
+                            <div class="col-10">
+                                &nbsp;{% block team_6_name %}{% endblock %}
+                            </div>
+                        </div>
+                    </td>
+                    <td>{% block team_6_stadium %}{% endblock %}</td>
+                    <td>{% block team_6_tickets %}{% endblock %}</td>
+                </tr>
+                <!-- TEAM 7 -->
+                <tr class="fs-5">
+                    <th scope="row" class="own-background-color" style="color:white;">7</th>
+                    <td>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="col-2">
+                                {% block team_7_image %}{% endblock %}
+                            </div>
+                            <div class="col-10">
+                                &nbsp;{% block team_7_name %}{% endblock %}
+                            </div>
+                        </div>
+                    </td>
+                    <td>{% block team_7_stadium %}{% endblock %}</td>
+                    <td>{% block team_7_tickets %}{% endblock %}</td>
+                </tr>
+                <!-- TEAM 8 -->
+                <tr class="fs-5">
+                    <th scope="row" class="own-background-color" style="color:white;">8</th>
+                    <td>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="col-2">
+                                {% block team_8_image %}{% endblock %}
+                            </div>
+                            <div class="col-10">
+                                &nbsp;{% block team_8_name %}{% endblock %}
+                            </div>
+                        </div>
+                    </td>
+                    <td>{% block team_8_stadium %}{% endblock %}</td>
+                    <td>{% block team_8_tickets %}{% endblock %}</td>
+                </tr>
+                <!-- TEAM 9 -->
+                <tr class="fs-5">
+                    <th scope="row" class="own-background-color" style="color:white;">9</th>
+                    <td>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="col-2">
+                                {% block team_9_image %}{% endblock %}
+                            </div>
+                            <div class="col-10">
+                                &nbsp;{% block team_9_name %}{% endblock %}
+                            </div>
+                        </div>
+                    </td>
+                    <td>{% block team_9_stadium %}{% endblock %}</td>
+                    <td>{% block team_9_tickets %}{% endblock %}</td>
+                </tr>
+                <!-- TEAM 10 -->
+                <tr class="fs-5">
+                    <th scope="row" class="own-background-color" style="color:white;">10</th>
+                    <td>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="col-2">
+                                {% block team_10_image %}{% endblock %}
+                            </div>
+                            <div class="col-10">
+                                &nbsp;{% block team_10_name %}{% endblock %}
+                            </div>
+                        </div>
+                    </td>
+                    <td>{% block team_10_stadium %}{% endblock %}</td>
+                    <td>{% block team_10_tickets %}{% endblock %}</td>
+                </tr>
+                <!-- TEAM 11 -->
+                <tr class="fs-5">
+                    <th scope="row" class="own-background-color" style="color:white;">11</th>
+                    <td>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="col-2">
+                                {% block team_11_image %}{% endblock %}
+                            </div>
+                            <div class="col-10">
+                                &nbsp;{% block team_11_name %}{% endblock %}
+                            </div>
+                        </div>
+                    </td>
+                    <td>{% block team_11_stadium %}{% endblock %}</td>
+                    <td>{% block team_11_tickets %}{% endblock %}</td>
+                </tr>
+                <!-- TEAM 12 -->
+                <tr class="fs-5">
+                    <th scope="row" class="own-background-color" style="color:white;">12</th>
+                    <td>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="col-2">
+                                {% block team_12_image %}{% endblock %}
+                            </div>
+                            <div class="col-10">
+                                &nbsp;{% block team_12_name %}{% endblock %}
+                            </div>
+                        </div>
+                    </td>
+                    <td>{% block team_12_stadium %}{% endblock %}</td>
+                    <td>{% block team_12_tickets %}{% endblock %}</td>
+                </tr>
+                <!-- TEAM 13 -->
+                <tr class="fs-5">
+                    <th scope="row" class="own-background-color" style="color:white;">13</th>
+                    <td>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="col-2">
+                                {% block team_13_image %}{% endblock %}
+                            </div>
+                            <div class="col-10">
+                                &nbsp;{% block team_13_name %}{% endblock %}
+                            </div>
+                        </div>
+                    </td>
+                    <td>{% block team_13_stadium %}{% endblock %}</td>
+                    <td>{% block team_13_tickets %}{% endblock %}</td>
+                </tr>
+                <!-- TEAM 14 -->
+                <tr class="fs-5">
+                    <th scope="row" class="own-background-color" style="color:white;">14</th>
+                    <td>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="col-2">
+                                {% block team_14_image %}{% endblock %}
+                            </div>
+                            <div class="col-10">
+                                &nbsp;{% block team_14_name %}{% endblock %}
+                            </div>
+                        </div>
+                    </td>
+                    <td>{% block team_14_stadium %}{% endblock %}</td>
+                    <td>{% block team_14_tickets %}{% endblock %}</td>
+                </tr>
+                <!-- TEAM 15 -->
+                <tr class="fs-5">
+                    <th scope="row" class="own-background-color" style="color:white;">15</th>
+                    <td>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="col-2">
+                                {% block team_15_image %}{% endblock %}
+                            </div>
+                            <div class="col-10">
+                                &nbsp;{% block team_15_name %}{% endblock %}
+                            </div>
+                        </div>
+                    </td>
+                    <td>{% block team_15_stadium %}{% endblock %}</td>
+                    <td>{% block team_15_tickets %}{% endblock %}</td>
+                </tr>
+                <!-- TEAM 16 -->
+                <tr class="fs-5">
+                    <th scope="row" class="own-background-color" style="color:white;">16</th>
+                    <td>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="col-2">
+                                {% block team_16_image %}{% endblock %}
+                            </div>
+                            <div class="col-10">
+                                &nbsp;{% block team_16_name %}{% endblock %}
+                            </div>
+                        </div>
+                    </td>
+                    <td>{% block team_16_stadium %}{% endblock %}</td>
+                    <td>{% block team_16_tickets %}{% endblock %}</td>
+                </tr>
+                <!-- TEAM 17 -->
+                <tr class="fs-5">
+                    <th scope="row" class="own-background-color" style="color:white;">17</th>
+                    <td>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="col-2">
+                                {% block team_17_image %}{% endblock %}
+                            </div>
+                            <div class="col-10">
+                                &nbsp;{% block team_17_name %}{% endblock %}
+                            </div>
+                        </div>
+                    </td>
+                    <td>{% block team_17_stadium %}{% endblock %}</td>
+                    <td>{% block team_17_tickets %}{% endblock %}</td>
+                </tr>
+                <!-- TEAM 18 -->
+                <tr class="fs-5">
+                    <th scope="row" class="own-background-color" style="color:white;">18</th>
+                    <td>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="col-2">
+                                {% block team_18_image %}{% endblock %}
+                            </div>
+                            <div class="col-10">
+                                &nbsp;{% block team_18_name %}{% endblock %}
+                            </div>
+                        </div>
+                    </td>
+                    <td>{% block team_18_stadium %}{% endblock %}</td>
+                    <td>{% block team_18_tickets %}{% endblock %}</td>
+                </tr>
+                <!-- TEAM 19 -->
+                <tr class="fs-5">
+                    <th scope="row" class="own-background-color" style="color:white;">19</th>
+                    <td>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="col-2">
+                                {% block team_19_image %}{% endblock %}
+                            </div>
+                            <div class="col-10">
+                                &nbsp;{% block team_19_name %}{% endblock %}
+                            </div>
+                        </div>
+                    </td>
+                    <td>{% block team_19_stadium %}{% endblock %}</td>
+                    <td>{% block team_19_tickets %}{% endblock %}</td>
+                </tr>
+                <!-- TEAM 20 -->
+                <tr class="fs-5">
+                    <th scope="row" class="own-background-color" style="color:white;">20</th>
+                    <td>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="col-2">
+                                {% block team_20_image %}{% endblock %}
+                            </div>
+                            <div class="col-10">
+                                &nbsp;{% block team_20_name %}{% endblock %}
+                            </div>
+                        </div>
+                    </td>
+                    <td>{% block team_20_stadium %}{% endblock %}</td>
+                    <td>{% block team_20_tickets %}{% endblock %}</td>
+                </tr>
+                <!-- TEAM 21 -->
+                <tr class="fs-5">
+                    <th scope="row" class="own-background-color" style="color:white;">21</th>
+                    <td>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="col-2">
+                                {% block team_21_image %}{% endblock %}
+                            </div>
+                            <div class="col-10">
+                                &nbsp;{% block team_21_name %}{% endblock %}
+                            </div>
+                        </div>
+                    </td>
+                    <td>{% block team_21_stadium %}{% endblock %}</td>
+                    <td>{% block team_21_tickets %}{% endblock %}</td>
+                </tr>
+                <!-- TEAM 22 -->
+                <tr class="fs-5">
+                    <th scope="row" class="own-background-color" style="color:white;">22</th>
+                    <td>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="col-2">
+                                {% block team_22_image %}{% endblock %}
+                            </div>
+                            <div class="col-10">
+                                &nbsp;{% block team_22_name %}{% endblock %}
+                            </div>
+                        </div>
+                    </td>
+                    <td>{% block team_22_stadium %}{% endblock %}</td>
+                    <td>{% block team_22_tickets %}{% endblock %}</td>
+                </tr>
+                <!-- TEAM 23 -->
+                <tr class="fs-5">
+                    <th scope="row" class="own-background-color" style="color:white;">23</th>
+                    <td>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="col-2">
+                                {% block team_23_image %}{% endblock %}
+                            </div>
+                            <div class="col-10">
+                                &nbsp;{% block team_23_name %}{% endblock %}
+                            </div>
+                        </div>
+                    </td>
+                    <td>{% block team_23_stadium %}{% endblock %}</td>
+                    <td>{% block team_23_tickets %}{% endblock %}</td>
+                </tr>
+                <!-- TEAM 24 -->
+                <tr class="fs-5">
+                    <th scope="row" class="own-background-color" style="color:white;">24</th>
+                    <td>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="col-2">
+                                {% block team_24_image %}{% endblock %}
+                            </div>
+                            <div class="col-10">
+                                &nbsp;{% block team_24_name %}{% endblock %}
+                            </div>
+                        </div>
+                    </td>
+                    <td>{% block team_24_stadium %}{% endblock %}</td>
+                    <td>{% block team_24_tickets %}{% endblock %}</td>
+                </tr>
+                <!-- TEAM 25 -->
+                <tr class="fs-5">
+                    <th scope="row" class="own-background-color" style="color:white;">25</th>
+                    <td>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="col-2">
+                                {% block team_25_image %}{% endblock %}
+                            </div>
+                            <div class="col-10">
+                                &nbsp;{% block team_25_name %}{% endblock %}
+                            </div>
+                        </div>
+                    </td>
+                    <td>{% block team_25_stadium %}{% endblock %}</td>
+                    <td>{% block team_25_tickets %}{% endblock %}</td>
+                </tr>
+                <!-- TEAM 26 -->
+                <tr class="fs-5">
+                    <th scope="row" class="own-background-color" style="color:white;">26</th>
+                    <td>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="col-2">
+                                {% block team_26_image %}{% endblock %}
+                            </div>
+                            <div class="col-10">
+                                &nbsp;{% block team_26_name %}{% endblock %}
+                            </div>
+                        </div>
+                    </td>
+                    <td>{% block team_26_stadium %}{% endblock %}</td>
+                    <td>{% block team_26_tickets %}{% endblock %}</td>
+                </tr>
+                <!-- TEAM 27 -->
+                <tr class="fs-5">
+                    <th scope="row" class="own-background-color" style="color:white;">27</th>
+                    <td>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="col-2">
+                                {% block team_27_image %}{% endblock %}
+                            </div>
+                            <div class="col-10">
+                                &nbsp;{% block team_27_name %}{% endblock %}
+                            </div>
+                        </div>
+                    </td>
+                    <td>{% block team_27_stadium %}{% endblock %}</td>
+                    <td>{% block team_27_tickets %}{% endblock %}</td>
+                </tr>
+                <!-- TEAM 28 -->
+                <tr class="fs-5">
+                    <th scope="row" class="own-background-color" style="color:white;">28</th>
+                    <td>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="col-2">
+                                {% block team_28_image %}{% endblock %}
+                            </div>
+                            <div class="col-10">
+                                &nbsp;{% block team_28_name %}{% endblock %}
+                            </div>
+                        </div>
+                    </td>
+                    <td>{% block team_28_stadium %}{% endblock %}</td>
+                    <td>{% block team_28_tickets %}{% endblock %}</td>
+                </tr>
+                <!-- TEAM 29 -->
+                <tr class="fs-5">
+                    <th scope="row" class="own-background-color" style="color:white;">29</th>
+                    <td>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="col-2">
+                                {% block team_29_image %}{% endblock %}
+                            </div>
+                            <div class="col-10">
+                                &nbsp;{% block team_29_name %}{% endblock %}
+                            </div>
+                        </div>
+                    </td>
+                    <td>{% block team_29_stadium %}{% endblock %}</td>
+                    <td>{% block team_29_tickets %}{% endblock %}</td>
+                </tr>
+                <!-- TEAM 30 -->
+                <tr class="fs-5">
+                    <th scope="row" class="own-background-color" style="color:white;">30</th>
+                    <td>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="col-2">
+                                {% block team_30_image %}{% endblock %}
+                            </div>
+                            <div class="col-10">
+                                &nbsp;{% block team_30_name %}{% endblock %}
+                            </div>
+                        </div>
+                    </td>
+                    <td>{% block team_30_stadium %}{% endblock %}</td>
+                    <td>{% block team_30_tickets %}{% endblock %}</td>
+                </tr>
+                <!-- TEAM 31 -->
+                {% block team_31_full %}
+                {% endblock %}
+                <!-- TEAM 32 -->
+                {% block team_32_full %}
+                {% endblock %}
+            </tbody>
+        </table>
+    </div>
+{% endblock %}

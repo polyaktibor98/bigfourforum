@@ -1,0 +1,748 @@
+{% extends "facts_base.html" %}
+
+
+{% block title %}
+    NBA Facts
+{% endblock %}
+
+
+{% block title_icon %}
+    <link rel="icon" href="/static/logo_nba.png" type="image/png">
+{% endblock %}
+
+
+{% block facts_league %}
+    NBA
+{% endblock %}
+
+
+{% block facts_image %}
+    <img src="/static/logo_nba.png" width="55" height="55" class="img-fluid rounded-start" alt="logo_nba">
+{% endblock %}
+
+
+<!-- TEAM 1 -->
+{% block team_1_image %}
+    <a href="https://www.nba.com/hawks" target="_blank" rel="noopener noreferrer"><img src="/static/nba_atlantahawks.png"  width="60" height="60" class="img-fluid rounded-start" alt="nba_atlantahawks"></a>
+{% endblock %}
+
+{% block team_1_name %}
+    Atlanta Hawks
+{% endblock %}
+
+{% block team_1_division %}
+    EC - Southeast
+{% endblock %}
+
+{% block team_1_facts %}
+    <li class="list-group-item">The Hawks won their only NBA Championship in 1958.</li>
+    <li class="list-group-item">Back then, they were St. Louis Hawks, and are Atlanta Hawks since 1968 till this day.</li>
+    <li class="list-group-item">The Hawks played the Boston Celtics in all four of their trips to the NBA Finals (1957, 1958, 1960, 1961).</li>
+{% endblock %}
+
+{% block team_1_source %}
+    <a href="https://kids.kiddle.co/Atlanta_Hawks" target="_blank" rel="noopener noreferrer">source</a>
+{% endblock %}
+
+
+<!-- TEAM 2 -->
+{% block team_2_image %}
+    <a href="https://www.nba.com/celtics" target="_blank" rel="noopener noreferrer"><img src="/static/nba_bostonceltics.png"  width="60" height="60" class="img-fluid rounded-start" alt="nba_bostonceltics"></a>
+{% endblock %}
+
+{% block team_2_name %}
+    Boston Celtics
+{% endblock %}
+
+{% block team_2_division %}
+    EC - Atlantic
+{% endblock %}
+
+{% block team_2_facts %}
+    <li class="list-group-item">The Celtics are one of two franchises, the other being the NY Knicks, that haven’t moved to another city.</li>
+    <li class="list-group-item">They drafted the first African American player in the NBA, Chuck Cooper.</li>
+    <li class="list-group-item">Starting in 1959, the Celtics won 8 consecutive championships.</li>
+    <li class="list-group-item">The Celtics are the most successful franchise along with the Los Angeles Lakers in the history of the NBA. Both team won 17 championships.</li>
+{% endblock %}
+
+{% block team_2_source %}
+    <a href="https://www.wearebasket.net/facts-you-need-to-know-about-the-boston-celtics" target="_blank" rel="noopener noreferrer">source</a>
+{% endblock %}
+
+
+<!-- TEAM 3 -->
+{% block team_3_image %}
+    <a href="https://www.nba.com/nets" target="_blank" rel="noopener noreferrer"><img src="/static/nba_brooklynnets.png"  width="60" height="60" class="img-fluid rounded-start" alt="nba_brooklynnets"></a>
+{% endblock %}
+
+{% block team_3_name %}
+    Brooklyn Nets
+{% endblock %}
+
+{% block team_3_division %}
+    EC - Atlantic
+{% endblock %}
+
+{% block team_3_facts %}
+    <li class="list-group-item">They played in New Jersey as the New Jersey Americans during their first season in 1967.</li>
+    <li class="list-group-item">The team moved to New York in 1968 - played as New York Nets.</li>
+    <li class="list-group-item">In 1977 they moved back to New Yersey - played as New Jersey Nets.</li>
+    <li class="list-group-item">The team is called Brooklyn Nets since 2012 when they moved to the Barclays Center in Brooklyn, New York.</li>
+{% endblock %}
+
+{% block team_3_source %}
+    <a href="https://www.usefultrivia.com/sports_trivia/brooklyn_nets_trivia.html" target="_blank" rel="noopener noreferrer">source</a>
+{% endblock %}
+
+
+<!-- TEAM 4 -->
+{% block team_4_image %}
+    <a href="https://www.nba.com/hornets" target="_blank" rel="noopener noreferrer"><img src="/static/nba_charlottehornets.png"  width="60" height="60" class="img-fluid rounded-start" alt="nba_charlottehornets"></a>
+{% endblock %}
+
+{% block team_4_name %}
+    Charlotte Hornets
+{% endblock %}
+
+{% block team_4_division %}
+    EC - Southeast
+{% endblock %}
+
+{% block team_4_facts %}
+    <li class="list-group-item">The Charlotte Hornets, founded in 1988, were the first professional sports team in Charlotte.</li>
+    <li class="list-group-item">In 1996 The Hornets drafted Kobe Bryant, but they immediately traded him to the Lakers.</li>
+    <li class="list-group-item">Michael Jordan is the owner of the team since 2010.</li>
+    <li class="list-group-item">They have never had a player become the regular season MVP.</li>
+{% endblock %}
+
+{% block team_4_source %}
+    <a href="https://www.wearebasket.net/10-facts-about-the-charlotte-hornets" target="_blank" rel="noopener noreferrer">source</a>
+{% endblock %}
+
+
+<!-- TEAM 5 -->
+{% block team_5_image %}
+    <a href="https://www.nba.com/bulls" target="_blank" rel="noopener noreferrer"><img src="/static/nba_chicagobulls.png"  width="60" height="60" class="img-fluid rounded-start" alt="nba_chicagobulls"></a>
+{% endblock %}
+
+{% block team_5_name %}
+    Chicago Bulls
+{% endblock %}
+
+{% block team_5_division %}
+    EC - Central
+{% endblock %}
+
+{% block team_5_facts %}
+    <li class="list-group-item">The Bulls were the first team to win more than 70 games in a season (season 1995-96 with a 72-10 record).</li>
+    <li class="list-group-item">Steve Kerr was part of the Bulls team as a player when they won 72 games in a single season and set the record, but he was the coach of the Golden State Warriors when they broke that record 20 years later (season 2015-16 with a 73-9 record, they lost the Finals though).</li>
+    <li class="list-group-item">The Bulls have won six titels in two three-peats, and Jordan and Scottie Pippen were the only players to be on the team for all titles.</li>
+    <li class="list-group-item">They have never lost a Finals, but they’ve also never reached one before 1991 and after 1998.</li>
+{% endblock %}
+
+{% block team_5_source %}
+    <a href="https://www.wearebasket.net/facts-you-need-to-know-about-the-chicago-bulls" target="_blank" rel="noopener noreferrer">source</a>
+{% endblock %}
+
+
+<!-- TEAM 6 -->
+{% block team_6_image %}
+    <a href="https://www.nba.com/cavaliers" target="_blank" rel="noopener noreferrer"><img src="/static/nba_clevelandcavaliers.png"  width="60" height="60" class="img-fluid rounded-start" alt="nba_clevelandcavaliers"></a>
+{% endblock %}
+
+{% block team_6_name %}
+    Cleveland Cavaliers
+{% endblock %}
+
+{% block team_6_division %}
+    EC - Central
+{% endblock %}
+
+{% block team_6_facts %}
+    <li class="list-group-item">The Cavs made their first Finals appearance ever in 2007 with the lead of LeBron James, 36 years after they were founded.</li>
+    <li class="list-group-item">They won the Championship once, in 2016, when they came back from a 3-1 deficit against the Golden State Warriors.</li>
+    <li class="list-group-item">The Cavs have two MVP awards in their history. Both were won by LeBron James, one in 2008 and one in 2010.</li>
+    <li class="list-group-item">Furthermore, LeBron James holds several Cavs records, among which most points scored, most minutes played, most assists and most steals.</li>
+{% endblock %}
+
+{% block team_6_source %}
+    <a href="https://www.wearebasket.net/facts-you-need-to-know-about-the-cleveland-cavaliers" target="_blank" rel="noopener noreferrer">source</a>
+{% endblock %}
+
+
+<!-- TEAM 7 -->
+{% block team_7_image %}
+    <a href="https://www.mavs.com" target="_blank" rel="noopener noreferrer"><img src="/static/nba_dallasmavericks.png"  width="60" height="60" class="img-fluid rounded-start" alt="nba_dallasmavericks"></a>
+{% endblock %}
+
+{% block team_7_name %}
+    Dallas Mavericks
+{% endblock %}
+
+{% block team_7_division %}
+    WC - Southwest
+{% endblock %}
+
+{% block team_7_facts %}
+    <li class="list-group-item">The Mavericks were founded in 1980, as an expansion team. They entered the league together with a team in Minneapolis.</li>
+    <li class="list-group-item">They had a playoff drought between 1990 and 2000.</li>
+    <li class="list-group-item">From December 2001 until the 2017 season, the Mavericks sold out 704 consecutive games.</li>
+    <li class="list-group-item">Dirk Nowitzki holds the most records and awards of all (former) Mavericks. Some of those awards are: 13-time All-Star, 1-time MVP and 1-time Finals MVP. He has also just made more history by becoming the first player to play 21 consecutive years for one team.</li>
+{% endblock %}
+
+{% block team_7_source %}
+    <a href="https://www.wearebasket.net/facts-you-need-to-know-about-the-dallas-mavericks" target="_blank" rel="noopener noreferrer">source</a>
+{% endblock %}
+
+
+<!-- TEAM 8 -->
+{% block team_8_image %}
+    <a href="https://www.nba.com/nuggets" target="_blank" rel="noopener noreferrer"><img src="/static/nba_denvernuggets.png"  width="60" height="60" class="img-fluid rounded-start" alt="nba_denvernuggets"></a>
+{% endblock %}
+
+{% block team_8_name %}
+    Denver Nuggets
+{% endblock %}
+
+{% block team_8_division %}
+    WC - Northwest
+{% endblock %}
+
+{% block team_8_facts %}
+    <li class="list-group-item">The team joined the NBA in 1976 after the ABA–NBA merger and qualified for the NBA playoffs in nine consecutive seasons in the 1980s and ten consecutive seasons from 2004 to 2013.</li>
+    <li class="list-group-item">However, it has not made an appearance in a championship round since its last year in the ABA; as such, they are also the only of the four surviving former ABA teams to have never reached the NBA Finals.</li>
+{% endblock %}
+
+{% block team_8_source %}
+    <a href="https://kids.kiddle.co/Denver_Nuggets" target="_blank" rel="noopener noreferrer">source</a>
+{% endblock %}
+
+
+<!-- TEAM 9 -->
+{% block team_9_image %}
+    <a href="https://www.nba.com/pistons" target="_blank" rel="noopener noreferrer"><img src="/static/nba_detroitpistons.png"  width="60" height="60" class="img-fluid rounded-start" alt="nba_detroitpistons"></a>
+{% endblock %}
+
+{% block team_9_name %}
+    Detroit Pistons
+{% endblock %}
+
+{% block team_9_division %}
+    EC - Central
+{% endblock %}
+
+{% block team_9_facts %}
+    <li class="list-group-item">The team was founded in Fort Wayne, Indiana as the Fort Wayne (Zollner) Pistons in 1941.</li>
+    <li class="list-group-item">In 1957, the franchise moved to Detroit.</li>
+    <li class="list-group-item">The Pistons have won three NBA championships: in 1989, 1990 and 2004. Although, they've lost 4 times in the Finals.</li>
+{% endblock %}
+
+{% block team_9_source %}
+    <a href="https://kids.kiddle.co/Detroit_Pistons" target="_blank" rel="noopener noreferrer">source</a>
+{% endblock %}
+
+
+<!-- TEAM 10 -->
+{% block team_10_image %}
+    <a href="https://www.nba.com/warriors" target="_blank" rel="noopener noreferrer"><img src="/static/nba_goldenstatewarriors.png"  width="60" height="60" class="img-fluid rounded-start" alt="nba_goldenstatewarriors"></a>
+{% endblock %}
+
+{% block team_10_name %}
+    Golden State Warriors
+{% endblock %}
+
+{% block team_10_division %}
+    WC - Pacific
+{% endblock %}
+
+{% block team_10_facts %}
+    <li class="list-group-item">The Warriors won the league’s first championship in 1947. The NBA only took its name in 1949, but the three titles before that are officially recognized by the league.</li>
+    <li class="list-group-item">In 1962, Wilt Chamberlain scored 100 points in a single game against the New York Knicks, which is the all-time record. That game, both teams also set the record for most points combined (316). Unfortunately, there is no video footage of the game.</li>
+    <li class="list-group-item">In 2016, the Warriors set the record for most wins in the regular season with 73-9. The previous record was set by the 1996 Chicago Bulls (72-10), with current head coach Steve Kerr on the team.</li>
+{% endblock %}
+
+{% block team_10_source %}
+    <a href="https://www.wearebasket.net/facts-you-need-to-know-about-the-golden-state-warriors" target="_blank" rel="noopener noreferrer">source</a>
+{% endblock %}
+
+
+<!-- TEAM 11 -->
+{% block team_11_image %}
+    <a href="https://www.nba.com/rockets" target="_blank" rel="noopener noreferrer"><img src="/static/nba_houstonrockets.png"  width="60" height="60" class="img-fluid rounded-start" alt="nba_houstonrockets"></a>
+{% endblock %}
+
+{% block team_11_name %}
+    Houston Rockets
+{% endblock %}
+
+{% block team_11_division %}
+    WC - Southwest
+{% endblock %}
+
+{% block team_11_facts %}
+    <li class="list-group-item">The (San Diego) Rockets won only 15 games in their debut season as a franchise in 1967.</li>
+    <li class="list-group-item">In 1971, the Rockets moved to Houston.</li>
+    <li class="list-group-item">They did not finish a season with a winning record for almost a decade until the 1976–77 season.</li>
+    <li class="list-group-item">The Rockets has 4 Finals appearances (1981, 1986, 1994, 1995), they've won 2: in 1994 and 1995.</li>
+{% endblock %}
+
+{% block team_11_source %}
+    <a href="https://kids.kiddle.co/Houston_Rockets" target="_blank" rel="noopener noreferrer">source</a>
+{% endblock %}
+
+
+<!-- TEAM 12 -->
+{% block team_12_image %}
+    <a href="https://www.nba.com/pacers" target="_blank" rel="noopener noreferrer"><img src="/static/nba_indianapacers.png"  width="60" height="60" class="img-fluid rounded-start" alt="nba_indianapacers"></a>
+{% endblock %}
+
+{% block team_12_name %}
+    Indiana Pacers
+{% endblock %}
+
+{% block team_12_division %}
+    EC - Central
+{% endblock %}
+
+{% block team_12_facts %}
+    <li class="list-group-item">The "Malice at the Palace" took place on Nov. 19, 2004 during a game between the Indiana Pacers and Detroit Pistons. Multiple players went into the stands to fight with fans amid the chaos. It started after Ben Wallace was fouled by Ron Artest in the final minute. Players got into a physical altercation. Artest had a drink thrown at him by a fan and the mayhem ensued from there. Artest was suspended for 86 games for his role in the brawl, which ended up being the longest in NBA history.</li>
+{% endblock %}
+
+{% block team_12_source %}
+    <a href="https://www.cbssports.com/nba/news/malice-at-the-palace-facts-you-didnt-know-about-on-the-15th-anniversary-of-nbas-biggest-brawl/" target="_blank" rel="noopener noreferrer">source</a>
+{% endblock %}
+
+
+<!-- TEAM 13 -->
+{% block team_13_image %}
+    <a href="https://www.nba.com/clippers" target="_blank" rel="noopener noreferrer"><img src="/static/nba_losangelesclippers.png"  width="60" height="60" class="img-fluid rounded-start" alt="nba_losangelesclippers"></a>
+{% endblock %}
+
+{% block team_13_name %}
+    Los Angeles Clippers
+{% endblock %}
+
+{% block team_13_division %}
+    WC - Pacific
+{% endblock %}
+
+{% block team_13_facts %}
+    <li class="list-group-item">Steve Ballmer - the owner of the Los Angeles Clippers since 2014 - is the richest owner in all of North American professional sports. Ballmer has and is willing to use his money to better the Clippers and the community.</li>
+    <li class="list-group-item">After the 2017-2018 season, the Clippers all-time record was 1562-2326. This shows just how bleak some eras of Clippers basketball has been. If the Clippers were to go 82-0 for the next nine seasons, they still would have a sub .500 win percentage all-time.</li>
+{% endblock %}
+
+{% block team_13_source %}
+    <a href="https://clipperholics.com/2018/08/01/10-fun-facts-los-angeles-clippers" target="_blank" rel="noopener noreferrer">source</a>
+{% endblock %}
+
+
+<!-- TEAM 14 -->
+{% block team_14_image %}
+    <a href="https://www.nba.com/lakers" target="_blank" rel="noopener noreferrer"><img src="/static/nba_losangeleslakers.png"  width="60" height="60" class="img-fluid rounded-start" alt="nba_losangeleslakers"></a>
+{% endblock %}
+
+{% block team_14_name %}
+    Los Angeles Lakers
+{% endblock %}
+
+{% block team_14_division %}
+    WC - Pacific
+{% endblock %}
+
+{% block team_14_facts %}
+    <li class="list-group-item">The Los Angeles Lakers started as the disbanded Detroit Gems (1946) and then became the Minneapolis Lakers (1947). They became the Los Angeles Lakers (1960).</li>
+    <li class="list-group-item">In the 1996 draft, the Lakers traded Vlade Divac for a player from the Charlotte Hornets, Kobe Bryant.</li>
+    <li class="list-group-item">The Lakers hold many records like five Lakers have won the NBA MVP award a total of nine times.</li>
+    <li class="list-group-item">They won a stunning record of 33 consecutive games in one season, which still stands.</li>
+    <li class="list-group-item">The Lakers are the most successful franchise along with the Boston Celtics in the history of the NBA. Both team won 17 championships.</li>
+{% endblock %}
+
+{% block team_14_source %}
+    <a href="https://kidadl.com/fun-facts/lakers-facts-an-american-professional-basketball-team" target="_blank" rel="noopener noreferrer">source</a>
+{% endblock %}
+
+
+<!-- TEAM 15 -->
+{% block team_15_image %}
+    <a href="https://www.nba.com/grizzlies" target="_blank" rel="noopener noreferrer"><img src="/static/nba_memphisgrizzlies.png"  width="60" height="60" class="img-fluid rounded-start" alt="nba_memphisgrizzlies"></a>
+{% endblock %}
+
+{% block team_15_name %}
+    Memphis Grizzlies
+{% endblock %}
+
+{% block team_15_division %}
+    WC - Southwest
+{% endblock %}
+
+{% block team_15_facts %}
+    <li class="list-group-item">The team was originally established as the Vancouver Grizzlies, an expansion team that joined the NBA for the 1995-96 season. After the 2000-01 season concluded, the Grizzlies moved to Memphis.</li>
+    <li class="list-group-item">During their very first season, the Vancouver Grizzlies lost 23 straight games from February 16 to April 2, 1996.</li>
+    <li class="list-group-item">In 2009, Iverson signed a one-year contract with the Memphis Grizzlies. He played just three games for the team, averaging 12.3 ppg, 1.3 rpg, and 3.7 apg in 22.3 mpg.</li>
+{% endblock %}
+
+{% block team_15_source %}
+    <a href="https://www.usefultrivia.com/sports_trivia/memphis_grizzlies_trivia.html" target="_blank" rel="noopener noreferrer">source</a>
+{% endblock %}
+
+
+<!-- TEAM 16 -->
+{% block team_16_image %}
+    <a href="https://www.nba.com/heat" target="_blank" rel="noopener noreferrer"><img src="/static/nba_miamiheat.png"  width="60" height="60" class="img-fluid rounded-start" alt="nba_miamiheat"></a>
+{% endblock %}
+
+{% block team_16_name %}
+    Miami Heat
+{% endblock %}
+
+{% block team_16_division %}
+    EC - Southeast
+{% endblock %}
+
+{% block team_16_facts %}
+    <li class="list-group-item">The franchise began play in the 1988–89 NBA season as an expansion team.</li>
+    <li class="list-group-item">Miami advanced to play in the NBA Finals in 2006 for the first time, where they clinched their first championship.</li>
+    <li class="list-group-item">In 2010, after creating significant cap space, the Heat partnered Dwayne Wade with former league MVP LeBron James, and perennial NBA All-Star Chris Bosh, creating the "Big Three". During their four-year spell together, and under the guise of Erik Spoelstra, James, Wade, and Bosh, they would lead the Heat to the NBA Finals in every season, and won two back-to-back championships in 2012 and 2013.</li>
+    <li class="list-group-item">The Heat hold the record for the NBA's third-longest winning streak, 27 straight games, set during the 2012–13 season.</li>
+{% endblock %}
+
+{% block team_16_source %}
+    <a href="https://kids.kiddle.co/Miami_Heat" target="_blank" rel="noopener noreferrer">source</a>
+{% endblock %}
+
+
+<!-- TEAM 17 -->
+{% block team_17_image %}
+    <a href="https://www.nba.com/bucks" target="_blank" rel="noopener noreferrer"><img src="/static/nba_milwaukeebucks.png"  width="60" height="60" class="img-fluid rounded-start" alt="nba_milwaukeebucks"></a>
+{% endblock %}
+
+{% block team_17_name %}
+    Milwaukee Bucks
+{% endblock %}
+
+{% block team_17_division %}
+    EC - Central
+{% endblock %}
+
+{% block team_17_facts %}
+    <li class="list-group-item">The Milwaukee Bucks were founded in 1968.</li>
+    <li class="list-group-item">Herb Kohl owned the bucks for many years, he bought the team in 1985 for $18 million, and sold it 29 years later for $550 million.</li>
+    <li class="list-group-item">They won the championship in 1971, lost in the 1974 Finals. Since then, the Bucks had not reached the Finals until 2021. They won the 2021 championship and are the current champions.</li>
+{% endblock %}
+
+{% block team_17_source %}
+    <a href="https://joeditzel.com/3-fun-facts-milwaukee-bucks" target="_blank" rel="noopener noreferrer">source</a>
+{% endblock %}
+
+
+<!-- TEAM 18 -->
+{% block team_18_image %}
+    <a href="https://www.nba.com/timberwolves" target="_blank" rel="noopener noreferrer"><img src="/static/nba_minnesotatimberwolves.png"  width="60" height="60" class="img-fluid rounded-start" alt="nba_minnesotatimberwolves"></a>
+{% endblock %}
+
+{% block team_18_name %}
+    Minnesota Timberwolves
+{% endblock %}
+
+{% block team_18_division %}
+    WC - Northwest
+{% endblock %}
+
+{% block team_18_facts %}
+    <li class="list-group-item">After the acquisition of Kevin Garnett in the 1995 NBA draft, the team qualified for the playoffs in eight consecutive seasons from 1997 to 2004.</li>
+    <li class="list-group-item">Despite losing in the first round in their first seven attempts, the Timberwolves won their first division championship in 2004. This is still their only success in the league.</li>
+    <li class="list-group-item">The Timberwolves ended a 14-year playoff drought when they returned to the postseason in 2018.</li>
+{% endblock %}
+
+{% block team_18_source %}
+    <a href="https://kids.kiddle.co/Minnesota_Timberwolves" target="_blank" rel="noopener noreferrer">source</a>
+{% endblock %}
+
+
+<!-- TEAM 19 -->
+{% block team_19_image %}
+    <a href="https://www.nba.com/pelicans" target="_blank" rel="noopener noreferrer"><img src="/static/nba_neworleanspelicans.png"  width="60" height="60" class="img-fluid rounded-start" alt="nba_neworleanspelicans"></a>
+{% endblock %}
+
+{% block team_19_name %}
+    New Orleans Pelicans
+{% endblock %}
+
+{% block team_19_division %}
+    WC - Southwest
+{% endblock %}
+
+{% block team_19_facts %}
+    <li class="list-group-item">The Pelicans were established as the New Orleans Hornets in the 2002–03 season when then-owner of the Charlotte Hornets, George Shinn, relocated the franchise to New Orleans.</li>
+    <li class="list-group-item">Due to the damage caused by Hurricane Katrina in 2005, the franchise temporarily relocated to Oklahoma City, where they spent two seasons officially known as the New Orleans/Oklahoma City Hornets.</li>
+    <li class="list-group-item">The team returned to New Orleans full-time for the 2007–08 season. In 2013, the franchise announced it would rename itself the Pelicans.</li>
+{% endblock %}
+
+{% block team_19_source %}
+    <a href="https://kids.kiddle.co/New_Orleans_Pelicans" target="_blank" rel="noopener noreferrer">source</a>
+{% endblock %}
+
+
+<!-- TEAM 20 -->
+{% block team_20_image %}
+    <a href="https://www.nba.com/knicks" target="_blank" rel="noopener noreferrer"><img src="/static/nba_newyorkknicks.png"  width="60" height="60" class="img-fluid rounded-start" alt="nba_newyorkknicks"></a>
+{% endblock %}
+
+{% block team_20_name %}
+    New York Knicks
+{% endblock %}
+
+{% block team_20_division %}
+    EC - Atlantic
+{% endblock %}
+
+{% block team_20_facts %}
+    <li class="list-group-item">The full name of the New York Knicks is the Knickerbockers.</li>
+    <li class="list-group-item">The Knicks played the first official game in the league, against the Toronto Huskies, in Toronto. They won that game 68-66.</li>
+    <li class="list-group-item">The Knicks are one of two teams that have never moved from their city, the other being the Boston Celtics.</li>
+    <li class="list-group-item">The New York Knicks are the most valuable franchise in the NBA, at $5.8 billion.</li>
+{% endblock %}
+
+{% block team_20_source %}
+    <a href="https://www.wearebasket.net/facts-need-know-new-york-knicks" target="_blank" rel="noopener noreferrer">source</a>
+{% endblock %}
+
+
+<!-- TEAM 21 -->
+{% block team_21_image %}
+    <a href="https://www.nba.com/thunder" target="_blank" rel="noopener noreferrer"><img src="/static/nba_oklahomacitythunder.png"  width="60" height="60" class="img-fluid rounded-start" alt="nba_oklahomacitythunder"></a>
+{% endblock %}
+
+{% block team_21_name %}
+    Oklahoma City Thunder
+{% endblock %}
+
+{% block team_21_division %}
+    WC - Northwest
+{% endblock %}
+
+{% block team_21_facts %}
+    <li class="list-group-item">The team was originally established as the Seattle SuperSonics in the 1967–68 season.</li>
+    <li class="list-group-item">SuperSonics moved in 2008 after a settlement was reached between the ownership and lawmakers in Seattle, following a lawsuit. In Seattle, the SuperSonics qualified for the NBA playoffs 22 times and won the 1979 NBA Championship.</li>
+    <li class="list-group-item">The Thunder in the 2011–12 season reached the NBA Finals for the fourth time in franchise history - they lost against the Miami Heat.</li>
+{% endblock %}
+
+{% block team_21_source %}
+    <a href="https://kids.kiddle.co/Oklahoma_City_Thunder" target="_blank" rel="noopener noreferrer">source</a>
+{% endblock %}
+
+
+<!-- TEAM 22 -->
+{% block team_22_image %}
+    <a href="https://www.nba.com/magic" target="_blank" rel="noopener noreferrer"><img src="/static/nba_orlandomagic.png"  width="60" height="60" class="img-fluid rounded-start" alt="nba_orlandomagic"></a>
+{% endblock %}
+
+{% block team_22_name %}
+    Orlando Magic
+{% endblock %}
+
+{% block team_22_division %}
+    EC - Southeast
+{% endblock %}
+
+{% block team_22_facts %}
+    <li class="list-group-item">The franchise was established in 1989 as an expansion franchise.</li>
+    <li class="list-group-item">As of 2019, the franchise has played in the NBA playoffs for exactly half of its existence (15 playoff appearances in 30 years), and twice went to the NBA Finals, in 1995 and 2009. They lost both.</li>
+{% endblock %}
+
+{% block team_22_source %}
+    <a href="https://kids.kiddle.co/Orlando_Magic" target="_blank" rel="noopener noreferrer">source</a>
+{% endblock %}
+
+
+<!-- TEAM 23 -->
+{% block team_23_image %}
+    <a href="https://www.nba.com/sixers" target="_blank" rel="noopener noreferrer"><img src="/static/nba_philadelphia76ers.png"  width="60" height="60" class="img-fluid rounded-start" alt="nba_philadelphia76ers"></a>
+{% endblock %}
+
+{% block team_23_name %}
+    Philadelphia 76ers
+{% endblock %}
+
+{% block team_23_division %}
+    EC - Atlantic
+{% endblock %}
+
+{% block team_23_facts %}
+    <li class="list-group-item">Originally known as the Syracuse Nationals, and therefore the 76ers, are one of the oldest franchises in the NBA, as they were founded in 1946.</li>
+    <li class="list-group-item">The 76ers are named the 76ers because of the signing are the Declaration of Independence in 1776.</li>
+    <li class="list-group-item">The 76ers have their own theme song. It was written in 1975, and it was partly inspired by Sesame Street.</li>
+{% endblock %}
+
+{% block team_23_source %}
+    <a href="https://www.wearebasket.net/facts-need-know-philadelphia-76ers" target="_blank" rel="noopener noreferrer">source</a>
+{% endblock %}
+
+
+<!-- TEAM 24 -->
+{% block team_24_image %}
+    <a href="https://www.nba.com/suns" target="_blank" rel="noopener noreferrer"><img src="/static/nba_phoenixsuns.png"  width="60" height="60" class="img-fluid rounded-start" alt="nba_phoenixsuns"></a>
+{% endblock %}
+
+{% block team_24_name %}
+    Phoenix Suns
+{% endblock %}
+
+{% block team_24_division %}
+    WC - Pacific
+{% endblock %}
+
+{% block team_24_facts %}
+    <li class="list-group-item">“The Suns” was chosen from 28,000 entries that also included Scorpions, Cougars, Thunderbirds, Wranglers, Mustangs and Tumbleweeds.</li>
+    <li class="list-group-item">Although they have never won an NBA Championship, the Phoenix Suns have made three Finals appearances (1976, 1993 and 2021) and 30 Playoff appearances.</li>
+    <li class="list-group-item">They are also fourth in the rankings of all-time winning percentage in the entire NBA.</li>
+{% endblock %}
+
+{% block team_24_source %}
+    <a href="https://www.ecollegetimes.com/11-things-you-didnt-know-about-the-phoenix-suns" target="_blank" rel="noopener noreferrer">source</a>
+{% endblock %}
+
+
+<!-- TEAM 25 -->
+{% block team_25_image %}
+    <a href="https://www.nba.com/blazers" target="_blank" rel="noopener noreferrer"><img src="/static/nba_portlandtrailblazers.png"  width="60" height="60" class="img-fluid rounded-start" alt="nba_portlandtrailblazers"></a>
+{% endblock %}
+
+{% block team_25_name %}
+    Portland Trail Blazers
+{% endblock %}
+
+{% block team_25_division %}
+    WC - Northwest
+{% endblock %}
+
+{% block team_25_facts %}
+    <li class="list-group-item">The Trail Blazers have enjoyed a strong following: from 1977 through 1995, the team sold out 814 consecutive home games, the longest such streak in American major professional sports at the time, and only since surpassed by the Boston Red Sox.</li>
+    <li class="list-group-item">The team has qualified for the playoffs as a streak of 21 straight appearances from 1983 through 2003.</li>
+    <li class="list-group-item">They were champions only once, back in 1977.</li>
+{% endblock %}
+
+{% block team_25_source %}
+    <a href="https://kids.kiddle.co/Portland_Trail_Blazers" target="_blank" rel="noopener noreferrer">source</a>
+{% endblock %}
+
+
+<!-- TEAM 26 -->
+{% block team_26_image %}
+    <a href="https://www.nba.com/kings" target="_blank" rel="noopener noreferrer"><img src="/static/nba_sacramentokings.png"  width="60" height="60" class="img-fluid rounded-start" alt="nba_sacramentokings"></a>
+{% endblock %}
+
+{% block team_26_name %}
+    Sacramento Kings
+{% endblock %}
+
+{% block team_26_division %}
+    WC - Pacific
+{% endblock %}
+
+{% block team_26_facts %}
+    <li class="list-group-item">The franchise began in 1923 as the Rochester Seagrams.</li>
+    <li class="list-group-item">The longest NBA game in history occurred on January 6, 1951 between the Indianapolis Olympians and the Rochester Royals. Indianapolis beat Rochester 75-73 after 6 overtimes.</li>
+    <li class="list-group-item">In the 1961-62 season, point guard Oscar Robertson became the first player in NBA history to average a triple-double for an entire season, with 30.8 points, 12.5 rebounds and 11.4 assists.</li>
+    <li class="list-group-item">The Kings moved to Sacramento for the 1985-86 NBA season.</li>
+{% endblock %}
+
+{% block team_26_source %}
+    <a href="https://www.usefultrivia.com/sports_trivia/sacramento_kings_trivia.html" target="_blank" rel="noopener noreferrer">source</a>
+{% endblock %}
+
+
+<!-- TEAM 27 -->
+{% block team_27_image %}
+    <a href="https://www.nba.com/spurs" target="_blank" rel="noopener noreferrer"><img src="/static/nba_sanantoniospurs.png"  width="60" height="60" class="img-fluid rounded-start" alt="nba_sanantoniospurs"></a>
+{% endblock %}
+
+{% block team_27_name %}
+    San Antonio Spurs
+{% endblock %}
+
+{% block team_27_division %}
+    WC - Southwest
+{% endblock %}
+
+{% block team_27_facts %}
+    <li class="list-group-item">The franchise has won NBA championships in 1999, 2003, 2005, 2007, and 2014 - they lost the 2013 Finals.</li>
+    <li class="list-group-item">From 1999–2000 to 2016–17, the Spurs won 50 games each season, setting a record of 18 consecutive 50-win seasons.</li>
+    <li class="list-group-item">In the 2018–19 season, the Spurs matched an NBA record for most consecutive playoff appearances with 22.</li>
+    <li class="list-group-item">Their coach, Gregg Popovich is the winningest coach in the NBA history.</li>
+{% endblock %}
+
+{% block team_27_source %}
+    <a href="https://kids.kiddle.co/San_Antonio_Spurs" target="_blank" rel="noopener noreferrer">source</a>
+{% endblock %}
+
+
+<!-- TEAM 28 -->
+{% block team_28_image %}
+    <a href="https://www.nba.com/raptors" target="_blank" rel="noopener noreferrer"><img src="/static/nba_torontoraptors.png"  width="60" height="60" class="img-fluid rounded-start" alt="nba_torontoraptors"></a>
+{% endblock %}
+
+{% block team_28_name %}
+    Toronto Raptors
+{% endblock %}
+
+{% block team_28_division %}
+    EC - Atlantic
+{% endblock %}
+
+{% block team_28_facts %}
+    <li class="list-group-item">The Vancouver Grizzlies and the Raptors started back in 1995.</li>
+    <li class="list-group-item">After not doing so well, the Grizzlies was sold to Memphis, where they are still known as The Memphis Grizzlies. That left the Raptors as the only Canadian NBA team.</li>
+    <li class="list-group-item">At that time when the name was chosen (1994), there was a very popular movie called Jurassic Park. It seemed like a perfect name for a powerful new basketball team.</li>
+{% endblock %}
+
+{% block team_28_source %}
+    <a href="https://www.cbc.ca/kidscbc2/the-feed/8-things-you-didnt-know-about-nba-champs-the-toronto-raptors" target="_blank" rel="noopener noreferrer">source</a>
+{% endblock %}
+
+
+<!-- TEAM 29 -->
+{% block team_29_image %}
+    <a href="https://www.nba.com/jazz" target="_blank" rel="noopener noreferrer"><img src="/static/nba_utahjazz.png"  width="60" height="60" class="img-fluid rounded-start" alt="nba_utahjazz"></a>
+{% endblock %}
+
+{% block team_29_name %}
+    Utah Jazz
+{% endblock %}
+
+{% block team_29_division %}
+    WC - Northwest
+{% endblock %}
+
+{% block team_29_facts %}
+    <li class="list-group-item">The franchise began play as an expansion team in 1974 as the New Orleans Jazz, they moved to Salt Lake City, Utah in 1979.</li>
+    <li class="list-group-item">The Jazz qualified for their first playoff appearance in 1984, they did not miss the playoffs again until 2004.</li>
+    <li class="list-group-item">The team has two NBA Finals appearances in 1997 and 1998, where they lost both times to the Chicago Bulls.</li>
+{% endblock %}
+
+{% block team_29_source %}
+    <a href="https://kids.kiddle.co/Utah_Jazz" target="_blank" rel="noopener noreferrer">source</a>
+{% endblock %}
+
+
+<!-- TEAM 30 -->
+{% block team_30_image %}
+    <a href="https://www.nba.com/wizards" target="_blank" rel="noopener noreferrer"><img src="/static/nba_washingtonwizards.png"  width="60" height="60" class="img-fluid rounded-start" alt="nba_washingtonwizards"></a>
+{% endblock %}
+
+{% block team_30_name %}
+    Washington Wizards
+{% endblock %}
+
+{% block team_30_division %}
+    EC - Southeast
+{% endblock %}
+
+{% block team_30_facts %}
+    <li class="list-group-item">The franchise was established in 1961 as the Chicago Packers based in Chicago, and were renamed to Chicago Zephyrs the following season. In 1963, they relocated to Baltimore, and became the Baltimore Bullets. In 1973, the team changed its name to the Capital Bullets, and then to Washington Bullets in the following season. In 1997, they rebranded themselves as the Wizards.</li>
+    <li class="list-group-item">The Wizards have appeared in four NBA Finals (1971, 1975, 1978, 1979), and won in 1978.</li>
+{% endblock %}
+
+{% block team_30_source %}
+    <a href="https://kids.kiddle.co/Washington_Wizards" target="_blank" rel="noopener noreferrer">source</a>
+{% endblock %}
