@@ -7,3 +7,10 @@ I have used Python and the Flask web framework, along with SQLite (later PostreS
 In terms of frontend, I have used HTML, Bootstrap, and Jinja trio (no JavaScript).
 
 The application is available at the following URL - https://big-four-forum.onrender.com/
+
+-------
+
+The SQLite "problem" - https://community.render.com/t/python-sqlite3/7540
+
+Every time, when the Render servers restarted, the SQLite database lost its content.
+Since I am using the Free Plan on Render, I had to use its PostgreSQL database feature.
