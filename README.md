@@ -14,3 +14,10 @@ The SQLite "problem" - https://community.render.com/t/python-sqlite3/7540
 
 Every time, when the Render servers restarted, the SQLite database lost its content.
 Since I am using the Free Plan on Render, I had to use its PostgreSQL database feature.
+
+-------
+
+This is a personal project and currently I don't intend to change to a paid plan on Render.
+Therefore, I must create and use a new free PostgreSQL database every 90 days.
+
+2023.03.24. - New database
