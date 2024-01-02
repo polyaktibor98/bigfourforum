@@ -13,7 +13,7 @@ def create_app():
     # Lokális használathoz - SQLite
     #app.config['SQLALCHEMY_DATABASE_URI'] = f'sqlite:///{DB_NAME}'
     #deployment, PostgreSQL
-    app.config['SQLALCHEMY_DATABASE_URI'] = "postgresql://polyaktibor98:RSx9ulPWjM8Cy5GE94FHmWUO6CKMS8Z2@dpg-cgemfh82qv2dpv9jifu0-a/dbname_h0cn"
+    app.config['SQLALCHEMY_DATABASE_URI'] = "postgresql://bigfourforum_database3_user:EqG3wKXLnemqwaYyIfVzJQTb25E61NYz@dpg-cma4trv109ks73edog6g-a/bigfourforum_database3"
     db.init_app(app)
 
     from .views import views
